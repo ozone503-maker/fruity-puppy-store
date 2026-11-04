@@ -2,8 +2,8 @@ import { loadStore } from '../lib/store.js';
 import { json } from '../lib/http.js';
 import { rateLimit } from '../lib/rate.js';
 
-// Minimal Stripe Checkout session creator. Expects STRIPE_SECRET_KEY.
-// Body: { items: [{ sku, quantity }], success_url, cancel_url }
+// Stripe Checkout. For production, prefer the official stripe package.
+// This version builds proper application/x-www-form-urlencoded for line_items.
 export async function POST(request) {
   const limited = rateLimit(request, { limit: 20 });
   if (limited) return limited;
@@ -15,34 +15,32 @@ export async function POST(request) {
   try { body = await request.json(); } catch { return json({ error: 'Bad JSON' }, 400); }
 
   const { catalog } = loadStore();
-  const line_items = [];
-  for (const item of body.items || []) {
+  const params = new URLSearchParams();
+  params.set('mode', 'payment');
+  params.set('success_url', body.success_url || 'https://brobots.space?success=1');
+  params.set('cancel_url', body.cancel_url || 'https://brobots.space');
+  params.set('automatic_tax[enabled]', 'false');
+
+  (body.items || []).forEach((item, i) => {
     const product = catalog.products.find(p => p.variants.some(v => v.sku === item.sku));
     const variant = product?.variants.find(v => v.sku === item.sku);
-    if (!variant) return json({ error: `Unknown sku ${item.sku}` }, 400);
-    line_items.push({
-      price_data: {
-        currency: 'usd',
-        product_data: { name: `${product.title} - ${variant.title}` },
-        unit_amount: variant.price_cents,
-      },
-      quantity: item.quantity || 1,
-    });
-  }
+    if (!variant) throw new Error(`Unknown sku ${item.sku}`);
+    const prefix = `line_items[${i}]`;
+    params.set(`${prefix}[price_data][currency]`, 'usd');
+    params.set(`${prefix}[price_data][product_data][name]`, `${product.title} - ${variant.title}`);
+    params.set(`${prefix}[price_data][unit_amount]`, String(variant.price_cents));
+    params.set(`${prefix}[quantity]`, String(item.quantity || 1));
+  });
 
-  const session = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+  const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${stripeKey}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
-    body: new URLSearchParams({
-      mode: 'payment',
-      success_url: body.success_url || 'https://brobots.space?success=1',
-      cancel_url: body.cancel_url || 'https://brobots.space',
-      'line_items[0][price_data][currency]': 'usd', // simplified; real impl needs proper form encoding for arrays
-    }).toString(), // Note: for production use stripe npm or proper form-data encoding
-  }).then(r => r.json());
-
+    body: params.toString(),
+  });
+  const session = await res.json();
+  if (!res.ok) return json({ error: session.error?.message || 'Stripe error' }, 500);
   return json({ url: session.url, id: session.id });
 }
