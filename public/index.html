@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fruity Puppy</title>
+<meta name="description" content="Fresh fruit skin nutrition from Hawaiʻi.">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff8ef;color:#251a1d;font:16px/1.55 system-ui,sans-serif}
+header,main{max-width:1100px;margin:auto;padding:32px 20px}h1{margin:0;font-size:36px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.card{border:1px solid #e8d9d0;border-radius:8px;background:#fff;padding:16px}
+.add{background:#c45c4a;color:#fff;border:0;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;width:100%}
+</style></head>
+<body><header><h1 id="name">Fruity Puppy</h1><p>Fresh fruit skin nutrition from Hawaiʻi.</p></header>
+<main id="shop"><p>Loading...</p></main>
+<script>
+fetch('/api/catalog').then(r=>r.json()).then(data=>{
+  document.getElementById('name').textContent = data.store.name;
+  const shop = document.getElementById('shop');
+  shop.innerHTML = '';
+  data.products.forEach(p=>{
+    const card = document.createElement('div'); card.className='card';
+    card.innerHTML = `<h3>${p.title}</h3><p>${p.description||''}</p><button class="add" data-add-sku="${p.variants[0].sku}">Add to cart</button>`;
+    shop.appendChild(card);
+  });
+}).catch(()=>document.getElementById('shop').textContent='Could not load store.');
+</script>
+<script src="/cart.js" defer></script>
+</body></html>
