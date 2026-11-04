@@ -3,24 +3,36 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fruity Puppy</title>
 <meta name="description" content="Fresh fruit skin nutrition from Hawaiʻi.">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#fff8ef;color:#251a1d;font:16px/1.55 system-ui,sans-serif}
-header,main{max-width:1100px;margin:auto;padding:32px 20px}h1{margin:0;font-size:36px;font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
-.card{border:1px solid #e8d9d0;border-radius:8px;background:#fff;padding:16px}
-.add{background:#c45c4a;color:#fff;border:0;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;width:100%}
-</style></head>
-<body><header><h1 id="name">Fruity Puppy</h1><p>Fresh fruit skin nutrition from Hawaiʻi.</p></header>
+<link rel="stylesheet" href="/store.css">
+</head>
+<body>
+<header class="fp-head">
+  <a class="fp-logo" href="/">Fruity Puppy</a>
+  <nav>
+    <a href="https://fruitypuppy.com/our-team">Our Team</a>
+    <a href="https://fruitypuppy.com/our-dream">Our Dream</a>
+    <a href="https://fruitypuppy.com/our-cream">Our Cream</a>
+    <a href="https://fruitypuppy.com/our-home">Our Home</a>
+    <a href="https://fruitypuppy.com/safety-and-transparency">Safety</a>
+    <a href="/">Shop</a>
+  </nav>
+</header>
 <main id="shop"><p>Loading...</p></main>
+<footer class="fp-foot">
+  <p>Fresh fruit skin nutrition from Hawaiʻi.</p>
+  <p><a href="https://fruitypuppy.com">fruitypuppy.com</a> · <a href="https://fruitypuppy.com/ask-ipo">Ask Ipo</a></p>
+</footer>
 <script>
 fetch('/api/catalog').then(r=>r.json()).then(data=>{
-  document.getElementById('name').textContent = data.store.name;
   const shop = document.getElementById('shop');
-  shop.innerHTML = '';
+  shop.innerHTML = '<div class="grid"></div>';
+  const grid = shop.querySelector('.grid');
   data.products.forEach(p=>{
+    const v = p.variants[0];
+    const price = v.price_cents ? '$'+(v.price_cents/100).toFixed(2) : '$5 shipping';
     const card = document.createElement('div'); card.className='card';
-    card.innerHTML = `<h3>${p.title}</h3><p>${p.description||''}</p><button class="add" data-add-sku="${p.variants[0].sku}">Add to cart</button>`;
-    shop.appendChild(card);
+    card.innerHTML = `<h3><a href="/product/${p.id}">${p.title}</a></h3><p>${p.description||''}</p><p class="price">${price}</p><button class="add" data-add-sku="${v.sku}">Add to cart</button>`;
+    grid.appendChild(card);
   });
 }).catch(()=>document.getElementById('shop').textContent='Could not load store.');
 </script>

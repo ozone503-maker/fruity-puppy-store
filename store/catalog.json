@@ -12,7 +12,7 @@
       "pairs": ["free-sample"],
       "fulfiller": "warehouse",
       "variants": [
-        { "sku": "FP-2OZ", "title": "2 oz", "price_cents": 5999, "active": true, "stock": 100 }
+        { "sku": "FP-2OZ", "title": "2 oz", "price_cents": 5999, "active": true }
       ]
     },
     {
@@ -26,8 +26,9 @@
       "tags": ["sample"],
       "pairs": ["fruity-puppy-original"],
       "fulfiller": "warehouse",
+      "fixed_shipping_cents": 500,
       "variants": [
-        { "sku": "FP-SAMPLE", "title": "Sample", "price_cents": 500, "active": true, "stock": 200 }
+        { "sku": "FP-SAMPLE", "title": "Sample", "price_cents": 0, "active": true }
       ]
     }
   ]
