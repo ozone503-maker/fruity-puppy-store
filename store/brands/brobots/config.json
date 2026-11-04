@@ -1,0 +1,30 @@
+{
+  "name": "Brobots",
+  "tagline": "Official Brobots merch. Built by robots, worn by humans.",
+  "currency": "usd",
+  "theme": {
+    "accent": "#0ea5e9",
+    "ink": "#0f172a",
+    "paper": "#f8fafc",
+    "muted": "#64748b",
+    "line": "#e2e8f0"
+  },
+  "allowed_origins": ["https://brobots.space", "https://www.brobots.space"],
+  "cart": { "max_qty_per_item": 20, "suggestions": 3 },
+  "checkout": { "automatic_tax": false, "promo_codes": true },
+  "inventory": { "low_stock_threshold": 5 },
+  "shipping": {
+    "countries": ["US"],
+    "options": [
+      { "label": "Standard", "amount_cents": 800, "min_days": 3, "max_days": 7 },
+      { "label": "Express", "amount_cents": 2200, "min_days": 1, "max_days": 3 }
+    ],
+    "free_over_cents": 7500,
+    "free_label": "Free standard shipping"
+  },
+  "default_fulfiller": "printify",
+  "fulfillers": {
+    "warehouse": { "adapter": "manual" },
+    "printify": { "adapter": "printify", "token_env": "PRINTIFY_TOKEN", "shop_id_env": "PRINTIFY_SHOP_ID", "send_to_production": false }
+  }
+}

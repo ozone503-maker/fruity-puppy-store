@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": "brobots-tee",
+      "title": "Brobots Tee",
+      "brand": "Brobots",
+      "type": "Apparel",
+      "collection": "Core",
+      "description": "Official Brobots tee. Designs go up through the merch factory.",
+      "images": [],
+      "tags": ["tee", "merch"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "BB-TEE-S", "title": "S", "price_cents": 2800, "active": true },
+        { "sku": "BB-TEE-M", "title": "M", "price_cents": 2800, "active": true },
+        { "sku": "BB-TEE-L", "title": "L", "price_cents": 2800, "active": true },
+        { "sku": "BB-TEE-XL", "title": "XL", "price_cents": 2800, "active": true }
+      ]
+    }
+  ]
+}

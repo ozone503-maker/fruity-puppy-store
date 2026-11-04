@@ -6,5 +6,6 @@ export function OPTIONS(request) { return new Response(null, { status: 204, head
 export function GET(request) {
   const limited = rateLimit(request, { limit: 120 });
   if (limited) return limited;
-  return json(publicCatalog(), 200, corsHeaders(request));
+  const brand = new URL(request.url).searchParams.get('brand') || undefined;
+  return json(publicCatalog(brand), 200, corsHeaders(request));
 }

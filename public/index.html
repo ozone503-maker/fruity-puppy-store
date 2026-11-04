@@ -24,7 +24,24 @@
 </footer>
 <script>
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
-fetch(BASE + '/api/catalog').then(r=>r.json()).then(data=>{
+const params = new URLSearchParams(location.search);
+const brand = params.get('brand') || (location.hostname.includes('brobots') ? 'brobots' : '');
+const brandQ = brand ? '?brand=' + brand : '';
+fetch(BASE + '/api/catalog' + brandQ).then(r=>r.json()).then(data=>{
+  if (data.store && data.store.name) document.title = data.store.name;
+  const logo = document.querySelector('.fp-logo');
+  if (logo && data.store) logo.textContent = data.store.name;
+  if (brand === 'brobots') {
+    document.querySelectorAll('nav a').forEach(a => {
+      if (a.textContent === 'Our Team') { a.href = 'https://brobots.space/dossiers.html'; a.textContent = 'Dossiers'; }
+      else if (a.textContent === 'Our Dream') { a.href = 'https://brobots.space/services.html'; a.textContent = 'Services'; }
+      else if (a.textContent === 'Our Cream') { a.href = 'https://brobots.space/multimedia.html'; a.textContent = 'Multimedia'; }
+      else if (a.textContent === 'Our Home') { a.href = 'https://brobots.space/'; a.textContent = 'Home'; }
+      else if (a.textContent === 'Safety') { a.href = 'https://brobots.space/'; a.textContent = 'Brobots'; }
+    });
+    const foot = document.querySelector('.fp-foot');
+    if (foot) foot.innerHTML = '<p>Official Brobots merch.</p><p><a href="https://brobots.space">brobots.space</a></p>';
+  }
   const shop = document.getElementById('shop');
   shop.innerHTML = '<div class="grid"></div>';
   const grid = shop.querySelector('.grid');
@@ -32,7 +49,7 @@ fetch(BASE + '/api/catalog').then(r=>r.json()).then(data=>{
     const v = p.variants[0];
     const price = v.price_cents ? '$'+(v.price_cents/100).toFixed(2) : '$5 shipping';
     const card = document.createElement('div'); card.className='card';
-    card.innerHTML = `<h3><a href="${BASE}/product/${p.id}">${p.title}</a></h3><p>${p.description||''}</p><p class="price">${price}</p><button class="add" data-add-sku="${v.sku}">Add to cart</button>`;
+    card.innerHTML = `<h3><a href="${BASE}/product/${p.id}${brandQ}">${p.title}</a></h3><p>${p.description||''}</p><p class="price">${price}</p><button class="add" data-add-sku="${v.sku}">Add to cart</button>`;
     grid.appendChild(card);
   });
 }).catch(()=>document.getElementById('shop').textContent='Could not load store.');
