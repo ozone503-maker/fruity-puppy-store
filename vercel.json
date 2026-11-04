@@ -1,0 +1,6 @@
+{
+  "functions": { "api/*.js": { "includeFiles": "store/**" } },
+  "headers": [
+    { "source": "/admin.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] }
+  ]
+}

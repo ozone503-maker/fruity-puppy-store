@@ -1,0 +1,13 @@
+{
+  "name": "store-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node tools/dev.js",
+    "check": "node tools/check-store.js",
+    "test": "node --test test/store.test.js test/bot.test.js",
+    "import:shopify": "node tools/import-shopify.js"
+  }
+}
