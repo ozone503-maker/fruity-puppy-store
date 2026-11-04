@@ -6,7 +6,9 @@ function getCart() {
 }
 function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
-  updateCartUI();
+  // Clear the cart after a successful Stripe checkout redirect.
+if (new URLSearchParams(location.search).get('checkout') === 'success') localStorage.removeItem(CART_KEY);
+updateCartUI();
 }
 function updateCartUI() {
   const count = getCart().reduce((s, i) => s + (i.quantity || 1), 0);
@@ -31,12 +33,14 @@ function addToCart(sku, quantity = 1) {
 async function checkout() {
   const cart = getCart();
   if (!cart.length) return alert('Cart empty');
-  const res = await fetch('/api/checkout', {
+  let res;
+  try { res = await fetch('/api/checkout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ items: cart, success_url: location.origin + '?success=1', cancel_url: location.href }),
-  });
-  const data = await res.json();
+    // success/cancel URLs are set server-side from STORE_SITE_URL (client URLs are ignored).
+    body: JSON.stringify({ items: cart.map(i => ({ sku: i.sku, quantity: i.quantity || 1 })) }),
+  }); } catch { return alert('Network error, please try again'); }
+  const data = await res.json().catch(() => ({}));
   if (data.url) location.href = data.url;
   else alert(data.error || 'Checkout failed');
 }
@@ -47,4 +51,6 @@ document.addEventListener('click', e => {
     addToCart(btn.dataset.addSku);
   }
 });
+// Clear the cart after a successful Stripe checkout redirect.
+if (new URLSearchParams(location.search).get('checkout') === 'success') localStorage.removeItem(CART_KEY);
 updateCartUI();

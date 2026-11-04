@@ -1,46 +1,38 @@
 import { loadStore } from '../lib/store.js';
 import { json } from '../lib/http.js';
 import { rateLimit } from '../lib/rate.js';
+import { buildCheckoutSessionParams, createCheckoutSession, CheckoutError } from '../lib/stripe.js';
 
-// Stripe Checkout. For production, prefer the official stripe package.
-// This version builds proper application/x-www-form-urlencoded for line_items.
+// Creates a Stripe Checkout Session from server-side catalog prices.
+// Body: { items: [{ sku, quantity }] }
+// success/cancel URLs come from env (STORE_SITE_URL or STORE_SUCCESS_URL/STORE_CANCEL_URL),
+// never from the request body, so the endpoint can't be used as an open redirect.
 export async function POST(request) {
   const limited = rateLimit(request, { limit: 20 });
   if (limited) return limited;
 
   const stripeKey = process.env.STRIPE_SECRET_KEY;
-  if (!stripeKey) return json({ error: 'Stripe not configured' }, 500);
+  if (!stripeKey) {
+    console.error('[checkout] STRIPE_SECRET_KEY is not set');
+    return json({ error: 'Checkout is not configured' }, 503);
+  }
 
   let body;
   try { body = await request.json(); } catch { return json({ error: 'Bad JSON' }, 400); }
 
-  const { catalog } = loadStore();
-  const params = new URLSearchParams();
-  params.set('mode', 'payment');
-  params.set('success_url', body.success_url || 'https://brobots.space?success=1');
-  params.set('cancel_url', body.cancel_url || 'https://brobots.space');
-  params.set('automatic_tax[enabled]', 'false');
-
-  (body.items || []).forEach((item, i) => {
-    const product = catalog.products.find(p => p.variants.some(v => v.sku === item.sku));
-    const variant = product?.variants.find(v => v.sku === item.sku);
-    if (!variant) throw new Error(`Unknown sku ${item.sku}`);
-    const prefix = `line_items[${i}]`;
-    params.set(`${prefix}[price_data][currency]`, 'usd');
-    params.set(`${prefix}[price_data][product_data][name]`, `${product.title} - ${variant.title}`);
-    params.set(`${prefix}[price_data][unit_amount]`, String(variant.price_cents));
-    params.set(`${prefix}[quantity]`, String(item.quantity || 1));
-  });
-
-  const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${stripeKey}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: params.toString(),
-  });
-  const session = await res.json();
-  if (!res.ok) return json({ error: session.error?.message || 'Stripe error' }, 500);
-  return json({ url: session.url, id: session.id });
+  try {
+    const { catalog, config } = loadStore();
+    const params = buildCheckoutSessionParams({ items: body?.items, catalog, config });
+    const session = await createCheckoutSession(params, { key: stripeKey });
+    if (!session?.url) throw new CheckoutError('Stripe did not return a checkout URL', 502);
+    return json({ url: session.url, id: session.id });
+  } catch (err) {
+    if (err instanceof CheckoutError) {
+      if (err.status >= 500) console.error(`[checkout] ${err.message}`);
+      // Don't echo internal config errors to shoppers.
+      return json({ error: err.status >= 500 ? 'Checkout is temporarily unavailable' : err.message }, err.status);
+    }
+    console.error('[checkout] unexpected error:', err?.message);
+    return json({ error: 'Checkout failed' }, 500);
+  }
 }
