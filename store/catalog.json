@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "fruity-puppy-original",
+      "title": "Fruity Puppy Original",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Cream",
+      "description": "45% real fresh Hawaiian tropical fruit. Ice-extracted, suspended in a crystalline lipid matrix. 17 bioavailable antioxidants. 2 oz.",
+      "images": [],
+      "tags": ["skincare", "cream", "face", "body"],
+      "pairs": ["free-sample"],
+      "fulfiller": "warehouse",
+      "variants": [
+        { "sku": "FP-2OZ", "title": "2 oz", "price_cents": 5999, "active": true, "stock": 100 }
+      ]
+    },
+    {
+      "id": "free-sample",
+      "title": "Free Sample",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Samples",
+      "description": "Try Fruity Puppy Original. $5 shipping & handling.",
+      "images": [],
+      "tags": ["sample"],
+      "pairs": ["fruity-puppy-original"],
+      "fulfiller": "warehouse",
+      "variants": [
+        { "sku": "FP-SAMPLE", "title": "Sample", "price_cents": 500, "active": true, "stock": 200 }
+      ]
+    }
+  ]
+}

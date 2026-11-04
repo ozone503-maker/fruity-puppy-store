@@ -1,0 +1,30 @@
+{
+  "name": "Fruity Puppy",
+  "tagline": "Fresh fruit skin nutrition from Hawaiʻi.",
+  "currency": "usd",
+  "theme": {
+    "accent": "#c45c4a",
+    "ink": "#251a1d",
+    "paper": "#fff8ef",
+    "muted": "#6d5a5e",
+    "line": "#e8d9d0"
+  },
+  "allowed_origins": ["https://brobots.space", "https://fruitypuppy.com", "https://www.fruitypuppy.com"],
+  "cart": { "max_qty_per_item": 20, "suggestions": 3 },
+  "checkout": { "automatic_tax": false, "promo_codes": true },
+  "inventory": { "low_stock_threshold": 5 },
+  "shipping": {
+    "countries": ["US"],
+    "options": [
+      { "label": "Standard", "amount_cents": 800, "min_days": 3, "max_days": 7 },
+      { "label": "Express", "amount_cents": 2200, "min_days": 1, "max_days": 3 }
+    ],
+    "free_over_cents": 7500,
+    "free_label": "Free standard shipping"
+  },
+  "default_fulfiller": "warehouse",
+  "fulfillers": {
+    "warehouse": { "adapter": "manual" },
+    "printshop": { "adapter": "manual" }
+  }
+}
