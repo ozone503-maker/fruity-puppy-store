@@ -1,5 +1,8 @@
 {
   "functions": { "api/*.js": { "includeFiles": "store/**" } },
+  "rewrites": [
+    { "source": "/product/:id", "destination": "/api/product?id=:id" }
+  ],
   "headers": [
     { "source": "/admin.html", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] }
   ]

@@ -25,6 +25,7 @@
   "default_fulfiller": "warehouse",
   "fulfillers": {
     "warehouse": { "adapter": "manual" },
-    "printshop": { "adapter": "manual" }
+    "printshop": { "adapter": "manual" },
+    "printify": { "adapter": "printify", "token_env": "PRINTIFY_TOKEN", "shop_id_env": "PRINTIFY_SHOP_ID", "send_to_production": false }
   }
 }
