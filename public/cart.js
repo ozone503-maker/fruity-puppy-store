@@ -1,5 +1,6 @@
 // Minimal cart for store kit
 const CART_KEY = 'fp-cart';
+const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 
 function getCart() {
   try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch { return []; }
@@ -31,10 +32,10 @@ function addToCart(sku, quantity = 1) {
 async function checkout() {
   const cart = getCart();
   if (!cart.length) return alert('Cart empty');
-  const res = await fetch('/api/checkout', {
+  const res = await fetch(BASE + '/api/checkout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ items: cart, success_url: location.origin + '?success=1', cancel_url: location.href }),
+    body: JSON.stringify({ items: cart, success_url: location.origin + BASE + '?success=1', cancel_url: location.href }),
   });
   const data = await res.json();
   if (data.url) location.href = data.url;
