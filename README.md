@@ -20,6 +20,10 @@ These are part of the program. They are not rebuilt per brand.
 
 A new brand inherits all of this. The only thing that changes is the catalog and the config.
 
+## Mockups
+
+When you add a product or expand a design, copy the mockups from the original catalog onto the new listing. Do not leave a new product on a logo or an empty `images` array if the original already has mockups. See `store/OPERATOR.md`.
+
 ## Standard catalog issue
 
 **Standard catalog issue** is a fixed set of products. When someone says “standard catalog issue”, “standard issue”, or “add the standard catalog,” expand it into **all six** of these, using the same design on every one:
@@ -59,6 +63,7 @@ Named extras are in addition to the standard set. They are not a replacement for
 ### Rules
 
 - Same design, same title stem, different product type on each listing.
+- Copy mockups from the original catalog product onto every new listing.
 - Resolve real Printify `blueprint_id` and `print_provider_id` at create time. Do not hardcode stale IDs.
 - Prefer Printify Choice / a US provider when both exist.
 - Enable the common size run (S–XL minimum on apparel; all offered sizes on the blanket).
