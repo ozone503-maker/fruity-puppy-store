@@ -5,35 +5,143 @@
       "title": "Kudoken Tee",
       "brand": "Kudoken",
       "type": "Apparel",
-      "collection": "Core",
-      "description": "Official Kudoken tee. Designs go up through the merch factory. Play. Earn. Spend.",
-      "images": [],
-      "tags": ["tee", "merch"],
-      "pairs": ["kudoken-hoodie"],
+      "collection": "Standard",
+      "description": "Official Kudoken tee. Logo in white or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["tee", "merch", "standard"],
+      "pairs": ["kudoken-long-sleeve", "kudoken-hoodie-kilauea"],
       "fulfiller": "printify",
       "variants": [
-        { "sku": "KDU-TEE-S", "title": "S", "price_cents": 2800, "active": true },
-        { "sku": "KDU-TEE-M", "title": "M", "price_cents": 2800, "active": true },
-        { "sku": "KDU-TEE-L", "title": "L", "price_cents": 2800, "active": true },
-        { "sku": "KDU-TEE-XL", "title": "XL", "price_cents": 2800, "active": true }
+        { "sku": "KDU-TEE-W", "title": "White", "price_cents": 2800, "active": true },
+        { "sku": "KDU-TEE-B", "title": "Kudoken Blue", "price_cents": 2800, "active": true }
       ]
     },
     {
-      "id": "kudoken-hoodie",
-      "title": "Kudoken Hoodie",
+      "id": "kudoken-long-sleeve",
+      "title": "Kudoken Long Sleeve",
       "brand": "Kudoken",
       "type": "Apparel",
-      "collection": "Core",
-      "description": "Official Kudoken hoodie. #EnergyIsCurrency",
-      "images": [],
-      "tags": ["hoodie", "merch"],
+      "collection": "Standard",
+      "description": "Long-sleeved Kudoken tee. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["long-sleeve", "merch", "standard"],
       "pairs": ["kudoken-tee"],
       "fulfiller": "printify",
       "variants": [
-        { "sku": "KDU-HOOD-S", "title": "S", "price_cents": 4800, "active": true },
-        { "sku": "KDU-HOOD-M", "title": "M", "price_cents": 4800, "active": true },
-        { "sku": "KDU-HOOD-L", "title": "L", "price_cents": 4800, "active": true },
-        { "sku": "KDU-HOOD-XL", "title": "XL", "price_cents": 4800, "active": true }
+        { "sku": "KDU-LS-W", "title": "White", "price_cents": 3200, "active": true },
+        { "sku": "KDU-LS-B", "title": "Kudoken Blue", "price_cents": 3200, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-hoodie-beach",
+      "title": "Kudoken Beach Hoodie",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "Lightweight 6-8 oz after-sun hoodie. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["hoodie", "beach", "standard"],
+      "pairs": ["kudoken-hoodie-kilauea"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-BEACH-W", "title": "White", "price_cents": 4200, "active": true },
+        { "sku": "KDU-BEACH-B", "title": "Kudoken Blue", "price_cents": 4200, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-hoodie-kilauea",
+      "title": "Kudoken Kīlauea Hoodie",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "Standard hooded sweatshirt. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["hoodie", "kilauea", "standard"],
+      "pairs": ["kudoken-hoodie-mauna-kea", "kudoken-tee"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-KIL-W", "title": "White", "price_cents": 4800, "active": true },
+        { "sku": "KDU-KIL-B", "title": "Kudoken Blue", "price_cents": 4800, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-hoodie-mauna-kea",
+      "title": "Kudoken Mauna Kea Hoodie",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "Thick, premium hoodie. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["hoodie", "mauna-kea", "standard"],
+      "pairs": ["kudoken-hoodie-kilauea"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-MK-W", "title": "White", "price_cents": 6800, "active": true },
+        { "sku": "KDU-MK-B", "title": "Kudoken Blue", "price_cents": 6800, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-blanket",
+      "title": "Kudoken Blanket",
+      "brand": "Kudoken",
+      "type": "Home",
+      "collection": "Standard",
+      "description": "Kudoken blanket. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["blanket", "standard"],
+      "pairs": ["kudoken-tee"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-BLANK-W", "title": "White", "price_cents": 4500, "active": true },
+        { "sku": "KDU-BLANK-B", "title": "Kudoken Blue", "price_cents": 4500, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-tank",
+      "title": "Kudoken Women's Tank",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Extra",
+      "description": "Women's tank top. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["tank", "women"],
+      "pairs": ["kudoken-tee", "kudoken-visor"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-TANK-W", "title": "White", "price_cents": 2600, "active": true },
+        { "sku": "KDU-TANK-B", "title": "Kudoken Blue", "price_cents": 2600, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-visor",
+      "title": "Kudoken Visor",
+      "brand": "Kudoken",
+      "type": "Accessories",
+      "collection": "Extra",
+      "description": "Kudoken visor. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["visor", "hat"],
+      "pairs": ["kudoken-tank", "kudoken-clogs"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-VISOR-W", "title": "White", "price_cents": 2200, "active": true },
+        { "sku": "KDU-VISOR-B", "title": "Kudoken Blue", "price_cents": 2200, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-clogs",
+      "title": "Kudoken Clogs",
+      "brand": "Kudoken",
+      "type": "Footwear",
+      "collection": "Extra",
+      "description": "Clog-style shoes. White or Kudoken blue.",
+      "images": ["https://kudoken.space/images/logo.jpg"],
+      "tags": ["clogs", "footwear"],
+      "pairs": ["kudoken-visor", "kudoken-tee"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-CLOG-W", "title": "White", "price_cents": 3500, "active": true },
+        { "sku": "KDU-CLOG-B", "title": "Kudoken Blue", "price_cents": 3500, "active": true }
       ]
     }
   ]
