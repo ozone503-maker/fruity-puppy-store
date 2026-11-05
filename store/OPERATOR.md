@@ -37,11 +37,12 @@ Models on file:
 
 Rules:
 
-1. Match the reference image in `store/characters/`. Same face, same colors, same body. Only the clothing changes.
-2. One photo per product, minimum. Front view, the item clearly visible.
-3. Ipo is the default for Fruity Puppy and Kudoken. The others are available for any brand.
-4. Put the image URL in the catalog `images` array. Commit. A listing without a character photo is not done.
-5. Printify is for fulfillment only. It is not the photo source.
+1. **Ipo always has at least a pair of shorts on.** No exceptions on any merch mockup.
+2. Match the reference image in `store/characters/`. Same face, same colors, same body. Only the clothing changes.
+3. One photo per product, minimum. Front view, the item clearly visible.
+4. Ipo is the default for Fruity Puppy and Kudoken. The others are available for any brand.
+5. Put the image URL in the catalog `images` array. Commit. A listing without a character photo is not done.
+6. Printify is for fulfillment only. It is not the photo source.
 
 ## Standard catalog issue
 
