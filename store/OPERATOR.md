@@ -10,7 +10,9 @@
 
 Read `README.md` and `store/standard-catalog.json`.
 
-**Standard catalog issue** always expands to all six: tee, long-sleeve, hoodie-light, hoodie-mid, hoodie-heavy, blanket.
+**Standard catalog issue** always expands to all six: tee, long-sleeve, Beach hoodie, Kīlauea hoodie, Mauna Kea hoodie, blanket.
+
+Hoodie weights, thinnest to thickest: beach → Kīlauea → Mauna Kea.
 
 If the user names extra products (trucker hat, duffel bag, etc.) plus standard catalog issue, create the extras **and** all six standard items. Extras do not replace the standard set.
 
