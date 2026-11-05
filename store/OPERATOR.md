@@ -12,7 +12,10 @@ Read `README.md` and `store/standard-catalog.json`.
 
 **Standard catalog issue** always expands to all six: tee, long-sleeve, Beach hoodie, Kīlauea hoodie, Mauna Kea hoodie, blanket.
 
-Hoodie weights, thinnest to thickest: beach → Kīlauea → Mauna Kea.
+Hoodie weights:
+- Beach — lightweight 6–8 oz, after-sun style
+- Kīlauea — standard hooded sweatshirt
+- Mauna Kea — thick and expensive
 
 If the user names extra products (trucker hat, duffel bag, etc.) plus standard catalog issue, create the extras **and** all six standard items. Extras do not replace the standard set.
 
