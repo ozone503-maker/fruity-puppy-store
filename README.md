@@ -1,11 +1,23 @@
 # Store Kit
 
-Multi-brand print-on-demand store.
+One store program. Every brand gets the same shop.
 
 - Brobots: `brobots.space/store` → `store/brands/brobots/catalog.json`
 - Fruity Puppy: `fruitypuppy.com/store` → `store/catalog.json`
+- New brand: add `store/brands/<brand>/` and mount `/store`. Do not rebuild the shop.
 
 Bots: read `store/OPERATOR.md` before touching anything.
+
+## What every store already has
+
+These are part of the program. They are not rebuilt per brand.
+
+- **Cart** — drawer plus `/cart`. Quantity, remove, subtotal. One cart per brand.
+- **Suggested products** — from `pairs` on the product, otherwise other products in that brand's catalog. Shown on the product page, the drawer, and the cart page.
+- **Order confirmation** — `/confirmation` after Stripe. Cart clears. Receipt line shown.
+- **Checkout** — Stripe. Uses `stripe_price_id` when linked, otherwise price data.
+
+A new brand inherits all of this. The only thing that changes is the catalog and the config.
 
 ## Standard catalog issue
 
