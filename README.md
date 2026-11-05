@@ -4,6 +4,7 @@ One store program. Every brand gets the same shop.
 
 - Brobots: `brobots.space/store` → `store/brands/brobots/catalog.json`
 - Fruity Puppy: `fruitypuppy.com/store` → `store/catalog.json`
+- Kudoken: `kudoken.space/store` → `store/brands/kudoken/catalog.json`
 - New brand: add `store/brands/<brand>/` and mount `/store`. Do not rebuild the shop.
 
 Bots: read `store/OPERATOR.md` before touching anything.
