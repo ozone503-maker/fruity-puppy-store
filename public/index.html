@@ -1,56 +1,263 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shop</title>
-<meta name="description" content="Shop">
-<link rel="stylesheet" href="store.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff8ef">
+  <title>Fruity Puppy · Shop</title>
+  <meta name="description" content="Fresh fruit skin nutrition from Hawaiʻi. Shop Fruity Puppy skincare and goods from the Big Island.">
+  <link rel="stylesheet" href="store.css">
 </head>
 <body>
-<header class="fp-head">
-  <a class="fp-logo" href=".">Shop</a>
-  <nav>
-    <a href=".">Shop</a>
-  </nav>
-</header>
-<main id="shop"><p>Loading...</p></main>
-<footer class="fp-foot">
-  <p id="tagline"></p>
-</footer>
-<script>
-const BASE = location.pathname.startsWith('/store') ? '/store' : '';
-const params = new URLSearchParams(location.search);
-function brandFromHost() {
-  const h = location.hostname;
-  if (h.includes('brobots')) return 'brobots';
-  if (h.includes('kudoken')) return 'kudoken';
-  return '';
-}
-const brand = params.get('brand') || brandFromHost();
-const brandQ = brand ? '?brand=' + brand : '';
-const homes = {
-  brobots: 'https://brobots.space',
-  kudoken: 'https://kudoken.space'
-};
-fetch(BASE + '/api/catalog' + brandQ).then(r=>r.json()).then(data=>{
-  if (data.store && data.store.name) document.title = data.store.name;
-  const logo = document.querySelector('.fp-logo');
-  if (logo && data.store) logo.textContent = data.store.name;
-  const tag = document.getElementById('tagline');
-  if (tag && data.store) tag.textContent = data.store.tagline || '';
-  const home = homes[brand] || 'https://fruitypuppy.com';
-  const foot = document.querySelector('.fp-foot');
-  if (foot && brand) foot.innerHTML = `<p>${data.store?.tagline || ''}</p><p><a href="${home}">${home.replace('https://','')}</a></p>`;
-  const shop = document.getElementById('shop');
-  shop.innerHTML = '<div class="grid"></div>';
-  const grid = shop.querySelector('.grid');
-  data.products.forEach(p=>{
-    const v = p.variants[0];
-    const price = v.price_cents ? '$'+(v.price_cents/100).toFixed(2) : '$5 shipping';
-    const card = document.createElement('div'); card.className='card';
-    card.innerHTML = `<h3><a href="${BASE}/product/${p.id}${brandQ}">${p.title}</a></h3><p>${p.description||''}</p><p class="price">${price}</p><button class="add" data-add-sku="${v.sku}">Add to cart</button>`;
-    grid.appendChild(card);
-  });
-}).catch(()=>document.getElementById('shop').textContent='Could not load store.');
-</script>
-<script src="cart.js" defer></script>
-</body></html>
+  <div class="announcement">REAL FRUIT SKINCARE FROM THE BIG ISLAND <span>✳</span> FRESHNESS IS A SPECTRUM</div>
+  <header class="fp-head">
+    <a class="fp-logo" id="brand-home" href="https://fruitypuppy.com" aria-label="Fruity Puppy home">Fruity Puppy</a>
+    <nav aria-label="Main navigation">
+      <a href="#products">Shop</a>
+      <a id="story-link" href="https://fruitypuppy.com">Our story</a>
+      <a id="cart-link" href="/store/cart">Cart</a>
+    </nav>
+  </header>
+
+  <main class="store-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" id="hero-eyebrow">REAL FRUIT. REAL SKIN NUTRITION.</p>
+        <h1 id="hero-title">Skin eats.<br><em>Feed it well.</em></h1>
+        <p class="hero-description" id="hero-description">Fresh Hawaiian fruit, ice-extracted immediately after harvest, brought into a new kind of skincare.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#products">Shop the collection <span aria-hidden="true">↗</span></a>
+          <span class="hero-note" id="hero-note">Made with intention on Hawaiʻi Island</span>
+        </div>
+        <div class="hero-proof" id="hero-proof">
+          <span><strong>45%</strong> real fruit in Original</span>
+          <span><strong>17</strong> bioavailable antioxidants</span>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <img src="https://fruitypuppy.com/images/hero/our-cream-hero-poster.jpg" alt="Fruity Puppy fruit skincare from Hawaiʻi" fetchpriority="high">
+        <div class="hero-stamp"><span>FRESH</span><strong>FROM<br>HAWAIʻI</strong></div>
+        <p class="image-caption">Fruit first. Everything else follows.</p>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Fruity Puppy principles">
+      <span>REAL HAWAIIAN FRUIT</span><i>✳</i>
+      <span>ICE-EXTRACTED FRESH</span><i>✳</i>
+      <span>SCIENCE + THE FRUIT</span><i>✳</i>
+      <span>MADE ON THE BIG ISLAND</span>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="collection-title">Fresh from the fruit line.</h2>
+          <p class="section-intro" id="collection-intro">Find your formula, then find your favorite way to carry the puppy.</p>
+        </div>
+        <p class="result-count" id="results-count" aria-live="polite"></p>
+      </div>
+
+      <div class="shop-controls">
+        <div class="filter-row" id="filter-row" role="group" aria-label="Filter products">
+          <button class="filter-button is-active" type="button" data-filter="all">Everything</button>
+          <button class="filter-button" type="button" data-filter="Skincare">Skincare</button>
+          <button class="filter-button" type="button" data-filter="Apparel">Wearables</button>
+          <button class="filter-button" type="button" data-filter="Home">Home</button>
+          <button class="filter-button" type="button" data-filter="Samples">Samples</button>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">Search products</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="product-search" type="search" placeholder="Find something…" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="grid" id="product-grid" aria-live="polite">
+        <div class="loading-state">Gathering the good stuff…</div>
+      </div>
+    </section>
+
+    <section class="fruit-note" id="fruit-note">
+      <div>
+        <p class="eyebrow">A DIFFERENT STARTING POINT</p>
+        <h2>We start with the fruit.</h2>
+      </div>
+      <p>Not a fragrance story. Not a trend forecast. Real fruit, handled with care, and made into something your skin can use.</p>
+      <a href="https://fruitypuppy.com">Get to know Fruity Puppy <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="fp-foot">
+    <a class="footer-brand" id="footer-brand" href="https://fruitypuppy.com">Fruity Puppy</a>
+    <p id="footer-tagline">Fresh fruit skin nutrition from Hawaiʻi.</p>
+    <p class="footer-small">Made with intention on Hawaiʻi Island.</p>
+  </footer>
+
+  <script>
+    const BASE = location.pathname.startsWith('/store') ? '/store' : '';
+    const params = new URLSearchParams(location.search);
+    function brandFromHost() {
+      const h = location.hostname;
+      if (h.includes('brobots')) return 'brobots';
+      if (h.includes('kudoken')) return 'kudoken';
+      return '';
+    }
+    const brand = params.get('brand') || brandFromHost();
+    const brandQ = brand ? '?brand=' + encodeURIComponent(brand) : '';
+    const homeUrl = brand === 'kudoken' ? 'https://kudoken.space' : brand === 'brobots' ? 'https://brobots.space' : 'https://fruitypuppy.com';
+    const filters = document.getElementById('filter-row');
+    const grid = document.getElementById('product-grid');
+    const search = document.getElementById('product-search');
+    let products = [];
+    let activeFilter = 'all';
+
+    function money(cents) {
+      return '$' + (Number(cents || 0) / 100).toFixed(2);
+    }
+    function productUrl(id) {
+      return BASE + '/product/' + encodeURIComponent(id) + brandQ;
+    }
+    function addText(parent, tag, className, value) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      node.textContent = value || '';
+      parent.appendChild(node);
+      return node;
+    }
+    function renderProducts() {
+      const q = search.value.trim().toLowerCase();
+      const visible = products.filter(function(p) {
+        const type = p.type || p.collection || '';
+        const typeMatch = activeFilter === 'all' || type.toLowerCase() === activeFilter.toLowerCase() || (activeFilter === 'Samples' && (p.collection || '').toLowerCase() === 'samples');
+        const textMatch = !q || [p.title, p.description, p.collection, p.type, ...(p.tags || [])].join(' ').toLowerCase().includes(q);
+        return typeMatch && textMatch;
+      });
+      grid.replaceChildren();
+      document.getElementById('results-count').textContent = visible.length + (visible.length === 1 ? ' item' : ' items');
+      if (!visible.length) {
+        addText(grid, 'p', 'empty-state', 'Nothing in this corner yet. Try another filter or search.');
+        return;
+      }
+      visible.forEach(function(p) {
+        const variants = (p.variants || []).filter(function(v) { return v.available !== false; });
+        if (!variants.length) return;
+        const first = variants[0];
+        const card = document.createElement('article');
+        card.className = 'product-card';
+
+        const artLink = document.createElement('a');
+        artLink.className = 'product-art';
+        artLink.href = productUrl(p.id);
+        artLink.setAttribute('aria-label', 'View ' + p.title);
+        if (p.images && p.images[0]) {
+          const img = document.createElement('img');
+          img.src = p.images[0];
+          img.alt = p.title;
+          img.loading = 'lazy';
+          img.decoding = 'async';
+          img.onerror = function() { img.remove(); artLink.classList.add('image-missing'); };
+          artLink.appendChild(img);
+        } else {
+          artLink.classList.add('image-missing');
+          addText(artLink, 'span', 'image-fallback', 'FRUITY PUPPY');
+        }
+        const typeLabel = addText(artLink, 'span', 'art-label', p.type || p.collection || 'Collection');
+        card.appendChild(artLink);
+
+        const copy = document.createElement('div');
+        copy.className = 'product-copy';
+        addText(copy, 'p', 'product-kicker', p.collection || p.type || 'The collection');
+        const title = document.createElement('h3');
+        const titleLink = document.createElement('a');
+        titleLink.href = productUrl(p.id);
+        titleLink.textContent = p.title;
+        title.appendChild(titleLink);
+        copy.appendChild(title);
+        addText(copy, 'p', 'product-description', p.description || '');
+        const foot = document.createElement('div');
+        foot.className = 'product-card-foot';
+        const price = document.createElement('span');
+        price.className = 'product-price';
+        price.textContent = p.id === 'free-sample' ? 'FREE + $5 shipping' : money(first.price_cents);
+        foot.appendChild(price);
+        if (variants.length === 1) {
+          const add = document.createElement('button');
+          add.type = 'button';
+          add.className = 'quick-add';
+          add.dataset.addSku = first.sku;
+          add.textContent = 'Add to cart +';
+          foot.appendChild(add);
+        } else {
+          const choose = document.createElement('a');
+          choose.className = 'choose-options';
+          choose.href = productUrl(p.id);
+          choose.textContent = 'Choose options ↗';
+          foot.appendChild(choose);
+        }
+        copy.appendChild(foot);
+        card.appendChild(copy);
+        grid.appendChild(card);
+      });
+    }
+
+    filters.addEventListener('click', function(event) {
+      const button = event.target.closest('[data-filter]');
+      if (!button) return;
+      activeFilter = button.dataset.filter;
+      filters.querySelectorAll('.filter-button').forEach(function(item) {
+        item.classList.toggle('is-active', item === button);
+      });
+      renderProducts();
+    });
+    search.addEventListener('input', renderProducts);
+
+    document.getElementById('brand-home').href = homeUrl;
+    document.getElementById('story-link').href = homeUrl;
+    document.getElementById('cart-link').href = BASE + '/cart' + brandQ;
+    document.getElementById('footer-brand').href = homeUrl;
+
+    fetch(BASE + '/api/catalog' + brandQ)
+      .then(function(response) {
+        if (!response.ok) throw new Error('Catalog unavailable');
+        return response.json();
+      })
+      .then(function(data) {
+        const store = data.store || {};
+        products = data.products || [];
+        document.title = (store.name || 'Shop') + ' · Store';
+        document.querySelectorAll('.fp-logo, .footer-brand').forEach(function(el) { el.textContent = store.name || 'Shop'; });
+        document.getElementById('footer-tagline').textContent = store.tagline || '';
+        if (store.theme) {
+          const root = document.documentElement;
+          if (store.theme.accent) root.style.setProperty('--accent', store.theme.accent);
+          if (store.theme.ink) root.style.setProperty('--ink', store.theme.ink);
+          if (store.theme.paper) root.style.setProperty('--paper', store.theme.paper);
+          if (store.theme.muted) root.style.setProperty('--muted', store.theme.muted);
+          if (store.theme.line) root.style.setProperty('--line', store.theme.line);
+        }
+        if (brand) {
+          document.querySelector('.announcement').textContent = store.tagline || 'THE COLLECTION';
+          document.getElementById('hero-eyebrow').textContent = 'THE ' + (store.name || 'STORE').toUpperCase() + ' COLLECTION';
+          document.getElementById('hero-title').textContent = store.name || 'The collection';
+          document.getElementById('hero-description').textContent = store.tagline || 'Explore the collection.';
+          document.getElementById('hero-proof').hidden = true;
+          document.getElementById('hero-visual').hidden = true;
+          document.getElementById('fruit-note').hidden = true;
+          document.getElementById('collection-title').textContent = 'Explore the collection.';
+          document.getElementById('collection-intro').textContent = store.tagline || '';
+        }
+        const presentTypes = new Set(products.map(function(p) { return p.type || ''; }));
+        filters.querySelectorAll('[data-filter]').forEach(function(button) {
+          if (button.dataset.filter !== 'all' && button.dataset.filter !== 'Samples' && !presentTypes.has(button.dataset.filter)) button.hidden = true;
+        });
+        renderProducts();
+      })
+      .catch(function() {
+        grid.replaceChildren();
+        addText(grid, 'p', 'empty-state', 'The shop is having a moment. Please refresh in a little bit.');
+      });
+  </script>
+  <script src="cart.js" defer></script>
+</body>
+</html>
