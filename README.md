@@ -15,10 +15,12 @@ Bots: read `store/OPERATOR.md` before touching anything.
 |-----|---------|-----------------|
 | `tee` | T-shirt | Unisex Softstyle / staple tee (lightweight) |
 | `long-sleeve` | Long-sleeved t-shirt | Unisex long sleeve tee |
-| `hoodie-light` | Light hoodie | Lightweight fleece hoodie |
-| `hoodie-mid` | Mid hoodie | Midweight / Softstyle fleece hoodie |
-| `hoodie-heavy` | Heavy hoodie | Heavy Blend hoodie (Gildan 18500 class) |
+| `hoodie-beach` | Beach hoodie | Lightweight fleece hoodie (thinnest) |
+| `hoodie-kilauea` | Kīlauea hoodie | Midweight / Softstyle fleece hoodie |
+| `hoodie-mauna-kea` | Mauna Kea hoodie | Heavy Blend hoodie (Gildan 18500 class, thickest) |
 | `blanket` | Blanket | Velveteen plush or Sherpa fleece blanket |
+
+Hoodie weights, thinnest to thickest: **beach** → **Kīlauea** → **Mauna Kea**.
 
 That is the whole standard set. Do not drop any of them. Do not invent extra items unless the user named them.
 
@@ -34,9 +36,9 @@ You create **8 products** from that one design:
 2. duffel bag (named extra)
 3. tee
 4. long-sleeve
-5. hoodie-light
-6. hoodie-mid
-7. hoodie-heavy
+5. Beach hoodie
+6. Kīlauea hoodie
+7. Mauna Kea hoodie
 8. blanket
 
 Named extras are in addition to the standard set. They are not a replacement for it.
