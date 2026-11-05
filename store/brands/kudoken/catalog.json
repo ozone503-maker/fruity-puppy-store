@@ -6,11 +6,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "Official Kudoken tee. Logo in white or Kudoken blue.",
+      "description": "The everyday Kudoken shirt. A soft unisex staple tee with the K comet on the chest, built for the hours between a game and whatever comes after. Light enough for a warm afternoon, substantial enough that it does not go see-through after one wash. Cut with a classic crew neck, set-in sleeves, and a straight hem. Wear it white for the clean mark, or Kudoken blue so the logo reads as a tone-on-tone stamp. Energy is currency. This is the bill you actually put on.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["tee", "merch", "standard"],
       "pairs": ["kudoken-long-sleeve", "kudoken-hoodie-kilauea"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Measurements are garment width and length, in inches. If you are between sizes, size up.",
+        "headers": ["Size", "Chest", "Length"],
+        "rows": [["S", "18", "28"], ["M", "20", "29"], ["L", "22", "30"], ["XL", "24", "31"], ["2XL", "26", "32"]]
+      },
       "variants": [
         { "sku": "KDU-TEE-W", "title": "White", "price_cents": 2800, "active": true },
         { "sku": "KDU-TEE-B", "title": "Kudoken Blue", "price_cents": 2800, "active": true }
@@ -22,11 +28,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "Long-sleeved Kudoken tee. White or Kudoken blue.",
+      "description": "Same mark, longer day. The Kudoken long sleeve is the tee for when the sun drops or the AC is rude. Soft jersey, ribbed cuffs that stay put, and a crew neck that does not choke. It layers under a hoodie or stands on its own. White reads crisp against the blue comet. Kudoken blue reads like the logo was born on the shirt. Either way it is the piece you reach for when a short sleeve is not quite enough.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["long-sleeve", "merch", "standard"],
       "pairs": ["kudoken-tee"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest and body length in inches. Sleeve is shoulder to cuff.",
+        "headers": ["Size", "Chest", "Length", "Sleeve"],
+        "rows": [["S", "18", "28", "33"], ["M", "20", "29", "34"], ["L", "22", "30", "35"], ["XL", "24", "31", "36"], ["2XL", "26", "32", "37"]]
+      },
       "variants": [
         { "sku": "KDU-LS-W", "title": "White", "price_cents": 3200, "active": true },
         { "sku": "KDU-LS-B", "title": "Kudoken Blue", "price_cents": 3200, "active": true }
@@ -38,11 +50,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "Lightweight 6-8 oz after-sun hoodie. White or Kudoken blue.",
+      "description": "The light one. A 6 to 8 ounce after-sun hoodie, thin enough to throw on when the breeze picks up and you are still in board shorts. Not a winter coat. Not trying to be. Kangaroo pocket, a hood that actually stays on in a light wind, and a fabric that dries faster than a heavy fleece. Named for the hour after the water, when you want something on your shoulders and nothing else. White for the boardwalk. Kudoken blue for the people who already know.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["hoodie", "beach", "standard"],
       "pairs": ["kudoken-hoodie-kilauea"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex. Chest and length in inches.",
+        "headers": ["Size", "Chest", "Length"],
+        "rows": [["S", "20", "27"], ["M", "22", "28"], ["L", "24", "29"], ["XL", "26", "30"], ["2XL", "28", "31"]]
+      },
       "variants": [
         { "sku": "KDU-BEACH-W", "title": "White", "price_cents": 4200, "active": true },
         { "sku": "KDU-BEACH-B", "title": "Kudoken Blue", "price_cents": 4200, "active": true }
@@ -54,11 +72,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "Standard hooded sweatshirt. White or Kudoken blue.",
+      "description": "The standard. A proper hooded sweatshirt, midweight fleece, the one you wear because it is cold and you are going out anyway. Named for Kīlauea: active, steady, not a stunt. Ribbed cuffs and hem, a hood with a drawcord, a front pocket that holds a phone and a set of keys. This is the hoodie people mean when they say hoodie. White is the clean version. Kudoken blue is the one that looks like it came with the logo already on it.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["hoodie", "kilauea", "standard"],
       "pairs": ["kudoken-hoodie-mauna-kea", "kudoken-tee"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex. Chest and length in inches.",
+        "headers": ["Size", "Chest", "Length"],
+        "rows": [["S", "20", "27"], ["M", "22", "28"], ["L", "24", "29"], ["XL", "26", "30"], ["2XL", "28", "31"]]
+      },
       "variants": [
         { "sku": "KDU-KIL-W", "title": "White", "price_cents": 4800, "active": true },
         { "sku": "KDU-KIL-B", "title": "Kudoken Blue", "price_cents": 4800, "active": true }
@@ -70,11 +94,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "Thick, premium hoodie. White or Kudoken blue.",
+      "description": "The thick one. Named for the mountain that holds snow above the tropics. Heavy fleece, a denser hand, the hoodie you buy when you want one that lasts and feels expensive on the hanger. It is warmer, heavier, and priced like it. The K comet sits on a fabric that does not collapse. White is stark and serious. Kudoken blue is the deep one, the color of the logo when it stops being a print and starts being the shirt.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["hoodie", "mauna-kea", "standard"],
       "pairs": ["kudoken-hoodie-kilauea"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Chest and length in inches. Runs slightly roomy.",
+        "headers": ["Size", "Chest", "Length"],
+        "rows": [["S", "21", "27.5"], ["M", "23", "28.5"], ["L", "25", "29.5"], ["XL", "27", "30.5"], ["2XL", "29", "31.5"]]
+      },
       "variants": [
         { "sku": "KDU-MK-W", "title": "White", "price_cents": 6800, "active": true },
         { "sku": "KDU-MK-B", "title": "Kudoken Blue", "price_cents": 6800, "active": true }
@@ -86,11 +116,17 @@
       "brand": "Kudoken",
       "type": "Home",
       "collection": "Standard",
-      "description": "Kudoken blanket. White or Kudoken blue.",
+      "description": "A blanket with the mark on it. Plush enough for a couch, a late session, or the foot of a bed. The K comet prints large, so it reads across a room and not just up close. White is the quiet one, for a light room. Kudoken blue is the one that looks like the brand moved in. Machine wash cold, low dry. It is a blanket. Use it like one.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["blanket", "standard"],
       "pairs": ["kudoken-tee"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements, in inches.",
+        "headers": ["Size", "Width", "Length"],
+        "rows": [["Standard", "50", "60"]]
+      },
       "variants": [
         { "sku": "KDU-BLANK-W", "title": "White", "price_cents": 4500, "active": true },
         { "sku": "KDU-BLANK-B", "title": "Kudoken Blue", "price_cents": 4500, "active": true }
@@ -102,11 +138,17 @@
       "brand": "Kudoken",
       "type": "Apparel",
       "collection": "Extra",
-      "description": "Women's tank top. White or Kudoken blue.",
+      "description": "Cut for a woman, not a shrunken men's shirt. A relaxed women's tank with a scooped neck, wider straps that do not dig, and a hem that sits at the hip. The K comet sits high on the chest. It is the hot-day piece and the layer under an open button-up. White is the clean summer version. Kudoken blue is the one that matches the visor and the clogs if you are building the set.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["tank", "women"],
       "pairs": ["kudoken-tee", "kudoken-visor"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Women's tank size chart",
+        "note": "Women's cut. Chest and length in inches.",
+        "headers": ["Size", "Chest", "Length"],
+        "rows": [["S", "16", "26"], ["M", "17", "26.5"], ["L", "18.5", "27"], ["XL", "20", "27.5"], ["2XL", "21.5", "28"]]
+      },
       "variants": [
         { "sku": "KDU-TANK-W", "title": "White", "price_cents": 2600, "active": true },
         { "sku": "KDU-TANK-B", "title": "Kudoken Blue", "price_cents": 2600, "active": true }
@@ -118,11 +160,17 @@
       "brand": "Kudoken",
       "type": "Accessories",
       "collection": "Extra",
-      "description": "Kudoken visor. White or Kudoken blue.",
+      "description": "A visor, not a hat. Open crown so the heat leaves, a curved brim that actually shades your eyes, and the K comet on the front panel. Adjustable strap in the back. It is for the court, the beach, the walk between them. White keeps it light. Kudoken blue makes the brim the same blue as the logo, so the mark and the shade are one thing.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["visor", "hat"],
       "pairs": ["kudoken-tank", "kudoken-clogs"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Visor size",
+        "note": "One size. Adjustable strap. Circumference in inches.",
+        "headers": ["Size", "Fits"],
+        "rows": [["One size", "21 to 24"]]
+      },
       "variants": [
         { "sku": "KDU-VISOR-W", "title": "White", "price_cents": 2200, "active": true },
         { "sku": "KDU-VISOR-B", "title": "Kudoken Blue", "price_cents": 2200, "active": true }
@@ -134,11 +182,17 @@
       "brand": "Kudoken",
       "type": "Footwear",
       "collection": "Extra",
-      "description": "Clog-style shoes. White or Kudoken blue.",
+      "description": "Clog-style shoes. Lightweight, vented, the kind you kick on and forget. Not a performance shoe. A shoe for the outlet, the sidewalk, the quick errand that turned into an afternoon. The K comet sits on the strap. White is the classic. Kudoken blue is the one that matches the visor and the tank, so the set reads as a set. They are fake crocs in the only way that matters: easy on, easy off, fine with water.",
       "images": ["https://kudoken.space/images/logo.jpg"],
       "tags": ["clogs", "footwear"],
       "pairs": ["kudoken-visor", "kudoken-tee"],
       "fulfiller": "printify",
+      "size_chart": {
+        "title": "Clog size chart",
+        "note": "Order your usual shoe size. Foot length is heel to toe, in inches.",
+        "headers": ["US", "EU", "Foot length"],
+        "rows": [["W6 / M4", "36", "9.0"], ["W7 / M5", "37", "9.3"], ["W8 / M6", "38", "9.5"], ["W9 / M7", "39", "9.8"], ["W10 / M8", "40", "10.0"], ["W11 / M9", "41", "10.3"], ["M10", "42", "10.5"], ["M11", "43", "10.8"], ["M12", "44", "11.0"]]
+      },
       "variants": [
         { "sku": "KDU-CLOG-W", "title": "White", "price_cents": 3500, "active": true },
         { "sku": "KDU-CLOG-B", "title": "Kudoken Blue", "price_cents": 3500, "active": true }
