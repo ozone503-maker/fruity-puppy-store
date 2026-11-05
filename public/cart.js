@@ -1,6 +1,12 @@
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 const params = new URLSearchParams(location.search);
-const BRAND = params.get('brand') || (location.hostname.includes('brobots') ? 'brobots' : '');
+function brandFromHost() {
+  const h = location.hostname;
+  if (h.includes('brobots')) return 'brobots';
+  if (h.includes('kudoken')) return 'kudoken';
+  return '';
+}
+const BRAND = params.get('brand') || brandFromHost();
 const brandQ = BRAND ? '?brand=' + BRAND : '';
 const CART_KEY = 'store-cart-' + (BRAND || 'default');
 let catalog = null;
@@ -79,7 +85,7 @@ function render() {
   ensureDrawer();
   const name = catalog?.store?.name;
   if (name) {
-    document.title = document.title.replace('Fruity Puppy', name);
+    document.title = name + ' · Cart';
     document.querySelectorAll('.fp-logo').forEach(el => { el.textContent = name; });
   }
   const cart = getCart();
