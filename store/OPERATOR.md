@@ -23,17 +23,23 @@ To add a brand: create `store/brands/<brand>/catalog.json` and `config.json`, th
 
 Do not use Printify mockups on the listing. Do not leave the listing on a logo.
 
-The product photo is a character from the universe wearing the actual item.
+Read `store/characters/README.md` first. Use those models. Do not invent a new face.
 
-- Kudoken and Fruity Puppy: Ipo, the pink robot dog with blue eyes, plus other bots when they fit.
-- Brobots: a Brobot from the roster wearing the item.
-- New brand: that brand's characters, not a stock model.
+Models on file:
+
+- Ipo — pink dog, blue eyes. Default for Fruity Puppy and Kudoken.
+- Gold Hawaiian — gold robot, leopard hat, headphones, mustache.
+- Rusty Fedora — weathered grey robot, fedora, yellow eyes.
+- Blue — blue alien, large head, brown eyes.
+- Red Leaf — red scaled creature, pointed ears.
+- Toad — large brown toad.
+- Pink Frog — tan frog, big eyes.
 
 Rules:
 
-1. One photo per product, minimum. Front view, the item clearly visible, the logo readable.
-2. Same character can wear the set (tee, hoodie, visor, clogs) so the catalog looks like one world.
-3. White and Kudoken blue are both shown when the product has both colors.
+1. Match the reference image in `store/characters/`. Same face, same colors, same body. Only the clothing changes.
+2. One photo per product, minimum. Front view, the item clearly visible.
+3. Ipo is the default for Fruity Puppy and Kudoken. The others are available for any brand.
 4. Put the image URL in the catalog `images` array. Commit. A listing without a character photo is not done.
 5. Printify is for fulfillment only. It is not the photo source.
 
