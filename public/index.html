@@ -1,47 +1,45 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fruity Puppy</title>
-<meta name="description" content="Fresh fruit skin nutrition from Hawaiʻi.">
+<title>Shop</title>
+<meta name="description" content="Shop">
 <link rel="stylesheet" href="store.css">
 </head>
 <body>
 <header class="fp-head">
-  <a class="fp-logo" href=".">Fruity Puppy</a>
+  <a class="fp-logo" href=".">Shop</a>
   <nav>
-    <a href="https://fruitypuppy.com/our-team">Our Team</a>
-    <a href="https://fruitypuppy.com/our-dream">Our Dream</a>
-    <a href="https://fruitypuppy.com/our-cream">Our Cream</a>
-    <a href="https://fruitypuppy.com/our-home">Our Home</a>
-    <a href="https://fruitypuppy.com/safety-and-transparency">Safety</a>
     <a href=".">Shop</a>
   </nav>
 </header>
 <main id="shop"><p>Loading...</p></main>
 <footer class="fp-foot">
-  <p>Fresh fruit skin nutrition from Hawaiʻi.</p>
-  <p><a href="https://fruitypuppy.com">fruitypuppy.com</a> · <a href="https://fruitypuppy.com/ask-ipo">Ask Ipo</a></p>
+  <p id="tagline"></p>
 </footer>
 <script>
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 const params = new URLSearchParams(location.search);
-const brand = params.get('brand') || (location.hostname.includes('brobots') ? 'brobots' : '');
+function brandFromHost() {
+  const h = location.hostname;
+  if (h.includes('brobots')) return 'brobots';
+  if (h.includes('kudoken')) return 'kudoken';
+  return '';
+}
+const brand = params.get('brand') || brandFromHost();
 const brandQ = brand ? '?brand=' + brand : '';
+const homes = {
+  brobots: 'https://brobots.space',
+  kudoken: 'https://kudoken.space'
+};
 fetch(BASE + '/api/catalog' + brandQ).then(r=>r.json()).then(data=>{
   if (data.store && data.store.name) document.title = data.store.name;
   const logo = document.querySelector('.fp-logo');
   if (logo && data.store) logo.textContent = data.store.name;
-  if (brand === 'brobots') {
-    document.querySelectorAll('nav a').forEach(a => {
-      if (a.textContent === 'Our Team') { a.href = 'https://brobots.space/dossiers.html'; a.textContent = 'Dossiers'; }
-      else if (a.textContent === 'Our Dream') { a.href = 'https://brobots.space/services.html'; a.textContent = 'Services'; }
-      else if (a.textContent === 'Our Cream') { a.href = 'https://brobots.space/multimedia.html'; a.textContent = 'Multimedia'; }
-      else if (a.textContent === 'Our Home') { a.href = 'https://brobots.space/'; a.textContent = 'Home'; }
-      else if (a.textContent === 'Safety') { a.href = 'https://brobots.space/'; a.textContent = 'Brobots'; }
-    });
-    const foot = document.querySelector('.fp-foot');
-    if (foot) foot.innerHTML = '<p>Official Brobots merch.</p><p><a href="https://brobots.space">brobots.space</a></p>';
-  }
+  const tag = document.getElementById('tagline');
+  if (tag && data.store) tag.textContent = data.store.tagline || '';
+  const home = homes[brand] || 'https://fruitypuppy.com';
+  const foot = document.querySelector('.fp-foot');
+  if (foot && brand) foot.innerHTML = `<p>${data.store?.tagline || ''}</p><p><a href="${home}">${home.replace('https://','')}</a></p>`;
   const shop = document.getElementById('shop');
   shop.innerHTML = '<div class="grid"></div>';
   const grid = shop.querySelector('.grid');
