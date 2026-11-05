@@ -1,1 +1,691 @@
-PLACEHOLDER
+{
+  "products": [
+    {
+      "id": "fruity-puppy-original",
+      "title": "Fruity Puppy Original",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Cream",
+      "description": "45% real fresh Hawaiian tropical fruit. Ice-extracted, suspended in a crystalline lipid matrix. 17 bioavailable antioxidants. 2 oz.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "cream",
+        "face",
+        "body"
+      ],
+      "pairs": [
+        "free-sample"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "FP-2OZ",
+          "title": "2 oz",
+          "price_cents": 5999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fpx",
+      "title": "FPX",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Cream",
+      "description": "Extra-strength exfoliating fruit cream. Fruity Puppy Original with more papaya and added starfruit. 2 oz. Not for sensitive skin.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "cream",
+        "exfoliant"
+      ],
+      "pairs": [
+        "fruity-puppy-original"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "FPX-2OZ",
+          "title": "2 oz",
+          "price_cents": 5999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "lava-guava",
+      "title": "Lava-Guava Bomb Balm",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Balm",
+      "description": "High-friction + high-moisture zones. Guava leaf, stickerbush shoots, and ti leaf. Coming into the line.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "balm"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "LG-BALM",
+          "title": "Balm",
+          "price_cents": 5999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "thorny-toad",
+      "title": "Thorny Toad Face Juice",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Toner",
+      "description": "Botanical toner for balance and clarity. Stickerbush cane, green tea, guava leaf, lemon peel, jungle mint.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "toner"
+      ],
+      "pairs": [
+        "moon-tea"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "TT-JUICE",
+          "title": "Bottle",
+          "price_cents": 2999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "desert-squirt",
+      "title": "Desert Squirt",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Toner",
+      "description": "A dry-climate botanical ritual. Returning to the fridge line.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "toner"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "DS-SQUIRT",
+          "title": "Bottle",
+          "price_cents": 2999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "moon-tea",
+      "title": "Moon Tea",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Toner",
+      "description": "Nocturnal botanical polishing toner. Blackberry leaf, orange peel, green tea, spearmint, cranberry hibiscus shoots.",
+      "images": [],
+      "tags": [
+        "skincare",
+        "toner"
+      ],
+      "pairs": [
+        "thorny-toad"
+      ],
+      "fulfiller": "warehouse",
+      "variants": [
+        {
+          "sku": "MT-TEA",
+          "title": "Bottle",
+          "price_cents": 2999,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "free-sample",
+      "title": "Free Sample",
+      "brand": "Fruity Puppy",
+      "type": "Skincare",
+      "collection": "Samples",
+      "description": "Try Fruity Puppy Original. $5 shipping & handling.",
+      "images": [],
+      "tags": [
+        "sample"
+      ],
+      "pairs": [
+        "fruity-puppy-original"
+      ],
+      "fulfiller": "warehouse",
+      "fixed_shipping_cents": 500,
+      "variants": [
+        {
+          "sku": "FP-SAMPLE",
+          "title": "Sample",
+          "price_cents": 0,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-tee",
+      "title": "Fruity Puppy Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "Ipo in the everyday Fruity Puppy tee. Soft unisex staple, pink wordmark on the chest. The shirt for the hours between a jar and the rest of the day.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/tee.jpg"
+      ],
+      "tags": [
+        "tee",
+        "merch",
+        "standard"
+      ],
+      "pairs": [
+        "fp-long-sleeve",
+        "fp-kilauea"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "FP-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "FP-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "FP-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "FP-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-long-sleeve",
+      "title": "Fruity Puppy Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "Same mark, longer day. Soft jersey long sleeve with the pink Fruity Puppy wordmark. For when the sun drops or the AC is rude.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/long-sleeve.jpg"
+      ],
+      "tags": [
+        "long-sleeve",
+        "merch",
+        "standard"
+      ],
+      "pairs": [
+        "fp-tee"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": true
+        },
+        {
+          "sku": "FP-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": true
+        },
+        {
+          "sku": "FP-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": true
+        },
+        {
+          "sku": "FP-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": true
+        },
+        {
+          "sku": "FP-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-beach",
+      "title": "Fruity Puppy Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "The light one. A 6 to 8 ounce after-sun hoodie, pale pink, thin enough for the hour after the water. Not a winter coat.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/beach.jpg"
+      ],
+      "tags": [
+        "hoodie",
+        "beach",
+        "standard"
+      ],
+      "pairs": [
+        "fp-kilauea"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": true
+        },
+        {
+          "sku": "FP-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": true
+        },
+        {
+          "sku": "FP-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": true
+        },
+        {
+          "sku": "FP-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": true
+        },
+        {
+          "sku": "FP-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-kilauea",
+      "title": "Fruity Puppy K\u012blauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "The standard. Midweight hooded sweatshirt, the one you wear because it is cold and you are going out anyway. Named for K\u012blauea: active, steady, not a stunt.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/kilauea.jpg"
+      ],
+      "tags": [
+        "hoodie",
+        "kilauea",
+        "standard"
+      ],
+      "pairs": [
+        "fp-mauna-kea",
+        "fp-tee"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "K\u012blauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": true
+        },
+        {
+          "sku": "FP-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": true
+        },
+        {
+          "sku": "FP-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": true
+        },
+        {
+          "sku": "FP-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": true
+        },
+        {
+          "sku": "FP-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-mauna-kea",
+      "title": "Fruity Puppy Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Standard",
+      "description": "The thick one. Named for the mountain that holds snow above the tropics. Heavy fleece, denser hand, the hoodie you buy when you want one that lasts.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/mauna-kea.jpg"
+      ],
+      "tags": [
+        "hoodie",
+        "mauna-kea",
+        "standard"
+      ],
+      "pairs": [
+        "fp-kilauea"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": true
+        },
+        {
+          "sku": "FP-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": true
+        },
+        {
+          "sku": "FP-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": true
+        },
+        {
+          "sku": "FP-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": true
+        },
+        {
+          "sku": "FP-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "fp-blanket",
+      "title": "Fruity Puppy Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Standard",
+      "description": "A plush blanket with the Fruity Puppy mark. For the couch, a late session, or the foot of a bed.",
+      "images": [
+        "https://www.fruitypuppy.com/images/merch/blanket.jpg"
+      ],
+      "tags": [
+        "blanket",
+        "standard"
+      ],
+      "pairs": [
+        "fp-tee"
+      ],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "FP-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": true
+        },
+        {
+          "sku": "FP-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": true
+        },
+        {
+          "sku": "FP-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": true
+        },
+        {
+          "sku": "FP-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": true
+        },
+        {
+          "sku": "FP-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": true
+        }
+      ]
+    }
+  ]
+}
