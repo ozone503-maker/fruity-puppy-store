@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order confirmed · Fruity Puppy</title>
+<link rel="stylesheet" href="../store.css">
+</head>
+<body>
+<header class="fp-head">
+  <a class="fp-logo" href="../">Fruity Puppy</a>
+  <nav><a href="../">Shop</a></nav>
+</header>
+<main class="confirm">
+  <h1>Order confirmed.</h1>
+  <p id="confirm-copy">We got it. A receipt is on its way to the email you used at checkout.</p>
+  <p id="session" class="muted"></p>
+  <a class="add" href="../">Back to the shop</a>
+</main>
+<footer class="fp-foot"><a href="../">fruitypuppy.com/store</a></footer>
+<script>
+localStorage.removeItem('fp-cart');
+const id = new URLSearchParams(location.search).get('session_id');
+if (id && id !== '{CHECKOUT_SESSION_ID}') {
+  document.getElementById('session').textContent = 'Order ' + id.slice(0, 18);
+}
+</script>
+</body></html>
