@@ -19,17 +19,23 @@ Every store already has:
 
 To add a brand: create `store/brands/<brand>/catalog.json` and `config.json`, then mount `/store` with `?brand=<brand>` or hostname detection. Cart, suggestions, and confirmation come with it.
 
-## Mockups: copy from the original catalog
+## Mockups: the characters wear the gear
 
-This is part of the program. Do not skip it.
+Do not use Printify mockups on the listing. Do not leave the listing on a logo.
 
-When you add a product, expand a design, or stand up a new brand, copy the mockup images from the original catalog onto the new listing.
+The product photo is a character from the universe wearing the actual item.
 
-1. Find the original. That is the source product in the catalog that already has the design, or the Printify product you just created.
-2. Copy its `images` array (the mockup URLs) onto the new catalog product. Do not leave the new listing on a logo or a blank `images` array if the original has mockups.
-3. If the original is a Printify product, GET it and copy `images[].src` into `images`.
-4. If you are expanding one design into the standard catalog (or extras), every new item gets the mockups from that original. Same design, same mockup set, different product type.
-5. Commit the catalog with the copied mockups. A listing without them is not done.
+- Kudoken and Fruity Puppy: Ipo, the pink robot dog with blue eyes, plus other bots when they fit.
+- Brobots: a Brobot from the roster wearing the item.
+- New brand: that brand's characters, not a stock model.
+
+Rules:
+
+1. One photo per product, minimum. Front view, the item clearly visible, the logo readable.
+2. Same character can wear the set (tee, hoodie, visor, clogs) so the catalog looks like one world.
+3. White and Kudoken blue are both shown when the product has both colors.
+4. Put the image URL in the catalog `images` array. Commit. A listing without a character photo is not done.
+5. Printify is for fulfillment only. It is not the photo source.
 
 ## Standard catalog issue
 
@@ -49,7 +55,7 @@ Example: "take this design, make me a trucker hat, a duffel bag and standard cat
 ## Adding a Printify product
 1. Upload design via PrintifyClient.uploadImage (URL or base64).
 2. Create product with blueprint_id, print_provider_id, variants (id, price in cents, is_enabled), print_areas with placeholders.images[{id, x, y, scale, angle}].
-3. After create, GET the product and copy mockup `images.src` into the catalog `images` array. If an original catalog product already has mockups for this design, copy those instead of leaving a placeholder.
+3. Fulfillment stays on Printify. The listing photo is a character wearing the gear, not the Printify mockup.
 4. Add to the brand catalog with fulfiller: "printify", and on variants add printify_product_id and printify_variant_id.
    - Brobots: store/brands/brobots/catalog.json
    - Fruity Puppy: store/catalog.json
@@ -63,6 +69,6 @@ On paid Stripe session, call fulfillOrder with the order object that includes it
 Webhook at /api/printify-webhook receives tracking and calls recordTracking.
 
 ## Merch factory
-See tools/merch-factory.js. It uploads, creates, then copies mockups from the created product (or from `--from` an original catalog product) into the brand catalog.
+See tools/merch-factory.js. Printify creates the product. The catalog image is the character photo.
 
 Default fulfiller is warehouse. Set product.fulfiller to "printify" for POD items.
