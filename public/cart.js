@@ -1,5 +1,8 @@
-const CART_KEY = 'fp-cart';
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
+const params = new URLSearchParams(location.search);
+const BRAND = params.get('brand') || (location.hostname.includes('brobots') ? 'brobots' : '');
+const brandQ = BRAND ? '?brand=' + BRAND : '';
+const CART_KEY = 'store-cart-' + (BRAND || 'default');
 let catalog = null;
 
 function getCart() {
@@ -49,7 +52,7 @@ function ensureDrawer() {
   if (document.getElementById('cart-drawer')) return;
   const wrap = document.createElement('div');
   wrap.innerHTML = `
-    <a id="cart-badge" href="${BASE}/cart">Cart (0)</a>
+    <a id="cart-badge" href="${BASE}/cart${brandQ}">Cart (0)</a>
     <div id="cart-drawer" hidden>
       <div class="cart-head"><strong>Your cart</strong><button id="cart-close" type="button">Close</button></div>
       <div id="cart-lines"></div>
@@ -57,12 +60,12 @@ function ensureDrawer() {
       <div class="cart-foot">
         <div id="cart-sub">Subtotal $0.00</div>
         <button id="cart-checkout" type="button">Checkout</button>
-        <a href="${BASE}/cart">View cart</a>
+        <a href="${BASE}/cart${brandQ}">View cart</a>
       </div>
     </div>`;
   document.body.appendChild(wrap);
   document.getElementById('cart-badge').addEventListener('click', e => {
-    if (location.pathname.endsWith('/cart')) return;
+    if (location.pathname.endsWith('/cart') || location.pathname.endsWith('/cart/')) return;
     e.preventDefault();
     document.getElementById('cart-drawer').hidden = false;
   });
@@ -74,6 +77,11 @@ function ensureDrawer() {
 
 function render() {
   ensureDrawer();
+  const name = catalog?.store?.name;
+  if (name) {
+    document.title = document.title.replace('Fruity Puppy', name);
+    document.querySelectorAll('.fp-logo').forEach(el => { el.textContent = name; });
+  }
   const cart = getCart();
   const count = cart.reduce((s, i) => s + (i.quantity || 1), 0);
   document.getElementById('cart-badge').textContent = `Cart (${count})`;
@@ -131,13 +139,13 @@ function setQty(index, delta) {
 async function checkout() {
   const cart = getCart();
   if (!cart.length) return alert('Cart empty');
-  const res = await fetch(BASE + '/api/checkout', {
+  const res = await fetch(BASE + '/api/checkout' + brandQ, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       items: cart,
-      success_url: location.origin + BASE + '/confirmation?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: location.origin + BASE + '/cart',
+      success_url: location.origin + BASE + '/confirmation' + brandQ + (brandQ ? '&' : '?') + 'session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: location.origin + BASE + '/cart' + brandQ,
     }),
   });
   const data = await res.json();
@@ -155,5 +163,5 @@ document.addEventListener('click', e => {
   if (e.target.id === 'cart-page-checkout') checkout();
 });
 
-fetch(BASE + '/api/catalog').then(r => r.json()).then(data => { catalog = data; render(); }).catch(() => render());
+fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(data => { catalog = data; render(); }).catch(() => render());
 render();
