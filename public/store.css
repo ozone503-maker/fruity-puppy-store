@@ -12,8 +12,15 @@ main{max-width:1100px;margin:auto;padding:32px 20px}
 .add{background:#c45c4a;color:#fff;border:0;padding:12px 18px;border-radius:6px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
 .product{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
 .photo,.images{background:#e8d9d0;border-radius:8px;min-height:280px}
+.images img{width:100%;display:block;border-radius:8px}
 .price{font-size:24px;font-weight:600;color:#c45c4a}
+.desc{white-space:pre-wrap}
 .muted{color:#6d5a5e}
+.size-chart{margin-top:28px}
+.size-chart h2{font-size:16px;letter-spacing:.06em;text-transform:uppercase}
+.size-chart table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+.size-chart th,.size-chart td{text-align:left;padding:6px 8px;border-bottom:1px solid #e8d9d0}
+.size-chart th{color:#6d5a5e;font-weight:600}
 #cart-badge{position:fixed;top:1rem;right:1rem;background:#c45c4a;color:#fff;padding:.45rem .9rem;border-radius:2rem;text-decoration:none;z-index:20;font-weight:600}
 #cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:#fff8ef;border-left:1px solid #e8d9d0;z-index:30;padding:18px;display:flex;flex-direction:column;gap:12px;overflow:auto}
 #cart-drawer[hidden]{display:none}
