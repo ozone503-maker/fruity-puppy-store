@@ -28,12 +28,12 @@ Read `store/characters/README.md` first. Use those models. Do not invent a new f
 Models on file:
 
 - Ipo — pink dog, blue eyes. Default for Fruity Puppy and Kudoken.
-- Gold Hawaiian — gold robot, leopard hat, headphones, mustache.
-- Rusty Fedora — weathered grey robot, fedora, yellow eyes.
-- Blue — blue alien, large head, brown eyes.
-- Red Leaf — red scaled creature, pointed ears.
-- Toad — large brown toad.
-- Pink Frog — tan frog, big eyes.
+- Shockbot — gold robot, leopard hat, headphones, mustache.
+- Tank — weathered grey robot, fedora, yellow eyes.
+- Mystery Drone Pilot — blue alien, large head, brown eyes.
+- Fonk — red scaled creature, pointed ears.
+- Erv — large brown toad.
+- Dinny — tan frog, big eyes.
 
 Rules:
 
