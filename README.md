@@ -11,16 +11,16 @@ Bots: read `store/OPERATOR.md` before touching anything.
 
 **Standard catalog issue** is a fixed set of products. When someone says “standard catalog issue”, “standard issue”, or “add the standard catalog,” expand it into **all six** of these, using the same design on every one:
 
-| Key | Product | Printify target |
-|-----|---------|-----------------|
+| Key | Product | What it is |
+|-----|---------|------------|
 | `tee` | T-shirt | Unisex Softstyle / staple tee (lightweight) |
 | `long-sleeve` | Long-sleeved t-shirt | Unisex long sleeve tee |
-| `hoodie-beach` | Beach hoodie | Lightweight fleece hoodie (thinnest) |
-| `hoodie-kilauea` | Kīlauea hoodie | Midweight / Softstyle fleece hoodie |
-| `hoodie-mauna-kea` | Mauna Kea hoodie | Heavy Blend hoodie (Gildan 18500 class, thickest) |
+| `hoodie-beach` | Beach hoodie | Lightweight 6–8 oz, after-sun style |
+| `hoodie-kilauea` | Kīlauea hoodie | Standard hooded sweatshirt |
+| `hoodie-mauna-kea` | Mauna Kea hoodie | Thick and expensive |
 | `blanket` | Blanket | Velveteen plush or Sherpa fleece blanket |
 
-Hoodie weights, thinnest to thickest: **beach** → **Kīlauea** → **Mauna Kea**.
+Hoodie weights: **Beach** (light 6–8 oz) → **Kīlauea** (standard) → **Mauna Kea** (thick, premium).
 
 That is the whole standard set. Do not drop any of them. Do not invent extra items unless the user named them.
 
