@@ -6,6 +6,19 @@
 - PRINTIFY_SHOP_ID (from GET /shops.json or dashboard)
 - Optional: PRINTIFY_WEBHOOK_SECRET
 
+## Duplicatable program
+
+One deployment. Many brands. Do not rebuild the shop for a new brand.
+
+Every store already has:
+
+- Cart (drawer + `/cart`), one cart per brand
+- Suggested products from `pairs`, else other products in that catalog
+- Order confirmation at `/confirmation`
+- Stripe checkout
+
+To add a brand: create `store/brands/<brand>/catalog.json` and `config.json`, then mount `/store` with `?brand=<brand>` or hostname detection. Cart, suggestions, and confirmation come with it.
+
 ## Standard catalog issue
 
 Read `README.md` and `store/standard-catalog.json`.
