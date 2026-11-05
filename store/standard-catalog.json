@@ -2,6 +2,7 @@
   "name": "standard catalog issue",
   "aliases": ["standard catalog issue", "standard issue", "standard catalog", "add the standard catalog"],
   "rule": "Expand to every item below. Named extras are added on top, not instead.",
+  "hoodie_weights": "beach (light) → kilauea (mid) → mauna kea (heavy)",
   "items": [
     {
       "key": "tee",
@@ -16,20 +17,20 @@
       "notes": "S-XL minimum."
     },
     {
-      "key": "hoodie-light",
-      "title": "Light hoodie",
+      "key": "hoodie-beach",
+      "title": "Beach hoodie",
       "printify_target": "Lightweight fleece hoodie",
-      "notes": "Thinnest of the three hoodie weights."
+      "notes": "Thinnest of the three."
     },
     {
-      "key": "hoodie-mid",
-      "title": "Mid hoodie",
+      "key": "hoodie-kilauea",
+      "title": "Kīlauea hoodie",
       "printify_target": "Midweight / Softstyle fleece hoodie",
       "notes": "Middle thickness."
     },
     {
-      "key": "hoodie-heavy",
-      "title": "Heavy hoodie",
+      "key": "hoodie-mauna-kea",
+      "title": "Mauna Kea hoodie",
       "printify_target": "Heavy Blend hoodie (Gildan 18500 class)",
       "notes": "Thickest of the three."
     },
