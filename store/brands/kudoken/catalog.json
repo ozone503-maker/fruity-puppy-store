@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "kudoken-tee",
+      "title": "Kudoken Tee",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Core",
+      "description": "Official Kudoken tee. Designs go up through the merch factory. Play. Earn. Spend.",
+      "images": [],
+      "tags": ["tee", "merch"],
+      "pairs": ["kudoken-hoodie"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-TEE-S", "title": "S", "price_cents": 2800, "active": true },
+        { "sku": "KDU-TEE-M", "title": "M", "price_cents": 2800, "active": true },
+        { "sku": "KDU-TEE-L", "title": "L", "price_cents": 2800, "active": true },
+        { "sku": "KDU-TEE-XL", "title": "XL", "price_cents": 2800, "active": true }
+      ]
+    },
+    {
+      "id": "kudoken-hoodie",
+      "title": "Kudoken Hoodie",
+      "brand": "Kudoken",
+      "type": "Apparel",
+      "collection": "Core",
+      "description": "Official Kudoken hoodie. #EnergyIsCurrency",
+      "images": [],
+      "tags": ["hoodie", "merch"],
+      "pairs": ["kudoken-tee"],
+      "fulfiller": "printify",
+      "variants": [
+        { "sku": "KDU-HOOD-S", "title": "S", "price_cents": 4800, "active": true },
+        { "sku": "KDU-HOOD-M", "title": "M", "price_cents": 4800, "active": true },
+        { "sku": "KDU-HOOD-L", "title": "L", "price_cents": 4800, "active": true },
+        { "sku": "KDU-HOOD-XL", "title": "XL", "price_cents": 4800, "active": true }
+      ]
+    }
+  ]
+}
