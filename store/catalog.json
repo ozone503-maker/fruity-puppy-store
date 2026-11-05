@@ -7,7 +7,9 @@
       "type": "Skincare",
       "collection": "Cream",
       "description": "45% real fresh Hawaiian tropical fruit. Ice-extracted, suspended in a crystalline lipid matrix. 17 bioavailable antioxidants. 2 oz.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/our-cream-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "cream",
@@ -34,7 +36,9 @@
       "type": "Skincare",
       "collection": "Cream",
       "description": "Extra-strength exfoliating fruit cream. Fruity Puppy Original with more papaya and added starfruit. 2 oz. Not for sensitive skin.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/fpx-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "cream",
@@ -60,7 +64,9 @@
       "type": "Skincare",
       "collection": "Balm",
       "description": "High-friction + high-moisture zones. Guava leaf, stickerbush shoots, and ti leaf. Coming into the line.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/lava-guava-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "balm"
@@ -82,7 +88,9 @@
       "type": "Skincare",
       "collection": "Toner",
       "description": "Botanical toner for balance and clarity. Stickerbush cane, green tea, guava leaf, lemon peel, jungle mint.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/thorny-toad-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "toner"
@@ -107,7 +115,9 @@
       "type": "Skincare",
       "collection": "Toner",
       "description": "A dry-climate botanical ritual. Returning to the fridge line.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/desert-squirt-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "toner"
@@ -129,7 +139,9 @@
       "type": "Skincare",
       "collection": "Toner",
       "description": "Nocturnal botanical polishing toner. Blackberry leaf, orange peel, green tea, spearmint, cranberry hibiscus shoots.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/moon-tea-hero-poster.jpg"
+      ],
       "tags": [
         "skincare",
         "toner"
@@ -154,7 +166,9 @@
       "type": "Skincare",
       "collection": "Samples",
       "description": "Try Fruity Puppy Original. $5 shipping & handling.",
-      "images": [],
+      "images": [
+        "https://fruitypuppy.com/images/hero/our-cream-hero-poster.jpg"
+      ],
       "tags": [
         "sample"
       ],
@@ -445,11 +459,11 @@
     },
     {
       "id": "fp-kilauea",
-      "title": "Fruity Puppy K\u012blauea Hoodie",
+      "title": "Fruity Puppy Kīlauea Hoodie",
       "brand": "Fruity Puppy",
       "type": "Apparel",
       "collection": "Standard",
-      "description": "The standard. Midweight hooded sweatshirt, the one you wear because it is cold and you are going out anyway. Named for K\u012blauea: active, steady, not a stunt.",
+      "description": "The standard. Midweight hooded sweatshirt, the one you wear because it is cold and you are going out anyway. Named for Kīlauea: active, steady, not a stunt.",
       "images": [
         "https://www.fruitypuppy.com/images/merch/kilauea.jpg"
       ],
@@ -464,7 +478,7 @@
       ],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "K\u012blauea hoodie size chart",
+        "title": "Kīlauea hoodie size chart",
         "note": "Standard hooded sweatshirt. Unisex.",
         "headers": [
           "Size",
