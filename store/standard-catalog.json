@@ -1,0 +1,43 @@
+{
+  "name": "standard catalog issue",
+  "aliases": ["standard catalog issue", "standard issue", "standard catalog", "add the standard catalog"],
+  "rule": "Expand to every item below. Named extras are added on top, not instead.",
+  "items": [
+    {
+      "key": "tee",
+      "title": "T-shirt",
+      "printify_target": "Unisex Softstyle / staple tee (lightweight)",
+      "notes": "Lightweight everyday tee. S-XL minimum."
+    },
+    {
+      "key": "long-sleeve",
+      "title": "Long-sleeved t-shirt",
+      "printify_target": "Unisex long sleeve tee",
+      "notes": "S-XL minimum."
+    },
+    {
+      "key": "hoodie-light",
+      "title": "Light hoodie",
+      "printify_target": "Lightweight fleece hoodie",
+      "notes": "Thinnest of the three hoodie weights."
+    },
+    {
+      "key": "hoodie-mid",
+      "title": "Mid hoodie",
+      "printify_target": "Midweight / Softstyle fleece hoodie",
+      "notes": "Middle thickness."
+    },
+    {
+      "key": "hoodie-heavy",
+      "title": "Heavy hoodie",
+      "printify_target": "Heavy Blend hoodie (Gildan 18500 class)",
+      "notes": "Thickest of the three."
+    },
+    {
+      "key": "blanket",
+      "title": "Blanket",
+      "printify_target": "Velveteen plush or Sherpa fleece blanket",
+      "notes": "Enable all offered sizes."
+    }
+  ]
+}
