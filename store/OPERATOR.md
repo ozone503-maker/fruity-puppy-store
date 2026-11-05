@@ -6,12 +6,26 @@
 - PRINTIFY_SHOP_ID (from GET /shops.json or dashboard)
 - Optional: PRINTIFY_WEBHOOK_SECRET
 
+## Standard catalog issue
+
+Read `README.md` and `store/standard-catalog.json`.
+
+**Standard catalog issue** always expands to all six: tee, long-sleeve, hoodie-light, hoodie-mid, hoodie-heavy, blanket.
+
+If the user names extra products (trucker hat, duffel bag, etc.) plus standard catalog issue, create the extras **and** all six standard items. Extras do not replace the standard set.
+
+Example: "take this design, make me a trucker hat, a duffel bag and standard catalog issue" → 8 products.
+
 ## Adding a Printify product
 1. Upload design via PrintifyClient.uploadImage (URL or base64).
 2. Create product with blueprint_id, print_provider_id, variants (id, price in cents, is_enabled), print_areas with placeholders.images[{id, x, y, scale, angle}].
 3. After create, GET the product to pull mockup images.src.
-4. Add to store/catalog.json with fulfiller: "printify", and on variants add printify_product_id and printify_variant_id.
+4. Add to the brand catalog with fulfiller: "printify", and on variants add printify_product_id and printify_variant_id.
+   - Brobots: store/brands/brobots/catalog.json
+   - Fruity Puppy: store/catalog.json
 5. Commit the catalog change.
+
+Resolve blueprint and provider IDs live from the Printify catalog. Do not hardcode stale IDs.
 
 ## Order flow
 On paid Stripe session, call fulfillOrder with the order object that includes items with printify_* ids and shipping address.
