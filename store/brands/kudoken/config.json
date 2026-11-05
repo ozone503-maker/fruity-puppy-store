@@ -1,0 +1,31 @@
+{
+  "name": "Kudoken",
+  "tagline": "Play. Earn. Spend. #EnergyIsCurrency",
+  "currency": "usd",
+  "theme": {
+    "accent": "#3b82f6",
+    "ink": "#f3ecdc",
+    "paper": "#07070d",
+    "muted": "#a8a29a",
+    "line": "#1e1e2e"
+  },
+  "allowed_origins": ["https://kudoken.space", "https://www.kudoken.space"],
+  "cart": { "max_qty_per_item": 20, "suggestions": 3 },
+  "checkout": { "automatic_tax": false, "promo_codes": true },
+  "inventory": { "low_stock_threshold": 5 },
+  "shipping": {
+    "countries": ["US"],
+    "options": [
+      { "label": "Standard", "amount_cents": 800, "min_days": 3, "max_days": 7 },
+      { "label": "Express", "amount_cents": 2200, "min_days": 1, "max_days": 3 }
+    ],
+    "free_over_cents": 7500,
+    "free_label": "Free standard shipping"
+  },
+  "default_fulfiller": "printify",
+  "fulfillers": {
+    "warehouse": { "adapter": "manual" },
+    "printshop": { "adapter": "manual" },
+    "printify": { "adapter": "printify", "token_env": "PRINTIFY_TOKEN", "shop_id_env": "PRINTIFY_SHOP_ID", "send_to_production": false }
+  }
+}
