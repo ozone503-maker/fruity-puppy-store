@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Order confirmed · Fruity Puppy</title>
+<title>Order confirmed</title>
 <link rel="stylesheet" href="../store.css">
 </head>
 <body>
 <header class="fp-head">
-  <a class="fp-logo" href="../">Fruity Puppy</a>
+  <a class="fp-logo" id="logo" href="../">Shop</a>
   <nav><a href="../">Shop</a></nav>
 </header>
 <main class="confirm">
@@ -15,12 +15,25 @@
   <p id="session" class="muted"></p>
   <a class="add" href="../">Back to the shop</a>
 </main>
-<footer class="fp-foot"><a href="../">fruitypuppy.com/store</a></footer>
+<footer class="fp-foot"><a href="../">Back to shop</a></footer>
 <script>
+const BASE = location.pathname.startsWith('/store') ? '/store' : '';
+const params = new URLSearchParams(location.search);
+const brand = params.get('brand') || (location.hostname.includes('brobots') ? 'brobots' : '');
+const key = 'store-cart-' + (brand || 'default');
+localStorage.removeItem(key);
 localStorage.removeItem('fp-cart');
-const id = new URLSearchParams(location.search).get('session_id');
+const id = params.get('session_id');
 if (id && id !== '{CHECKOUT_SESSION_ID}') {
   document.getElementById('session').textContent = 'Order ' + id.slice(0, 18);
 }
+const q = brand ? '?brand=' + brand : '';
+fetch(BASE + '/api/catalog' + q).then(r => r.json()).then(data => {
+  const name = data.store && data.store.name;
+  if (name) {
+    document.getElementById('logo').textContent = name;
+    document.title = 'Order confirmed · ' + name;
+  }
+}).catch(() => {});
 </script>
 </body></html>
