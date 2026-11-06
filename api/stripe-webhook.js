@@ -18,7 +18,7 @@ export async function POST(request, deps = {}) {
   try { event = JSON.parse(raw); } catch { return json({ error: 'Bad JSON' }, 400); }
 
   try {
-    const result = await applyCheckoutEvent(event, { store, fetchImpl: deps.fetchImpl });
+    const result = await applyCheckoutEvent(event, { store, fetchImpl: deps.fetchImpl, emailFetch: deps.emailFetch });
     return json({ received: true, ...('duplicate' in result ? { duplicate: true } : {}) });
   } catch (err) {
     console.error('stripe-webhook failed', event.type, err.message);

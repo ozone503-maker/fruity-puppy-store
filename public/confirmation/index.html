@@ -27,11 +27,11 @@ const id = params.get('session_id');
 const title = document.getElementById('confirm-title');
 const copy = document.getElementById('confirm-copy');
 const MSG = {
-  paid: ['Order confirmed.', 'We got it. A receipt is on its way to the email you used at checkout.'],
+  paid: ['Order confirmed.', 'We got your payment and your order is in our queue.'],
   pending: ['Payment processing.', 'Your payment is still processing. We will email you once it clears.'],
   failed: ['Payment did not go through.', 'Your order was not placed. You can return to the shop and try again.'],
   expired: ['Checkout expired.', 'Your order was not placed. You can return to the shop and try again.'],
-  fallback: ['Thank you.', 'If your payment completed, Stripe will email your receipt to the address you used at checkout.'],
+  fallback: ['Thank you.', 'We could not confirm your payment yet. Please refresh this page in a minute.'],
 };
 function show(k) { const m = MSG[k] || MSG.fallback; title.textContent = m[0]; copy.textContent = m[1]; }
 if (id && id !== '{CHECKOUT_SESSION_ID}') {
