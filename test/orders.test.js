@@ -184,7 +184,7 @@ test('upstash adapter speaks REST commands and surfaces errors', async () => {
   const calls = [];
   const s = upstashStore({ url: 'https://kv.example', token: 't', fetchImpl: async (u, i) => { const a = JSON.parse(i.body); calls.push(a); return new Response(JSON.stringify({ result: a[0] === 'SET' ? 'OK' : a[0] === 'GET' ? '{"id":"o"}' : [] })); } });
   assert.equal(await s.claimEvent('e'), true);
-  assert.deepEqual(calls[0].slice(0, 4), ['SET', 'evt:e', '1', 'NX']);
+  assert.deepEqual(calls[0].slice(0, 4), ['SET', 'fps:evt:e', '1', 'NX']);
   assert.deepEqual(await s.getOrder('o'), { id: 'o' });
   const bad = upstashStore({ url: 'https://kv.example', token: 't', fetchImpl: async () => new Response('{"error":"x"}', { status: 401 }) });
   await assert.rejects(bad.getOrder('o'));

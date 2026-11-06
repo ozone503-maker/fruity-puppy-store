@@ -19,3 +19,12 @@ Payment state and fulfillment state are separate on every order.
 - `PRINTIFY_WEBHOOK_SECRET` — the `secret` used when registering the Printify webhook.
 
 Tests: `npm test` (local mocks and locally signed payloads only).
+
+## Order confirmation emails (branded, separate from Stripe receipts)
+- Queued on the order (`confirmation_email`) only when payment is verified `paid` and an email exists; queued once per order.
+- Sending is OFF unless `ORDER_EMAILS_ENABLED=true`, `RESEND_API_KEY`, and `ORDER_EMAIL_FROM` (a sender on a domain verified in Resend) are all set. Optional `ORDER_EMAIL_REPLY_TO`.
+- Resend `Idempotency-Key: order-confirmation/<session id>` prevents double sends. Failures stay `failed`; retry with `POST /api/admin-orders` (Bearer `ADMIN_TOKEN`, up to 5 attempts).
+- Email contains items, quantities, shipping and total only; no address or payment identifiers.
+
+## Storage
+Upstash Redis (Free plan) resource `biorama-rama-ratelimit`, shared with other projects; all keys are prefixed `fps:`.
