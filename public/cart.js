@@ -11,6 +11,9 @@ const brandQ = BRAND ? '?brand=' + BRAND : '';
 const CART_KEY = 'store-cart-' + (BRAND || 'default');
 let catalog = null;
 
+// Shop and Back to shop links go to the store root (/store on fruitypuppy.com), not the site homepage.
+document.querySelectorAll('a[data-shop-home]').forEach(a => { a.href = (BASE || '/') + brandQ; });
+
 function getCart() {
   try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch { return []; }
 }

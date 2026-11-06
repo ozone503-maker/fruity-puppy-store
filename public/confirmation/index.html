@@ -7,15 +7,15 @@
 <body>
 <header class="fp-head">
   <a class="fp-logo" id="logo" href="../">Shop</a>
-  <nav><a href="../">Shop</a></nav>
+  <nav><a href="../" data-shop-home>Shop</a></nav>
 </header>
 <main class="confirm">
   <h1>Order confirmed.</h1>
   <p id="confirm-copy">We got it. A receipt is on its way to the email you used at checkout.</p>
   <p id="session" class="muted"></p>
-  <a class="add" href="../">Back to the shop</a>
+  <a class="add" href="../" data-shop-home>Back to the shop</a>
 </main>
-<footer class="fp-foot"><a href="../">Back to shop</a></footer>
+<footer class="fp-foot"><a href="../" data-shop-home>Back to shop</a></footer>
 <script>
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 const params = new URLSearchParams(location.search);
@@ -28,6 +28,7 @@ if (id && id !== '{CHECKOUT_SESSION_ID}') {
   document.getElementById('session').textContent = 'Order ' + id.slice(0, 18);
 }
 const q = brand ? '?brand=' + brand : '';
+document.querySelectorAll('a[data-shop-home]').forEach(a => { a.href = (BASE || '/') + q; });
 fetch(BASE + '/api/catalog' + q).then(r => r.json()).then(data => {
   const name = data.store && data.store.name;
   if (name) {
