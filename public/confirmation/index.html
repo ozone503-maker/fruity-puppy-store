@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Order confirmed</title>
+<title>Thank you</title>
 <link rel="stylesheet" href="../store.css">
 </head>
 <body>
@@ -10,8 +10,8 @@
   <nav><a href="../" data-shop-home>Shop</a></nav>
 </header>
 <main class="confirm">
-  <h1>Order confirmed.</h1>
-  <p id="confirm-copy">We got it. A receipt is on its way to the email you used at checkout.</p>
+  <h1 id="confirm-title">Thank you.</h1>
+  <p id="confirm-copy">Checking your payment&hellip;</p>
   <p id="session" class="muted"></p>
   <a class="add" href="../" data-shop-home>Back to the shop</a>
 </main>
@@ -24,16 +24,33 @@ const key = 'store-cart-' + (brand || 'default');
 localStorage.removeItem(key);
 localStorage.removeItem('fp-cart');
 const id = params.get('session_id');
+const title = document.getElementById('confirm-title');
+const copy = document.getElementById('confirm-copy');
+const MSG = {
+  paid: ['Order confirmed.', 'We got it. A receipt is on its way to the email you used at checkout.'],
+  pending: ['Payment processing.', 'Your payment is still processing. We will email you once it clears.'],
+  failed: ['Payment did not go through.', 'Your order was not placed. You can return to the shop and try again.'],
+  expired: ['Checkout expired.', 'Your order was not placed. You can return to the shop and try again.'],
+  fallback: ['Thank you.', 'If your payment completed, Stripe will email your receipt to the address you used at checkout.'],
+};
+function show(k) { const m = MSG[k] || MSG.fallback; title.textContent = m[0]; copy.textContent = m[1]; }
 if (id && id !== '{CHECKOUT_SESSION_ID}') {
   document.getElementById('session').textContent = 'Order ' + id.slice(0, 18);
-}
+  let tries = 0;
+  const poll = () => fetch(BASE + '/api/order-status?session_id=' + encodeURIComponent(id))
+    .then(r => r.json()).then(d => {
+      if (d.status === 'processing' && ++tries < 6) return setTimeout(poll, 2000);
+      show(d.status === 'processing' ? 'fallback' : d.status);
+    }).catch(() => show('fallback'));
+  poll();
+} else { show('fallback'); }
 const q = brand ? '?brand=' + brand : '';
 document.querySelectorAll('a[data-shop-home]').forEach(a => { a.href = (BASE || '/') + q; });
 fetch(BASE + '/api/catalog' + q).then(r => r.json()).then(data => {
   const name = data.store && data.store.name;
   if (name) {
     document.getElementById('logo').textContent = name;
-    document.title = 'Order confirmed · ' + name;
+    document.title = 'Thank you · ' + name;
   }
 }).catch(() => {});
 </script>
