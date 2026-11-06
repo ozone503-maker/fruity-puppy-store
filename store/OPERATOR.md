@@ -79,3 +79,44 @@ Webhook at /api/printify-webhook receives tracking and calls recordTracking.
 See tools/merch-factory.js. Printify creates the product. The catalog image is the character photo.
 
 Default fulfiller is warehouse. Set product.fulfiller to "printify" for POD items.
+
+## Foundational operating principles (for bots)
+
+These rules sit above product creation and page writing. Follow them before expanding catalogs or writing copy.
+
+### Demand validation first
+Do not add products because someone likes the idea. Prefer items with evidence of existing demand:
+- Public sales signals (Amazon Best Sellers Rank under ~50k in category, "bought in past month," Movers & Shakers)
+- Search trends that are stable or rising
+- Social proof (people already asking about or filming the item)
+- Clear margin after product cost, shipping, and reasonable ad spend
+
+Ask for the numbers. Never invent sales volume, ranks, or margins. If you cannot verify a figure, say so and stop.
+
+### Review-to-page method
+Customer objections are free research. Before writing or rewriting a product page:
+1. Collect real language from 3-star (and lower) reviews on comparable products, existing support emails, or market comments.
+2. List the specific complaints that almost stopped the sale (size mismatch, shipping time, durability, texture, fridge requirement, fruit content claims, etc.).
+3. Write the page so the headline and body answer those exact objections instead of using supplier or generic descriptions.
+4. For Fruity Puppy cream, typical objections include: real fruit vs. extracts, refrigeration, jar life after opening, texture under makeup, price justification.
+5. For merch, typical objections include fit, fabric weight, print durability, and whether the character photo matches what arrives.
+
+The page is done when the biggest complaints have been directly answered in the customer's own language.
+
+### Approval gates
+Stop and ask for Jessie's explicit yes before:
+- Spending money (ads, inventory, paid tools)
+- Publishing a new product or major page change
+- Emailing customers
+- Deleting anything irreversible
+
+Routine catalog updates and draft copy can proceed; irreversible or customer-facing actions require the gate.
+
+### Fulfillment order
+Test with POD / dropship / existing fulfillment first. Bring volume winners in-house only after demand is proven. Printify is fulfillment only; listing photos remain character mockups.
+
+### Daily hygiene
+When running ops, surface: new orders, low stock, payment or webhook failures, and anything that broke. Do not invent status.
+
+### Prompting pattern
+When starting work, state the goal, the limits, what needs approval, and what done looks like. Work in stages: research → store/page → fulfillment → legal/ops → marketing. Never skip the research stage.
