@@ -1,9 +1,11 @@
 import { loadStore } from '../lib/store.js';
-import { json } from '../lib/http.js';
+import { json, requireBearer } from '../lib/http.js';
 
 // Creates a Stripe Product + Price for every variant that does not already have stripe_price_id.
 // Returns the IDs so they can be written into the catalog.
 export async function POST(request) {
+  const denied = requireBearer(request, 'ADMIN_TOKEN');
+  if (denied) return denied;
   const stripeKey = process.env.STRIPE_SECRET_KEY;
   if (!stripeKey) return json({ error: 'Stripe not configured' }, 500);
 
