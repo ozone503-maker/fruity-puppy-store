@@ -56,7 +56,7 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
 .fp #cart-checkout{background:var(--copper);color:#fff;border:0;border-radius:999px;padding:0 22px;font-weight:700}
 
 .runway{padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px) 0}
-.runway h1{font-size:clamp(44px,8.5vw,128px);line-height:.92;font-weight:800;letter-spacing:-.03em;margin:0 0 18px;max-width:14ch;color:var(--ink)}
+.runway .runway-h{font-size:clamp(44px,8.5vw,128px);line-height:.92;font-weight:800;letter-spacing:-.03em;margin:0 0 18px;max-width:14ch;color:var(--ink)}
 .runway-sub{font-size:19px;max-width:44ch;margin:0 0 28px}
 .runway-strip{list-style:none;margin:0 calc(-1*clamp(16px,4vw,48px));padding:0 clamp(16px,4vw,48px) 32px;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,1fr);gap:clamp(8px,1.2vw,16px);overflow-x:auto;scroll-snap-type:x mandatory}
 .runway-strip li{scroll-snap-align:start}
@@ -115,3 +115,10 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
   .outlet{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.topbuy{padding:clamp(24px,4vw,56px) clamp(16px,4vw,48px);background:linear-gradient(180deg,var(--papaya) 0 55%,var(--blush) 55%)}
+.top-h{font-size:clamp(40px,7vw,96px);line-height:.95;font-weight:800;letter-spacing:-.03em;margin:0 0 14px;max-width:16ch}
+.jars.top{grid-template-columns:repeat(auto-fit,minmax(260px,420px))}
+.jars.top .jar-name{font-size:26px}
+.jars.top .jar-price{font-size:22px}
+.fridge{background:var(--blush)}
