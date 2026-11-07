@@ -21,8 +21,11 @@ export function GET(request) {
   const variants = product.variants || [];
   const first = variants[0] || {};
   const price = first.price_cents ? `$${(first.price_cents / 100).toFixed(2)}` : '$5 shipping';
-  const images = (product.images || []).map((src) => `<img src="${esc(src)}" alt="${esc(product.title)}">`).join('');
-  const options = variants.map((v) => `<option value="${esc(v.sku)}">${esc(v.title)} — $${(v.price_cents / 100).toFixed(2)}</option>`).join('');
+  const images = (product.images || []).map((src) => `<img src="${esc(/^https?:/.test(src) ? src : '../' + src)}" alt="${esc(product.title)}">`).join('');
+  const buyable = variants.filter((v) => v.active !== false);
+  const soldOut = !buyable.length;
+  const options = buyable.length > 1 ? buyable.map((v) => `<option value="${esc(v.sku)}">${esc(v.title)} ($${(v.price_cents / 100).toFixed(2)})</option>`).join('') : '';
+  const firstBuy = buyable[0] || first;
 
   const chart = product.size_chart;
   const chartHtml = chart && chart.rows && chart.rows.length
@@ -31,13 +34,13 @@ export function GET(request) {
 
   const suggested = (product.pairs || [])
     .map((pid) => catalog.products.find((p) => p.id === pid))
-    .filter(Boolean)
+    .filter((p) => p && (p.variants || []).some((v) => v.active !== false))
     .slice(0, 3);
   const suggestHtml = suggested.length
     ? `<section class="suggest-block"><h2>Suggested</h2><div class="grid">${suggested.map((p) => {
-        const v = p.variants[0] || {};
+        const v = p.variants.find((x) => x.active !== false) || {};
         const pPrice = v.price_cents ? `$${(v.price_cents / 100).toFixed(2)}` : '';
-        return `<div class="card"><h3><a class="prod-link" data-id="${esc(p.id)}" href="#">${esc(p.title)}</a></h3><p class="price">${pPrice}</p><button class="add" data-add-sku="${esc(v.sku || '')}">Add to cart</button></div>`;
+        return `<div class="card"><h3><a class="prod-link" data-id="${esc(p.id)}" href="${esc(p.id)}">${esc(p.title)}</a></h3><p class="price">${pPrice}</p><button class="add" data-add-sku="${esc(v.sku || '')}">Add to cart</button></div>`;
       }).join('')}</div></section>`
     : '';
 
@@ -46,12 +49,12 @@ export function GET(request) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(product.title)} · ${esc(config.name || 'Shop')}</title>
 <meta name="description" content="${esc((product.description || '').slice(0, 160))}">
-<link id="css" rel="stylesheet" href="/store.css">
+<link id="css" rel="stylesheet" href="../store.css">
 </head>
-<body>
+<body class="${brand || /brobots|kudoken/.test(url.hostname) ? '' : 'fp'}">
 <header class="fp-head">
-  <a class="fp-logo" id="home" href="/">${esc(config.name || 'Shop')}</a>
-  <nav><a id="shop" href="/">Shop</a> <a id="cart-link" href="/cart">Cart</a></nav>
+  <a class="fp-logo" id="home" href="../">${esc(config.name || 'Shop')}</a>
+  <nav><a id="shop" href="../">Shop</a> <a id="cart-link" href="../cart/">Cart</a></nav>
 </header>
 <main class="product">
   <div class="images">${images || '<p>No photos yet</p>'}</div>
@@ -60,12 +63,12 @@ export function GET(request) {
     <p class="desc">${esc(product.description || '')}</p>
     <p class="price">${price}</p>
     ${options ? `<label>Color <select id="sku">${options}</select></label>` : ''}
-    <button class="add" data-add-sku="${esc(first.sku || '')}">Add to cart</button>
+    ${soldOut ? '<p class="stock-out">Out of stock right now</p><button class="add" type="button" disabled>Out of stock</button>' : `<button class="add" data-add-sku="${esc(firstBuy.sku || '')}">Add to cart</button>`}
     ${chartHtml}
   </div>
 </main>
 ${suggestHtml}
-<footer class="fp-foot"><a id="back" href="/">Back to shop</a></footer>
+<footer class="fp-foot"><a id="back" href="../">Back to shop</a></footer>
 <script>
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 const brand = new URLSearchParams(location.search).get('brand') || (location.hostname.includes('kudoken') ? 'kudoken' : location.hostname.includes('brobots') ? 'brobots' : '');

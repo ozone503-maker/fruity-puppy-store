@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="store.css">
 </head>
 <body>
+<a class="skip" href="#shop">Skip to products</a>
 <header class="fp-head">
   <a class="fp-logo" href=".">Shop</a>
   <nav>
@@ -27,11 +28,89 @@ function brandFromHost() {
 }
 const brand = params.get('brand') || brandFromHost();
 const brandQ = brand ? '?brand=' + brand : '';
-const homes = {
-  brobots: 'https://brobots.space',
-  kudoken: 'https://kudoken.space'
-};
-fetch(BASE + '/api/catalog' + brandQ).then(r=>r.json()).then(data=>{
+const homes = { brobots: 'https://brobots.space', kudoken: 'https://kudoken.space' };
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const money = c => '$' + (c / 100).toFixed(2).replace(/\.00$/, '');
+const imgSrc = u => /^https?:/.test(u) ? u : `${BASE}/${u}`;
+const href = p => `${BASE}/product/${p.id}${brandQ}`;
+const SWATCH = { White: '#f7f4f0', Carnation: '#f2a3b6', Plum: '#6b2a4a', Grey: '#9c9b9e', Black: '#211a1e' };
+const buyable = p => p.variants.filter(v => v.available !== false);
+
+function genericGrid(data, shop) {
+  shop.innerHTML = '<div class="grid"></div>';
+  const grid = shop.querySelector('.grid');
+  data.products.forEach(p => {
+    const v = p.variants[0];
+    const price = v.price_cents ? '$' + (v.price_cents / 100).toFixed(2) : '$5 shipping';
+    const card = document.createElement('div'); card.className = 'card';
+    card.innerHTML = `<h3><a href="${href(p)}">${esc(p.title)}</a></h3><p>${esc(p.description)}</p><p class="price">${price}</p><button class="add" data-add-sku="${esc(v.sku)}">Add to cart</button>`;
+    grid.appendChild(card);
+  });
+}
+
+function merchCard(p) {
+  const vs = buyable(p);
+  const v = vs[0];
+  const chips = vs.map((x, i) => `<label class="chip" title="${esc(x.title)}"><input type="radio" name="c-${esc(p.id)}" value="${esc(x.sku)}" ${i ? '' : 'checked'}><span style="--sw:${SWATCH[x.title] || '#ccc'}"></span><b class="sr">${esc(x.title)}</b></label>`).join('');
+  return `<article class="rack-item" data-id="${esc(p.id)}">
+    <a class="rack-photo" href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="Ipo wearing the ${esc(p.title)}" loading="lazy" width="496" height="992"></a>
+    <div class="rack-info">
+      <h3><a href="${href(p)}">${esc(p.title.replace(/^Fruity Puppy /, ''))}</a></h3>
+      <p class="rack-price">${money(v.price_cents)}</p>
+    </div>
+    <fieldset class="chips"><legend class="sr">Color</legend>${chips}</fieldset>
+    <button class="buy" type="button" data-add-sku="${esc(v.sku)}">Add to cart</button>
+  </article>`;
+}
+
+function jarCard(p) {
+  const vs = buyable(p);
+  const img = p.images[0] ? `<img src="${esc(imgSrc(p.images[0]))}" alt="${esc(p.id === 'free-sample' ? 'A real Fruity Puppy sample jar held between two fingers' : p.title)}" loading="lazy">` : '<div class="jar-blank" aria-hidden="true"></div>';
+  if (!vs.length) return `<li class="jar out"><a href="${href(p)}">${img}<span class="jar-name">${esc(p.title)}</span></a><span class="stock-out">Out of stock</span></li>`;
+  const v = vs[0];
+  const price = v.price_cents ? money(v.price_cents) : 'Free, $5 shipping';
+  return `<li class="jar"><a href="${href(p)}">${img}<span class="jar-name">${esc(p.title)}</span></a><span class="jar-price">${price}</span><button class="buy" type="button" data-add-sku="${esc(v.sku)}">Add to cart</button></li>`;
+}
+
+function fruityPuppy(data, shop) {
+  document.body.classList.add('fp');
+  const merch = data.products.filter(p => p.collection === 'Standard' && p.images.length);
+  const skin = data.products.filter(p => p.collection !== 'Standard');
+  const inStock = skin.filter(p => buyable(p).length);
+  const out = skin.filter(p => !buyable(p).length);
+  shop.innerHTML = `
+  <section class="topbuy" aria-labelledby="top-h">
+    <h1 id="top-h" class="top-h">Fruity Puppy cream<br>fresh from the fridge</h1>
+    <p class="fridge-sub">Fresh fruit skin nutrition from Hawaiʻi.</p>
+    <ul class="jars top">${inStock.map(jarCard).join('')}</ul>
+  </section>
+  <section class="runway" aria-labelledby="runway-h">
+    <h2 id="runway-h" class="runway-h">Ipo wears it first<br>you wear it next</h2>
+    <p class="runway-sub">Soft goods from Fruity Puppy, modeled by the pink poodle herself.</p>
+    <ol class="runway-strip">${merch.map(p => `<li><a href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="Ipo wearing the ${esc(p.title)}" width="496" height="992" ${merch.indexOf(p) < 3 ? 'fetchpriority="high"' : 'loading="lazy"'}><span>${esc(p.title.replace(/^Fruity Puppy /, ''))}</span></a></li>`).join('')}</ol>
+  </section>
+  <section class="rack" aria-labelledby="rack-h">
+    <h2 id="rack-h">The rack</h2>
+    <div class="rack-grid">${merch.map(merchCard).join('')}</div>
+  </section>
+  ${out.length ? `<section class="fridge" aria-labelledby="fridge-h">
+    <h2 id="fridge-h">More from the fridge</h2>
+    <p class="fridge-sub">Out of stock right now</p>
+    <ul class="jars small">${out.map(jarCard).join('')}</ul>
+  </section>` : ''}
+  <figure class="outlet">
+    <img src="${BASE}/img/ipo-erv-fitting-room-outlet.jpg" alt="Ipo on a fitting room bench holding a yellow top, Erv standing beside her" loading="lazy" width="620" height="775">
+    <figcaption>Ipo and Erv, deep in a fitting room decision</figcaption>
+  </figure>`;
+  shop.addEventListener('change', e => {
+    if (e.target.matches('.chips input')) {
+      const card = e.target.closest('.rack-item');
+      card.querySelector('.buy').dataset.addSku = e.target.value;
+    }
+  });
+}
+
+fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(data => {
   if (data.store && data.store.name) document.title = data.store.name;
   const logo = document.querySelector('.fp-logo');
   if (logo && data.store) logo.textContent = data.store.name;
@@ -39,18 +118,10 @@ fetch(BASE + '/api/catalog' + brandQ).then(r=>r.json()).then(data=>{
   if (tag && data.store) tag.textContent = data.store.tagline || '';
   const home = homes[brand] || 'https://fruitypuppy.com';
   const foot = document.querySelector('.fp-foot');
-  if (foot && brand) foot.innerHTML = `<p>${data.store?.tagline || ''}</p><p><a href="${home}">${home.replace('https://','')}</a></p>`;
+  if (foot && brand) foot.innerHTML = `<p>${esc(data.store?.tagline)}</p><p><a href="${home}">${home.replace('https://', '')}</a></p>`;
   const shop = document.getElementById('shop');
-  shop.innerHTML = '<div class="grid"></div>';
-  const grid = shop.querySelector('.grid');
-  data.products.forEach(p=>{
-    const v = p.variants[0];
-    const price = v.price_cents ? '$'+(v.price_cents/100).toFixed(2) : '$5 shipping';
-    const card = document.createElement('div'); card.className='card';
-    card.innerHTML = `<h3><a href="${BASE}/product/${p.id}${brandQ}">${p.title}</a></h3><p>${p.description||''}</p><p class="price">${price}</p><button class="add" data-add-sku="${v.sku}">Add to cart</button>`;
-    grid.appendChild(card);
-  });
-}).catch(()=>document.getElementById('shop').textContent='Could not load store.');
+  if (brand) genericGrid(data, shop); else fruityPuppy(data, shop);
+}).catch(() => { document.getElementById('shop').textContent = 'The shop did not load. Refresh the page to try again.'; });
 </script>
 <script src="cart.js" defer></script>
 </body></html>
