@@ -8,13 +8,1042 @@
       "collection": "Core",
       "description": "Official Brobots tee. Designs go up through the merch factory.",
       "images": [],
-      "tags": ["tee", "merch"],
+      "tags": [
+        "tee",
+        "merch"
+      ],
       "fulfiller": "printify",
       "variants": [
-        { "sku": "BB-TEE-S", "title": "S", "price_cents": 2800, "active": true },
-        { "sku": "BB-TEE-M", "title": "M", "price_cents": 2800, "active": true },
-        { "sku": "BB-TEE-L", "title": "L", "price_cents": 2800, "active": true },
-        { "sku": "BB-TEE-XL", "title": "XL", "price_cents": 2800, "active": true }
+        {
+          "sku": "BB-TEE-S",
+          "title": "S",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "BB-TEE-M",
+          "title": "M",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "BB-TEE-L",
+          "title": "L",
+          "price_cents": 2800,
+          "active": true
+        },
+        {
+          "sku": "BB-TEE-XL",
+          "title": "XL",
+          "price_cents": 2800,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "brobots-factory-letterman",
+      "title": "BroBots Factory Letterman",
+      "brand": "Brobots",
+      "type": "Outerwear",
+      "collection": "Factory Issue 01: Outerwear",
+      "description": "ShockBot patch. Built on the AWDIS JH043 heavyweight letterman, printed to order.",
+      "images": [
+        "../img/brobots/factory-letterman.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "outerwear"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-OUT-01-S",
+          "title": "S",
+          "price_cents": 5699,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-01-M",
+          "title": "M",
+          "price_cents": 5699,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-01-L",
+          "title": "L",
+          "price_cents": 5699,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-01-XL",
+          "title": "XL",
+          "price_cents": 5699,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-01-2XL",
+          "title": "2XL",
+          "price_cents": 5699,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-crew-bomber",
+      "title": "BroBots Crew Bomber",
+      "brand": "Brobots",
+      "type": "Outerwear",
+      "collection": "Factory Issue 01: Outerwear",
+      "description": "All-over crew pattern. Built on the All-over-print bomber, printed to order.",
+      "images": [
+        "../img/brobots/crew-bomber.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "outerwear"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-OUT-02-S",
+          "title": "S",
+          "price_cents": 7399,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-02-M",
+          "title": "M",
+          "price_cents": 7399,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-02-L",
+          "title": "L",
+          "price_cents": 7399,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-02-XL",
+          "title": "XL",
+          "price_cents": 7399,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-02-2XL",
+          "title": "2XL",
+          "price_cents": 7399,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-upcountry-sherpa",
+      "title": "BroBots Upcountry Sherpa",
+      "brand": "Brobots",
+      "type": "Outerwear",
+      "collection": "Factory Issue 01: Outerwear",
+      "description": "Drone Pilot patch. Built on the CornerStone CS625 sherpa-lined fleece, printed to order.",
+      "images": [
+        "../img/brobots/upcountry-sherpa.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "outerwear"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-OUT-03-S",
+          "title": "S",
+          "price_cents": 8799,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-03-M",
+          "title": "M",
+          "price_cents": 8799,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-03-L",
+          "title": "L",
+          "price_cents": 8799,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-03-XL",
+          "title": "XL",
+          "price_cents": 8799,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-03-2XL",
+          "title": "2XL",
+          "price_cents": 8799,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-shop-denim",
+      "title": "BroBots Shop Denim",
+      "brand": "Brobots",
+      "type": "Outerwear",
+      "collection": "Factory Issue 01: Outerwear",
+      "description": "Tank back print. Built on the Men's denim jacket, printed to order.",
+      "images": [
+        "../img/brobots/shop-denim.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "outerwear"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-OUT-04-S",
+          "title": "S",
+          "price_cents": 5099,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-04-M",
+          "title": "M",
+          "price_cents": 5099,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-04-L",
+          "title": "L",
+          "price_cents": 5099,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-04-XL",
+          "title": "XL",
+          "price_cents": 5099,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-04-2XL",
+          "title": "2XL",
+          "price_cents": 5099,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-track-jacket",
+      "title": "BroBots Track Jacket",
+      "brand": "Brobots",
+      "type": "Outerwear",
+      "collection": "Factory Issue 01: Outerwear",
+      "description": "ShockBot chest print. Built on the Sport-Tek JST90 tricot, printed to order.",
+      "images": [
+        "../img/brobots/track-jacket.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "outerwear"
+      ],
+      "pairs": [
+        "brobots-track-pant"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-OUT-05-S",
+          "title": "S",
+          "price_cents": 4999,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-05-M",
+          "title": "M",
+          "price_cents": 4999,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-05-L",
+          "title": "L",
+          "price_cents": 4999,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-05-XL",
+          "title": "XL",
+          "price_cents": 4999,
+          "active": false
+        },
+        {
+          "sku": "BB-OUT-05-2XL",
+          "title": "2XL",
+          "price_cents": 4999,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-maxweight-hoodie",
+      "title": "BroBots Maxweight Hoodie",
+      "brand": "Brobots",
+      "type": "Hoodie",
+      "collection": "Factory Issue 01: Hoodies",
+      "description": "ShockBot front print. Built on the Gildan Hammer Maxweight 19500, printed to order.",
+      "images": [
+        "../img/brobots/maxweight-hoodie.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hoodies"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HOOD-01-S",
+          "title": "S",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-01-M",
+          "title": "M",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-01-L",
+          "title": "L",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-01-XL",
+          "title": "XL",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-01-2XL",
+          "title": "2XL",
+          "price_cents": 4799,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-oversized-hoodie",
+      "title": "BroBots Oversized Hoodie",
+      "brand": "Brobots",
+      "type": "Hoodie",
+      "collection": "Factory Issue 01: Hoodies",
+      "description": "Tank front print. Built on the Next Level 9307 heavyweight oversized, printed to order.",
+      "images": [
+        "../img/brobots/oversized-hoodie.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hoodies"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HOOD-02-S",
+          "title": "S",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-02-M",
+          "title": "M",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-02-L",
+          "title": "L",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-02-XL",
+          "title": "XL",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-02-2XL",
+          "title": "2XL",
+          "price_cents": 5199,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-garment-dyed-hoodie",
+      "title": "BroBots Garment-Dyed Hoodie",
+      "brand": "Brobots",
+      "type": "Hoodie",
+      "collection": "Factory Issue 01: Hoodies",
+      "description": "Drone Pilot front print. Built on the Comfort Colors 1567, printed to order.",
+      "images": [
+        "../img/brobots/garment-dyed-hoodie.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hoodies"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HOOD-03-S",
+          "title": "S",
+          "price_cents": 4599,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-03-M",
+          "title": "M",
+          "price_cents": 4599,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-03-L",
+          "title": "L",
+          "price_cents": 4599,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-03-XL",
+          "title": "XL",
+          "price_cents": 4599,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-03-2XL",
+          "title": "2XL",
+          "price_cents": 4599,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-pigment-dyed-hoodie",
+      "title": "BroBots Pigment-Dyed Hoodie",
+      "brand": "Brobots",
+      "type": "Hoodie",
+      "collection": "Factory Issue 01: Hoodies",
+      "description": "The Crew front print. Built on the Independent Trading Co. PRM4500, printed to order.",
+      "images": [
+        "../img/brobots/pigment-dyed-hoodie.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hoodies"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HOOD-04-S",
+          "title": "S",
+          "price_cents": 4699,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-04-M",
+          "title": "M",
+          "price_cents": 4699,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-04-L",
+          "title": "L",
+          "price_cents": 4699,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-04-XL",
+          "title": "XL",
+          "price_cents": 4699,
+          "active": false
+        },
+        {
+          "sku": "BB-HOOD-04-2XL",
+          "title": "2XL",
+          "price_cents": 4699,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-washed-crew",
+      "title": "BroBots Washed Crew",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "ShockBot front print. Built on the Comfort Colors 1566, printed to order.",
+      "images": [
+        "../img/brobots/washed-crew.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "pairs": [
+        "brobots-washed-sweatpant"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-01-S",
+          "title": "S",
+          "price_cents": 3799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-01-M",
+          "title": "M",
+          "price_cents": 3799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-01-L",
+          "title": "L",
+          "price_cents": 3799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-01-XL",
+          "title": "XL",
+          "price_cents": 3799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-01-2XL",
+          "title": "2XL",
+          "price_cents": 3799,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-washed-sweatpant",
+      "title": "BroBots Washed Sweatpant",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "ShockBot thigh print. Built on the Comfort Colors 1469, printed to order.",
+      "images": [
+        "../img/brobots/washed-sweatpant.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "pairs": [
+        "brobots-washed-crew"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-02-S",
+          "title": "S",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-02-M",
+          "title": "M",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-02-L",
+          "title": "L",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-02-XL",
+          "title": "XL",
+          "price_cents": 4799,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-02-2XL",
+          "title": "2XL",
+          "price_cents": 4799,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-pigment-crew",
+      "title": "BroBots Pigment Crew",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "Tank front print. Built on the Independent Trading Co. PRM3500, printed to order.",
+      "images": [
+        "../img/brobots/pigment-crew.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "pairs": [
+        "brobots-pigment-sweatpant"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-03-S",
+          "title": "S",
+          "price_cents": 4499,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-03-M",
+          "title": "M",
+          "price_cents": 4499,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-03-L",
+          "title": "L",
+          "price_cents": 4499,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-03-XL",
+          "title": "XL",
+          "price_cents": 4499,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-03-2XL",
+          "title": "2XL",
+          "price_cents": 4499,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-pigment-sweatpant",
+      "title": "BroBots Pigment Sweatpant",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "Tank thigh print. Built on the Independent Trading Co. PRM50PTPD, printed to order.",
+      "images": [
+        "../img/brobots/pigment-sweatpant.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "pairs": [
+        "brobots-pigment-crew"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-04-S",
+          "title": "S",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-04-M",
+          "title": "M",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-04-L",
+          "title": "L",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-04-XL",
+          "title": "XL",
+          "price_cents": 5199,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-04-2XL",
+          "title": "2XL",
+          "price_cents": 5199,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-quarter-zip",
+      "title": "BroBots Quarter-Zip",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "Drone Pilot patch. Built on the Comfort Colors 1580, printed to order.",
+      "images": [
+        "../img/brobots/quarter-zip.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-05-S",
+          "title": "S",
+          "price_cents": 5999,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-05-M",
+          "title": "M",
+          "price_cents": 5999,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-05-L",
+          "title": "L",
+          "price_cents": 5999,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-05-XL",
+          "title": "XL",
+          "price_cents": 5999,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-05-2XL",
+          "title": "2XL",
+          "price_cents": 5999,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-track-pant",
+      "title": "BroBots Track Pant",
+      "brand": "Brobots",
+      "type": "Sweats",
+      "collection": "Factory Issue 01: Sets",
+      "description": "ShockBot thigh print. Built on the AS Colour 5932 relax track pant, printed to order.",
+      "images": [
+        "../img/brobots/track-pant.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "sets"
+      ],
+      "pairs": [
+        "brobots-track-jacket"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-SET-06-S",
+          "title": "S",
+          "price_cents": 4899,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-06-M",
+          "title": "M",
+          "price_cents": 4899,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-06-L",
+          "title": "L",
+          "price_cents": 4899,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-06-XL",
+          "title": "XL",
+          "price_cents": 4899,
+          "active": false
+        },
+        {
+          "sku": "BB-SET-06-2XL",
+          "title": "2XL",
+          "price_cents": 4899,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-league-baseball-jersey",
+      "title": "BroBots League Baseball Jersey",
+      "brand": "Brobots",
+      "type": "Jersey",
+      "collection": "Factory Issue 01: Jerseys",
+      "description": "Pinstripe. Built on the All-over-print baseball jersey, printed to order.",
+      "images": [
+        "../img/brobots/league-baseball-jersey.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "jerseys"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-JRS-01-S",
+          "title": "S",
+          "price_cents": 4199,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-01-M",
+          "title": "M",
+          "price_cents": 4199,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-01-L",
+          "title": "L",
+          "price_cents": 4199,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-01-XL",
+          "title": "XL",
+          "price_cents": 4199,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-01-2XL",
+          "title": "2XL",
+          "price_cents": 4199,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-court-jersey",
+      "title": "BroBots Court Jersey",
+      "brand": "Brobots",
+      "type": "Jersey",
+      "collection": "Factory Issue 01: Jerseys",
+      "description": "Tank front print. Built on the All-over-print basketball jersey, printed to order.",
+      "images": [
+        "../img/brobots/court-jersey.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "jerseys"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-JRS-02-S",
+          "title": "S",
+          "price_cents": 3299,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-02-M",
+          "title": "M",
+          "price_cents": 3299,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-02-L",
+          "title": "L",
+          "price_cents": 3299,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-02-XL",
+          "title": "XL",
+          "price_cents": 3299,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-02-2XL",
+          "title": "2XL",
+          "price_cents": 3299,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-gridiron-jersey",
+      "title": "BroBots Gridiron Jersey",
+      "brand": "Brobots",
+      "type": "Jersey",
+      "collection": "Factory Issue 01: Jerseys",
+      "description": "Drone Pilot sleeve patches. Built on the All-over-print football jersey, printed to order.",
+      "images": [
+        "../img/brobots/gridiron-jersey.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "jerseys"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-JRS-03-S",
+          "title": "S",
+          "price_cents": 3999,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-03-M",
+          "title": "M",
+          "price_cents": 3999,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-03-L",
+          "title": "L",
+          "price_cents": 3999,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-03-XL",
+          "title": "XL",
+          "price_cents": 3999,
+          "active": false
+        },
+        {
+          "sku": "BB-JRS-03-2XL",
+          "title": "2XL",
+          "price_cents": 3999,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-factory-trucker",
+      "title": "BroBots Factory Trucker",
+      "brand": "Brobots",
+      "type": "Hat",
+      "collection": "Factory Issue 01: Hats",
+      "description": "ShockBot patch. Built on the Richardson 112, printed to order.",
+      "images": [
+        "../img/brobots/factory-trucker.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hats"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HAT-01-ONESIZE",
+          "title": "One size",
+          "price_cents": 1899,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-fitted-cap",
+      "title": "BroBots Fitted Cap",
+      "brand": "Brobots",
+      "type": "Hat",
+      "collection": "Factory Issue 01: Hats",
+      "description": "Tank patch. Built on the Flexfit 6277 embroidered, printed to order.",
+      "images": [
+        "../img/brobots/fitted-cap.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hats"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HAT-02-SM",
+          "title": "S/M",
+          "price_cents": 2299,
+          "active": false
+        },
+        {
+          "sku": "BB-HAT-02-LXL",
+          "title": "L/XL",
+          "price_cents": 2299,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-corduroy-cap",
+      "title": "BroBots Corduroy Cap",
+      "brand": "Brobots",
+      "type": "Hat",
+      "collection": "Factory Issue 01: Hats",
+      "description": "Drone Pilot patch. Built on the Big Accessories BA703 corduroy, printed to order.",
+      "images": [
+        "../img/brobots/corduroy-cap.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hats"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HAT-03-ONESIZE",
+          "title": "One size",
+          "price_cents": 2299,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "brobots-cuffed-beanie",
+      "title": "BroBots Cuffed Beanie",
+      "brand": "Brobots",
+      "type": "Hat",
+      "collection": "Factory Issue 01: Hats",
+      "description": "ShockBot cuff label. Built on the Yupoong 1501KC embroidered, printed to order.",
+      "images": [
+        "../img/brobots/cuffed-beanie.svg"
+      ],
+      "tags": [
+        "merch",
+        "factory-issue-01",
+        "hats"
+      ],
+      "fulfiller": "printify",
+      "variants": [
+        {
+          "sku": "BB-HAT-04-ONESIZE",
+          "title": "One size",
+          "price_cents": 1899,
+          "active": false
+        }
       ]
     }
   ]
