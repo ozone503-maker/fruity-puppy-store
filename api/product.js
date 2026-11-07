@@ -63,7 +63,7 @@ export function GET(request) {
     <p class="desc">${esc(product.description || '')}</p>
     <p class="price">${price}</p>
     ${options ? `<label>Color <select id="sku">${options}</select></label>` : ''}
-    ${soldOut ? '<p class="stock-out">Out of stock right now</p><button class="add" type="button" disabled>Out of stock</button>' : `<button class="add" data-add-sku="${esc(firstBuy.sku || '')}">Add to cart</button>`}
+    ${product.draft ? '<p class="stock-out">Coming soon. Not for sale yet; colors and sizes are planned, not confirmed with the printer.</p><button class="add" type="button" disabled>Coming soon</button>' : soldOut ? '<p class="stock-out">Out of stock right now</p><button class="add" type="button" disabled>Out of stock</button>' : `<button class="add" data-add-sku="${esc(firstBuy.sku || '')}">Add to cart</button>`}
     ${chartHtml}
   </div>
 </main>

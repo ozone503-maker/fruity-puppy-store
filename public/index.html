@@ -72,10 +72,30 @@ function jarCard(p) {
   return `<li class="jar"><a href="${href(p)}">${img}<span class="jar-name">${esc(p.title)}</span></a><span class="jar-price">${price}</span><button class="buy" type="button" data-add-sku="${esc(v.sku)}">Add to cart</button></li>`;
 }
 
+function logoCard(p) {
+  const colors = p.variants.map(v => v.title).join(', ');
+  const sizes = p.size_chart ? p.size_chart.rows.map(r => r[0]).join(', ') : '';
+  const who = p.model ? `${p.model} wearing the ${p.title}` : `The ${p.title}, laid flat`;
+  return `<li class="logo-item"><a href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="${esc(who)}" loading="lazy" width="360" height="${p.model ? 640 : 480}"></a>
+    <h4>${esc(p.title.replace(p.logo + ' ', ''))}</h4>
+    <p class="logo-price">${money(p.variants[0].price_cents)} <span class="soon">Coming soon</span></p>
+    <p class="logo-var">Planned colors: ${esc(colors)}${sizes ? `<br>Planned sizes: ${esc(sizes)}` : ''}</p></li>`;
+}
+
+function logoSection(items) {
+  const groups = [...new Set(items.map(p => p.logo))];
+  return `<section class="logos" aria-labelledby="logos-h">
+    <h2 id="logos-h">The label collection</h2>
+    <p class="logos-sub">Our jar labels, made wearable. Coming soon, not for sale yet. Colors and sizes are planned and not confirmed with the printer.</p>
+    ${groups.map(g => `<details class="logo-group"${g === groups[0] ? ' open' : ''}><summary>${esc(g)}</summary><ul class="logo-row">${items.filter(p => p.logo === g).map(logoCard).join('')}</ul></details>`).join('')}
+  </section>`;
+}
+
 function fruityPuppy(data, shop) {
   document.body.classList.add('fp');
   const merch = data.products.filter(p => p.collection === 'Standard' && p.images.length);
-  const skin = data.products.filter(p => p.collection !== 'Standard');
+  const skin = data.products.filter(p => p.collection !== 'Standard' && p.collection !== 'Logo');
+  const logoDrafts = data.products.filter(p => p.collection === 'Logo' && p.images.length);
   const inStock = skin.filter(p => buyable(p).length);
   const out = skin.filter(p => !buyable(p).length);
   shop.innerHTML = `
@@ -93,6 +113,7 @@ function fruityPuppy(data, shop) {
     <h2 id="rack-h">The rack</h2>
     <div class="rack-grid">${merch.map(merchCard).join('')}</div>
   </section>
+  ${logoDrafts.length ? logoSection(logoDrafts) : ''}
   ${out.length ? `<section class="fridge" aria-labelledby="fridge-h">
     <h2 id="fridge-h">More from the fridge</h2>
     <p class="fridge-sub">Out of stock right now</p>

@@ -122,3 +122,15 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
 .jars.top .jar-name{font-size:26px}
 .jars.top .jar-price{font-size:22px}
 .fridge{background:var(--blush)}
+
+/* Label collection (draft, coming soon) */
+.logos{margin:64px 0}
+.logos-sub{max-width:60ch;opacity:.8}
+.logo-group{border-top:2px solid currentColor;padding:14px 0}
+.logo-group summary{font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;cursor:pointer}
+.logo-row{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:24px 16px}
+.logo-item img{width:100%;height:auto;display:block;border-radius:10px;background:#eee}
+.logo-item h4{margin:8px 0 2px;font-size:1rem}
+.logo-price{margin:0;font-weight:700}
+.soon{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:99px;background:#2b1630;color:#fff;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}
+.logo-var{margin:4px 0 0;font-size:.8rem;opacity:.75;line-height:1.35}

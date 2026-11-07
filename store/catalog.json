@@ -698,6 +698,3126 @@
           "active": true
         }
       ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-tee",
+      "title": "Fruity Puppy Original Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/fruity-puppy-original-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-long-sleeve",
+      "title": "Fruity Puppy Original Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/fruity-puppy-original-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-beach-hoodie",
+      "title": "Fruity Puppy Original Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/fruity-puppy-original-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-kilauea-hoodie",
+      "title": "Fruity Puppy Original Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/fruity-puppy-original-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-mauna-kea-hoodie",
+      "title": "Fruity Puppy Original Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/fruity-puppy-original-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fruity-puppy-original-blanket",
+      "title": "Fruity Puppy Original Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "Fruity Puppy Original",
+      "draft": true,
+      "description": "The Fruity Puppy Original label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/fruity-puppy-original-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPO-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPO-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-tee",
+      "title": "Lava-Guava Pink Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/lava-guava-pink-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-long-sleeve",
+      "title": "Lava-Guava Pink Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/lava-guava-pink-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-beach-hoodie",
+      "title": "Lava-Guava Pink Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/lava-guava-pink-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-kilauea-hoodie",
+      "title": "Lava-Guava Pink Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/lava-guava-pink-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-mauna-kea-hoodie",
+      "title": "Lava-Guava Pink Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/lava-guava-pink-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-pink-blanket",
+      "title": "Lava-Guava Pink Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "Lava-Guava Pink",
+      "draft": true,
+      "description": "The Lava-Guava Pink label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/lava-guava-pink-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGP-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGP-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-tee",
+      "title": "Lava-Guava Volcanic Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/lava-guava-black-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-long-sleeve",
+      "title": "Lava-Guava Volcanic Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/lava-guava-black-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-beach-hoodie",
+      "title": "Lava-Guava Volcanic Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/lava-guava-black-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-kilauea-hoodie",
+      "title": "Lava-Guava Volcanic Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/lava-guava-black-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-mauna-kea-hoodie",
+      "title": "Lava-Guava Volcanic Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/lava-guava-black-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-lava-guava-black-blanket",
+      "title": "Lava-Guava Volcanic Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "Lava-Guava Volcanic",
+      "draft": true,
+      "description": "The Lava-Guava Volcanic label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/lava-guava-black-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-LGV-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-LGV-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-tee",
+      "title": "FPX Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/fpx-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-long-sleeve",
+      "title": "FPX Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/fpx-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-beach-hoodie",
+      "title": "FPX Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/fpx-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-kilauea-hoodie",
+      "title": "FPX Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/fpx-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-mauna-kea-hoodie",
+      "title": "FPX Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/fpx-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-fpx-blanket",
+      "title": "FPX Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "FPX",
+      "draft": true,
+      "description": "The FPX label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/fpx-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-FPX-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-FPX-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-tee",
+      "title": "Moon Tea Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/moon-tea-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-long-sleeve",
+      "title": "Moon Tea Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/moon-tea-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-beach-hoodie",
+      "title": "Moon Tea Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/moon-tea-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-kilauea-hoodie",
+      "title": "Moon Tea Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/moon-tea-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-mauna-kea-hoodie",
+      "title": "Moon Tea Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/moon-tea-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-moon-tea-blanket",
+      "title": "Moon Tea Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "Moon Tea",
+      "draft": true,
+      "description": "The Moon Tea label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/moon-tea-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-MTL-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-MTL-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-tee",
+      "title": "Thorny Toad Tee",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/thorny-toad-tee.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Tee size chart",
+        "note": "Unisex. Chest and length in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28"
+          ],
+          [
+            "M",
+            "20",
+            "29"
+          ],
+          [
+            "L",
+            "22",
+            "30"
+          ],
+          [
+            "XL",
+            "24",
+            "31"
+          ],
+          [
+            "2XL",
+            "26",
+            "32"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-TEE-WHITE",
+          "title": "White",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-TEE-CARNATION",
+          "title": "Carnation",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-TEE-PLUM",
+          "title": "Plum",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-TEE-GREY",
+          "title": "Grey",
+          "price_cents": 2800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-TEE-BLACK",
+          "title": "Black",
+          "price_cents": 2800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-long-sleeve",
+      "title": "Thorny Toad Long Sleeve",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Dinny",
+      "images": [
+        "img/logo/thorny-toad-long-sleeve.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Long sleeve size chart",
+        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length",
+          "Sleeve"
+        ],
+        "rows": [
+          [
+            "S",
+            "18",
+            "28",
+            "33"
+          ],
+          [
+            "M",
+            "20",
+            "29",
+            "34"
+          ],
+          [
+            "L",
+            "22",
+            "30",
+            "35"
+          ],
+          [
+            "XL",
+            "24",
+            "31",
+            "36"
+          ],
+          [
+            "2XL",
+            "26",
+            "32",
+            "37"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-LS-WHITE",
+          "title": "White",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-LS-CARNATION",
+          "title": "Carnation",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-LS-PLUM",
+          "title": "Plum",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-LS-GREY",
+          "title": "Grey",
+          "price_cents": 3200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-LS-BLACK",
+          "title": "Black",
+          "price_cents": 3200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-beach-hoodie",
+      "title": "Thorny Toad Beach Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Erv",
+      "images": [
+        "img/logo/thorny-toad-beach-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Beach hoodie size chart",
+        "note": "Lightweight 6-8 oz. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-BEACH-WHITE",
+          "title": "White",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BEACH-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BEACH-PLUM",
+          "title": "Plum",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BEACH-GREY",
+          "title": "Grey",
+          "price_cents": 4200,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BEACH-BLACK",
+          "title": "Black",
+          "price_cents": 4200,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-kilauea-hoodie",
+      "title": "Thorny Toad Kīlauea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Fonk",
+      "images": [
+        "img/logo/thorny-toad-kilauea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Kīlauea hoodie size chart",
+        "note": "Standard hooded sweatshirt. Unisex.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "20",
+            "27"
+          ],
+          [
+            "M",
+            "22",
+            "28"
+          ],
+          [
+            "L",
+            "24",
+            "29"
+          ],
+          [
+            "XL",
+            "26",
+            "30"
+          ],
+          [
+            "2XL",
+            "28",
+            "31"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-KIL-WHITE",
+          "title": "White",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-KIL-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-KIL-PLUM",
+          "title": "Plum",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-KIL-GREY",
+          "title": "Grey",
+          "price_cents": 4800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-KIL-BLACK",
+          "title": "Black",
+          "price_cents": 4800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-mauna-kea-hoodie",
+      "title": "Thorny Toad Mauna Kea Hoodie",
+      "brand": "Fruity Puppy",
+      "type": "Apparel",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "model": "Ipo",
+      "images": [
+        "img/logo/thorny-toad-mauna-kea-hoodie.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Mauna Kea hoodie size chart",
+        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "headers": [
+          "Size",
+          "Chest",
+          "Length"
+        ],
+        "rows": [
+          [
+            "S",
+            "21",
+            "27.5"
+          ],
+          [
+            "M",
+            "23",
+            "28.5"
+          ],
+          [
+            "L",
+            "25",
+            "29.5"
+          ],
+          [
+            "XL",
+            "27",
+            "30.5"
+          ],
+          [
+            "2XL",
+            "29",
+            "31.5"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-MK-WHITE",
+          "title": "White",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-MK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-MK-PLUM",
+          "title": "Plum",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-MK-GREY",
+          "title": "Grey",
+          "price_cents": 6800,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-MK-BLACK",
+          "title": "Black",
+          "price_cents": 6800,
+          "active": false
+        }
+      ]
+    },
+    {
+      "id": "logo-thorny-toad-blanket",
+      "title": "Thorny Toad Blanket",
+      "brand": "Fruity Puppy",
+      "type": "Home",
+      "collection": "Logo",
+      "logo": "Thorny Toad",
+      "draft": true,
+      "description": "The Thorny Toad label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "model": null,
+      "images": [
+        "img/logo/thorny-toad-blanket.webp"
+      ],
+      "tags": [
+        "merch",
+        "logo",
+        "draft"
+      ],
+      "pairs": [],
+      "fulfiller": "printify",
+      "size_chart": {
+        "title": "Blanket size",
+        "note": "One size. Finished measurements in inches.",
+        "headers": [
+          "Size",
+          "Width",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Standard",
+            "50",
+            "60"
+          ]
+        ]
+      },
+      "variants": [
+        {
+          "sku": "DRAFT-TTL-BLANK-WHITE",
+          "title": "White",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BLANK-CARNATION",
+          "title": "Carnation",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BLANK-PLUM",
+          "title": "Plum",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BLANK-GREY",
+          "title": "Grey",
+          "price_cents": 4500,
+          "active": false
+        },
+        {
+          "sku": "DRAFT-TTL-BLANK-BLACK",
+          "title": "Black",
+          "price_cents": 4500,
+          "active": false
+        }
+      ]
     }
   ]
 }

@@ -197,7 +197,7 @@ test('signature helper', () => {
 });
 test('catalog unchanged shape', async () => {
   const d = await (await catalog(new Request('https://x/api/catalog'))).json();
-  assert.equal(d.products.length, 13);
+  assert.equal(d.products.filter(p => !p.draft).length, 13);
   assert.ok(d.products.every(p => p.variants.every(v => 'sku' in v && 'price_cents' in v)));
 });
 
@@ -212,6 +212,6 @@ test('out-of-stock skincare is rejected server-side; Original, sample and merch 
     assert.equal(r.status, 200, sku);
   }
   const d = await (await catalog(new Request('https://x/api/catalog'))).json();
-  const avail = Object.fromEntries(d.products.map(p => [p.id, p.variants.some(v => v.available)]));
+  const avail = Object.fromEntries(d.products.filter(p => !p.draft).map(p => [p.id, p.variants.some(v => v.available)]));
   assert.deepEqual(Object.entries(avail).filter(([, a]) => !a).map(([id]) => id).sort(), ['desert-squirt', 'fpx', 'lava-guava', 'moon-tea', 'thorny-toad']);
 });
