@@ -31,6 +31,7 @@ const brandQ = brand ? '?brand=' + brand : '';
 const homes = { brobots: 'https://brobots.space', kudoken: 'https://kudoken.space' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const money = c => '$' + (c / 100).toFixed(2).replace(/\.00$/, '');
+const imgSrc = u => /^https?:/.test(u) ? u : `${BASE}/${u}`;
 const href = p => `${BASE}/product/${p.id}${brandQ}`;
 const SWATCH = { White: '#f7f4f0', Carnation: '#f2a3b6', Plum: '#6b2a4a', Grey: '#9c9b9e', Black: '#211a1e' };
 const buyable = p => p.variants.filter(v => v.available !== false);
@@ -52,7 +53,7 @@ function merchCard(p) {
   const v = vs[0];
   const chips = vs.map((x, i) => `<label class="chip" title="${esc(x.title)}"><input type="radio" name="c-${esc(p.id)}" value="${esc(x.sku)}" ${i ? '' : 'checked'}><span style="--sw:${SWATCH[x.title] || '#ccc'}"></span><b class="sr">${esc(x.title)}</b></label>`).join('');
   return `<article class="rack-item" data-id="${esc(p.id)}">
-    <a class="rack-photo" href="${href(p)}"><img src="${esc(p.images[0])}" alt="Ipo wearing the ${esc(p.title)}" loading="lazy" width="496" height="992"></a>
+    <a class="rack-photo" href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="Ipo wearing the ${esc(p.title)}" loading="lazy" width="496" height="992"></a>
     <div class="rack-info">
       <h3><a href="${href(p)}">${esc(p.title.replace(/^Fruity Puppy /, ''))}</a></h3>
       <p class="rack-price">${money(v.price_cents)}</p>
@@ -64,7 +65,7 @@ function merchCard(p) {
 
 function jarCard(p) {
   const vs = buyable(p);
-  const img = p.images[0] ? `<img src="${esc(p.images[0])}" alt="${esc(p.title)}" loading="lazy" width="400" height="400">` : '<div class="jar-blank" aria-hidden="true"></div>';
+  const img = p.images[0] ? `<img src="${esc(imgSrc(p.images[0]))}" alt="${esc(p.id === 'free-sample' ? 'A real Fruity Puppy sample jar held between two fingers' : p.title)}" loading="lazy">` : '<div class="jar-blank" aria-hidden="true"></div>';
   if (!vs.length) return `<li class="jar out"><a href="${href(p)}">${img}<span class="jar-name">${esc(p.title)}</span></a><span class="stock-out">Out of stock</span></li>`;
   const v = vs[0];
   const price = v.price_cents ? money(v.price_cents) : 'Free, $5 shipping';
@@ -86,7 +87,7 @@ function fruityPuppy(data, shop) {
   <section class="runway" aria-labelledby="runway-h">
     <h2 id="runway-h" class="runway-h">Ipo wears it first<br>you wear it next</h2>
     <p class="runway-sub">Soft goods from Fruity Puppy, modeled by the pink poodle herself.</p>
-    <ol class="runway-strip">${merch.map(p => `<li><a href="${href(p)}"><img src="${esc(p.images[0])}" alt="Ipo wearing the ${esc(p.title)}" width="496" height="992" ${merch.indexOf(p) < 3 ? 'fetchpriority="high"' : 'loading="lazy"'}><span>${esc(p.title.replace(/^Fruity Puppy /, ''))}</span></a></li>`).join('')}</ol>
+    <ol class="runway-strip">${merch.map(p => `<li><a href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="Ipo wearing the ${esc(p.title)}" width="496" height="992" ${merch.indexOf(p) < 3 ? 'fetchpriority="high"' : 'loading="lazy"'}><span>${esc(p.title.replace(/^Fruity Puppy /, ''))}</span></a></li>`).join('')}</ol>
   </section>
   <section class="rack" aria-labelledby="rack-h">
     <h2 id="rack-h">The rack</h2>

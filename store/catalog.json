@@ -8,7 +8,7 @@
       "collection": "Cream",
       "description": "45% real fresh Hawaiian tropical fruit. Ice-extracted, suspended in a crystalline lipid matrix. 17 bioavailable antioxidants. 2 oz.",
       "images": [
-        "https://www.fruitypuppy.com/images/products/original-jar.png"
+        "img/fruity-puppy-original.webp"
       ],
       "tags": [
         "skincare",
@@ -37,7 +37,7 @@
       "collection": "Cream",
       "description": "Extra-strength exfoliating fruit cream. Fruity Puppy Original with more papaya and added starfruit. 2 oz. Not for sensitive skin.",
       "images": [
-        "https://www.fruitypuppy.com/images/products/fpx-jar.jpg"
+        "img/fpx.webp"
       ],
       "tags": [
         "skincare",
@@ -65,7 +65,7 @@
       "collection": "Balm",
       "description": "High-friction + high-moisture zones. Guava leaf, stickerbush shoots, and ti leaf. Coming into the line.",
       "images": [
-        "https://www.fruitypuppy.com/images/lava-guava/open-balm.webp"
+        "img/lava-guava.webp"
       ],
       "tags": [
         "skincare",
@@ -89,7 +89,7 @@
       "collection": "Toner",
       "description": "Botanical toner for balance and clarity. Stickerbush cane, green tea, guava leaf, lemon peel, jungle mint.",
       "images": [
-        "https://www.fruitypuppy.com/images/products/thorny-toad-bottle.png"
+        "img/thorny-toad.webp"
       ],
       "tags": [
         "skincare",
@@ -138,7 +138,7 @@
       "collection": "Toner",
       "description": "Nocturnal botanical polishing toner. Blackberry leaf, orange peel, green tea, spearmint, cranberry hibiscus shoots.",
       "images": [
-        "https://www.fruitypuppy.com/images/products/moon-tea-bottle.png"
+        "img/moon-tea.webp"
       ],
       "tags": [
         "skincare",
@@ -164,7 +164,9 @@
       "type": "Skincare",
       "collection": "Samples",
       "description": "Try Fruity Puppy Original. $5 shipping & handling.",
-      "images": [],
+      "images": [
+        "img/free-sample.webp"
+      ],
       "tags": [
         "sample"
       ],
@@ -190,7 +192,7 @@
       "collection": "Standard",
       "description": "Ipo in the everyday Fruity Puppy tee. Soft unisex staple, pink wordmark on the chest. The shirt for the hours between a jar and the rest of the day.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/tee.jpg"
+        "img/fp-tee.webp"
       ],
       "tags": [
         "tee",
@@ -279,7 +281,7 @@
       "collection": "Standard",
       "description": "Same mark, longer day. Soft jersey long sleeve with the pink Fruity Puppy wordmark. For when the sun drops or the AC is rude.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/long-sleeve.jpg"
+        "img/fp-long-sleeve.webp"
       ],
       "tags": [
         "long-sleeve",
@@ -373,7 +375,7 @@
       "collection": "Standard",
       "description": "The light one. A 6 to 8 ounce after-sun hoodie, pale pink, thin enough for the hour after the water. Not a winter coat.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/beach.jpg"
+        "img/fp-beach.webp"
       ],
       "tags": [
         "hoodie",
@@ -461,7 +463,7 @@
       "collection": "Standard",
       "description": "The standard. Midweight hooded sweatshirt, the one you wear because it is cold and you are going out anyway. Named for Kīlauea: active, steady, not a stunt.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/kilauea.jpg"
+        "img/fp-kilauea.webp"
       ],
       "tags": [
         "hoodie",
@@ -550,7 +552,7 @@
       "collection": "Standard",
       "description": "The thick one. Named for the mountain that holds snow above the tropics. Heavy fleece, denser hand, the hoodie you buy when you want one that lasts.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/mauna-kea.jpg"
+        "img/fp-mauna-kea.webp"
       ],
       "tags": [
         "hoodie",
@@ -638,7 +640,7 @@
       "collection": "Standard",
       "description": "A plush blanket with the Fruity Puppy mark. For the couch, a late session, or the foot of a bed.",
       "images": [
-        "https://www.fruitypuppy.com/images/merch/blanket.jpg"
+        "img/fp-blanket.webp"
       ],
       "tags": [
         "blanket",

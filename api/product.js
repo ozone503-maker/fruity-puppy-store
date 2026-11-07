@@ -21,7 +21,7 @@ export function GET(request) {
   const variants = product.variants || [];
   const first = variants[0] || {};
   const price = first.price_cents ? `$${(first.price_cents / 100).toFixed(2)}` : '$5 shipping';
-  const images = (product.images || []).map((src) => `<img src="${esc(src)}" alt="${esc(product.title)}">`).join('');
+  const images = (product.images || []).map((src) => `<img src="${esc(/^https?:/.test(src) ? src : '../' + src)}" alt="${esc(product.title)}">`).join('');
   const buyable = variants.filter((v) => v.active !== false);
   const soldOut = !buyable.length;
   const options = buyable.length > 1 ? buyable.map((v) => `<option value="${esc(v.sku)}">${esc(v.title)} ($${(v.price_cents / 100).toFixed(2)})</option>`).join('') : '';
