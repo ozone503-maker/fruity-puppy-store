@@ -200,3 +200,18 @@ test('catalog unchanged shape', async () => {
   assert.equal(d.products.length, 13);
   assert.ok(d.products.every(p => p.variants.every(v => 'sku' in v && 'price_cents' in v)));
 });
+
+test('out-of-stock skincare is rejected server-side; Original, sample and merch still buy', async () => {
+  for (const sku of ['FPX-2OZ', 'LG-BALM', 'TT-JUICE', 'DS-SQUIRT', 'MT-TEA']) {
+    const cap = [];
+    const r = await checkout(post('https://x/api/checkout', { items: [{ sku: 'FP-2OZ', quantity: 1 }, { sku, quantity: 1 }] }), { fetchImpl: stripeMock(cap) });
+    assert.equal(r.status, 400, sku); assert.equal(cap.length, 0);
+  }
+  for (const sku of ['FP-2OZ', 'FP-SAMPLE', 'FP-TEE-PLUM']) {
+    const r = await checkout(post('https://x/api/checkout', { items: [{ sku, quantity: 1 }] }), { fetchImpl: stripeMock([]) });
+    assert.equal(r.status, 200, sku);
+  }
+  const d = await (await catalog(new Request('https://x/api/catalog'))).json();
+  const avail = Object.fromEntries(d.products.map(p => [p.id, p.variants.some(v => v.available)]));
+  assert.deepEqual(Object.entries(avail).filter(([, a]) => !a).map(([id]) => id).sort(), ['desert-squirt', 'fpx', 'lava-guava', 'moon-tea', 'thorny-toad']);
+});

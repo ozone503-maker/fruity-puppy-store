@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap");
 *{box-sizing:border-box}
 body{margin:0;background:#fff8ef;color:#251a1d;font:16px/1.55 system-ui,Georgia,serif}
 .fp-head{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid #e8d9d0;background:#fff8ef}
@@ -32,3 +33,85 @@ main{max-width:1100px;margin:auto;padding:32px 20px}
 .suggest-block{max-width:1100px;margin:0 auto 40px;padding:0 20px}
 .confirm{text-align:center;padding-top:80px}
 @media(max-width:700px){.product{grid-template-columns:1fr}.fp-head{flex-wrap:wrap}}
+
+/* shared helpers (all brands) */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:50;background:#fff;padding:10px 14px}
+.stock-out{color:#8a3b2a;font-weight:700}
+.add[disabled],.buy[disabled]{opacity:.5;cursor:not-allowed}
+a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visible{outline:3px solid #2b6cb0;outline-offset:3px}
+.qty button,#cart-close,#cart-checkout{min-height:44px;min-width:44px}
+
+/* Fruity Puppy skin */
+.fp{--blush:#fbe3ea;--ink:#47182f;--pink:#e889a3;--papaya:#ef8a4c;--pulp:#f2cd48;--copper:#a5603a;--pewter:#7c8187;
+  background:var(--blush);color:var(--ink);font:17px/1.6 "Atkinson Hyperlegible",system-ui,sans-serif}
+.fp h1,.fp h2,.fp h3,.fp .fp-logo{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-optical-sizing:auto}
+.fp .fp-head{background:var(--blush);border-bottom:0;padding:16px clamp(16px,4vw,48px)}
+.fp .fp-logo{font-weight:800;font-size:22px;color:var(--ink)}
+.fp .fp-head nav a{color:var(--ink);font-size:16px;padding:12px 8px;display:inline-block}
+.fp main#shop{max-width:none;padding:0}
+.fp #cart-badge{background:var(--ink);color:var(--blush);min-height:44px;display:flex;align-items:center}
+.fp .buy,.fp .add{background:var(--copper);color:#fff8f2;border:0;border-radius:999px;padding:0 26px;min-height:48px;font:700 16px/1 "Atkinson Hyperlegible",sans-serif;cursor:pointer;transition:background .15s}
+.fp .buy:hover,.fp .add:hover{background:#8b4e2d}
+.fp #cart-checkout{background:var(--copper);color:#fff;border:0;border-radius:999px;padding:0 22px;font-weight:700}
+
+.runway{padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px) 0}
+.runway h1{font-size:clamp(44px,8.5vw,128px);line-height:.92;font-weight:800;letter-spacing:-.03em;margin:0 0 18px;max-width:14ch;color:var(--ink)}
+.runway-sub{font-size:19px;max-width:44ch;margin:0 0 28px}
+.runway-strip{list-style:none;margin:0 calc(-1*clamp(16px,4vw,48px));padding:0 clamp(16px,4vw,48px) 32px;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,1fr);gap:clamp(8px,1.2vw,16px);overflow-x:auto;scroll-snap-type:x mandatory}
+.runway-strip li{scroll-snap-align:start}
+.runway-strip a{display:block;text-decoration:none;color:var(--ink)}
+.runway-strip img{width:100%;height:auto;aspect-ratio:1/2;object-fit:cover;border-radius:120px 120px 18px 18px;background:#efd2da}
+.runway-strip span{display:block;font:500 17px/1.2 "Bricolage Grotesque",sans-serif;margin-top:10px}
+.runway-strip li:nth-child(even){margin-top:48px}
+
+.rack{background:var(--ink);color:var(--blush);padding:clamp(40px,6vw,88px) clamp(16px,4vw,48px)}
+.rack h2,.fridge h2{font-size:clamp(36px,5vw,64px);font-weight:800;letter-spacing:-.02em;margin:0 0 28px}
+.rack-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:40px 24px}
+.rack-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:14px;background:#5d2741;display:block}
+.rack-info{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:14px}
+.rack-info h3{margin:0;font-size:22px;font-weight:500}
+.rack-info a{color:var(--blush);text-decoration:none}
+.rack-price{margin:0;font-weight:700;font-size:20px;color:var(--pulp)}
+.chips{border:0;padding:0;margin:12px 0 14px;display:flex;gap:4px;flex-wrap:wrap}
+.chip{position:relative;width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{width:28px;height:28px;border-radius:50%;background:var(--sw);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.chip input:checked+span{box-shadow:0 0 0 3px var(--ink),0 0 0 5px var(--pink)}
+.rack .buy{width:100%}
+
+.fridge{padding:clamp(40px,6vw,88px) clamp(16px,4vw,48px);background:linear-gradient(180deg,var(--papaya) 0 60%,var(--blush) 60%)}
+.fridge-sub{font-size:19px;margin:-14px 0 28px}
+.jars{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px}
+.jar{background:#fff7f0;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.jar a{color:var(--ink);text-decoration:none}
+.jar img,.jar-blank{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;background:var(--pulp);display:block}
+.jar-name{display:block;font:500 20px/1.2 "Bricolage Grotesque",sans-serif;margin-top:8px}
+.jar-price{font-weight:700;font-size:18px}
+.out-h{font-size:22px;margin:44px 0 16px}
+.jars.small{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.jars.small .jar{background:transparent;padding:0}
+.jars.small img,.jars.small .jar-blank{filter:grayscale(.6);opacity:.75}
+.jars.small .jar-name{font-size:16px}
+
+.outlet{margin:0;padding:clamp(40px,6vw,88px) clamp(16px,4vw,48px);display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:32px;align-items:end}
+.outlet img{width:100%;height:auto;border-radius:18px}
+.outlet figcaption{font:800 clamp(28px,4vw,52px)/1 "Bricolage Grotesque",sans-serif;max-width:12ch}
+.fp .fp-foot{border-top:0;background:var(--ink);color:var(--blush)}
+
+/* product + cart pages on the Fruity Puppy skin */
+.fp main.product{max-width:1100px;padding:clamp(24px,4vw,56px) 20px}
+.fp .images img{border-radius:18px}
+.fp .info h1{font-size:clamp(36px,5vw,60px);line-height:1;font-weight:800;margin:0 0 16px}
+.fp .price{color:var(--copper)}
+.fp select{min-height:44px;font:inherit;padding:0 10px;margin:0 12px 16px 6px;border-radius:10px;border:1px solid var(--pewter);background:#fff}
+.fp .card{background:#fff7f0;border:0;border-radius:18px}
+.fp .card a{color:var(--ink)}
+.fp #cart-drawer{background:var(--blush)}
+
+@media(max-width:700px){
+  .runway-strip{grid-auto-columns:46%}
+  .runway-strip li:nth-child(even){margin-top:28px}
+  .outlet{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
