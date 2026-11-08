@@ -1,4 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/atkinson-hyperlegible-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/atkinson-hyperlegible-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fonts/bricolage-grotesque-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fonts/bricolage-grotesque-800.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 *{box-sizing:border-box}
 body{margin:0;background:#fff8ef;color:#251a1d;font:16px/1.55 system-ui,Georgia,serif}
 .fp-head{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid #e8d9d0;background:#fff8ef}
@@ -123,15 +156,41 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
 .jars.top .jar-price{font-size:22px}
 .fridge{background:var(--blush)}
 
-/* Label collection (draft, coming soon) */
-.logos{margin:64px 0}
-.logos-sub{max-width:60ch;opacity:.8}
-.logo-group{border-top:2px solid currentColor;padding:14px 0}
-.logo-group summary{font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;cursor:pointer}
-.logo-row{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:24px 16px}
-.logo-item img{width:100%;height:auto;display:block;border-radius:10px;background:#eee}
-.logo-item h4{margin:8px 0 2px;font-size:1rem}
-.logo-price{margin:0;font-weight:700}
-.soon{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:99px;background:#2b1630;color:#fff;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}
-.logo-var{margin:4px 0 0;font-size:.8rem;opacity:.75;line-height:1.35}
-.logo-buy{display:inline-block;margin-top:8px;text-decoration:none;text-align:center}
+
+/* Carousels: one row per group, swipe or use the arrows */
+.top-h{line-height:1.02;margin-bottom:18px}
+.topbuy .fridge-sub{margin:0 0 24px}
+.rack-sub,.labels-sub{font-size:18px;max-width:52ch;margin:-12px 0 28px}
+.labels{padding:clamp(40px,6vw,88px) clamp(16px,4vw,48px)}
+.labels h2{font-size:clamp(36px,5vw,64px);font-weight:800;letter-spacing:-.02em;margin:0 0 28px}
+.carousel{margin:0 0 44px}
+.car-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 14px}
+.car-head h3{margin:0;font-size:clamp(24px,3vw,32px);font-weight:800}
+.car-nav{display:flex;gap:8px}
+.car-btn{width:44px;height:44px;border-radius:50%;border:2px solid currentColor;background:transparent;color:inherit;font:700 26px/1 system-ui,sans-serif;cursor:pointer;display:grid;place-items:center;padding:0 0 3px}
+.car-btn:hover{background:var(--ink);color:var(--blush);border-color:var(--ink)}
+.dark .car-btn:hover{background:var(--blush);color:var(--ink);border-color:var(--blush)}
+.car-btn:focus-visible,.car-track:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.car-track{list-style:none;margin:0;padding:0 0 12px;display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,300px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin}
+.car-track>li{scroll-snap-align:start;min-width:0}
+.rack .car-track .rack-item{height:100%}
+.pcard{background:#fff7f0;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;height:100%}
+.pcard-photo{display:block;background:#efe6e1}
+.pcard-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 24%}
+.pcard-photo.flat img{object-position:50% 50%}
+.pcard-body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pcard h4{margin:0;font:800 20px/1.2 "Bricolage Grotesque",system-ui,sans-serif}
+.pcard h4 a{color:var(--ink);text-decoration:none}
+.pcard-price{margin:0;font-weight:700;font-size:18px}
+.pcard-var{margin:0 0 10px;font-size:15px;color:#6b4256}
+.pcard-buy{margin-top:auto;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;padding:0 16px}
+.soon-card{opacity:.8}
+.soon-card .pcard-var{font-weight:700;color:var(--ink)}
+.small .car-track{grid-auto-columns:clamp(150px,16vw,190px)}
+.small .jar{background:transparent;padding:0}
+.small .jar img,.small .jar-blank{filter:grayscale(.6);opacity:.8}
+@media (max-width:640px){
+  .car-track{grid-auto-columns:78%}
+  .small .car-track{grid-auto-columns:44%}
+  .top-h{font-size:clamp(36px,11vw,56px)}
+}
