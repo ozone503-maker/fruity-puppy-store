@@ -706,87 +706,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
-      "draft": true,
-      "description": "The Fruity Puppy Original label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Fruity Puppy Original label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/fruity-puppy-original-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPO-TEE-WHITE",
-          "title": "White",
+          "sku": "FPO-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPO-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "FPO-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPO-TEE-PLUM",
-          "title": "Plum",
+          "sku": "FPO-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPO-TEE-GREY",
-          "title": "Grey",
+          "sku": "FPO-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPO-TEE-BLACK",
-          "title": "Black",
+          "sku": "FPO-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "FPO-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "FPO-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPO-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc438b04fd1a7ef05b628",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc438b04fd1a7ef05b628"
     },
     {
       "id": "logo-fruity-puppy-original-long-sleeve",
@@ -795,93 +887,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
-      "draft": true,
-      "description": "The Fruity Puppy Original label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Fruity Puppy Original label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/fruity-puppy-original-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPO-LS-WHITE",
-          "title": "White",
+          "sku": "FPO-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPO-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "FPO-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPO-LS-PLUM",
-          "title": "Plum",
+          "sku": "FPO-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPO-LS-GREY",
-          "title": "Grey",
+          "sku": "FPO-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPO-LS-BLACK",
-          "title": "Black",
+          "sku": "FPO-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "FPO-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "FPO-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPO-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc58e3e4c1665fa0c0d0d",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc58e3e4c1665fa0c0d0d"
     },
     {
       "id": "logo-fruity-puppy-original-beach-hoodie",
@@ -891,7 +1069,7 @@
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
       "draft": true,
-      "description": "The Fruity Puppy Original label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Fruity Puppy Original label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/fruity-puppy-original-beach-hoodie.webp"
@@ -979,87 +1157,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
-      "draft": true,
-      "description": "The Fruity Puppy Original label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Fruity Puppy Original label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/fruity-puppy-original-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPO-KIL-WHITE",
-          "title": "White",
+          "sku": "FPO-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPO-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "FPO-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPO-KIL-PLUM",
-          "title": "Plum",
+          "sku": "FPO-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPO-KIL-GREY",
-          "title": "Grey",
+          "sku": "FPO-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPO-KIL-BLACK",
-          "title": "Black",
+          "sku": "FPO-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "FPO-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "FPO-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPO-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59335d2671b2405ca37",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc59335d2671b2405ca37"
     },
     {
       "id": "logo-fruity-puppy-original-mauna-kea-hoodie",
@@ -1068,87 +1338,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
-      "draft": true,
-      "description": "The Fruity Puppy Original label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Fruity Puppy Original label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/fruity-puppy-original-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPO-MK-WHITE",
-          "title": "White",
+          "sku": "FPO-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-FPO-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "FPO-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-FPO-MK-PLUM",
-          "title": "Plum",
+          "sku": "FPO-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-FPO-MK-GREY",
-          "title": "Grey",
+          "sku": "FPO-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-FPO-MK-BLACK",
-          "title": "Black",
+          "sku": "FPO-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "FPO-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPO-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPO-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPO-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPO-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "FPO-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPO-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPO-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPO-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "FPO-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5959ed4cd2ce40bb04c",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5959ed4cd2ce40bb04c"
     },
     {
       "id": "logo-fruity-puppy-original-blanket",
@@ -1158,7 +1520,7 @@
       "collection": "Logo",
       "logo": "Fruity Puppy Original",
       "draft": true,
-      "description": "The Fruity Puppy Original label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The Fruity Puppy Original label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/fruity-puppy-original-blanket.webp"
@@ -1226,87 +1588,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
-      "draft": true,
-      "description": "The Lava-Guava Pink label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Pink label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/lava-guava-pink-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGP-TEE-WHITE",
-          "title": "White",
+          "sku": "LGP-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGP-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "LGP-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGP-TEE-PLUM",
-          "title": "Plum",
+          "sku": "LGP-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGP-TEE-GREY",
-          "title": "Grey",
+          "sku": "LGP-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGP-TEE-BLACK",
-          "title": "Black",
+          "sku": "LGP-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "LGP-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "LGP-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGP-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5989ed4cd2ce40bb04e",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5989ed4cd2ce40bb04e"
     },
     {
       "id": "logo-lava-guava-pink-long-sleeve",
@@ -1315,93 +1769,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
-      "draft": true,
-      "description": "The Lava-Guava Pink label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Pink label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/lava-guava-pink-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGP-LS-WHITE",
-          "title": "White",
+          "sku": "LGP-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGP-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "LGP-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGP-LS-PLUM",
-          "title": "Plum",
+          "sku": "LGP-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGP-LS-GREY",
-          "title": "Grey",
+          "sku": "LGP-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGP-LS-BLACK",
-          "title": "Black",
+          "sku": "LGP-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "LGP-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "LGP-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGP-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc59bad99e6137e0f6e3b",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc59bad99e6137e0f6e3b"
     },
     {
       "id": "logo-lava-guava-pink-beach-hoodie",
@@ -1411,7 +1951,7 @@
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
       "draft": true,
-      "description": "The Lava-Guava Pink label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Pink label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/lava-guava-pink-beach-hoodie.webp"
@@ -1499,87 +2039,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
-      "draft": true,
-      "description": "The Lava-Guava Pink label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Pink label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/lava-guava-pink-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGP-KIL-WHITE",
-          "title": "White",
+          "sku": "LGP-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGP-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "LGP-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGP-KIL-PLUM",
-          "title": "Plum",
+          "sku": "LGP-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGP-KIL-GREY",
-          "title": "Grey",
+          "sku": "LGP-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGP-KIL-BLACK",
-          "title": "Black",
+          "sku": "LGP-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "LGP-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "LGP-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGP-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc59f6357064780107652",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc59f6357064780107652"
     },
     {
       "id": "logo-lava-guava-pink-mauna-kea-hoodie",
@@ -1588,87 +2220,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
-      "draft": true,
-      "description": "The Lava-Guava Pink label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Pink label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/lava-guava-pink-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGP-MK-WHITE",
-          "title": "White",
+          "sku": "LGP-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-LGP-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "LGP-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-LGP-MK-PLUM",
-          "title": "Plum",
+          "sku": "LGP-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-LGP-MK-GREY",
-          "title": "Grey",
+          "sku": "LGP-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-LGP-MK-BLACK",
-          "title": "Black",
+          "sku": "LGP-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "LGP-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGP-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGP-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGP-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGP-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "LGP-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGP-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGP-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGP-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "LGP-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5a12a8c9289780b1650",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5a12a8c9289780b1650"
     },
     {
       "id": "logo-lava-guava-pink-blanket",
@@ -1678,7 +2402,7 @@
       "collection": "Logo",
       "logo": "Lava-Guava Pink",
       "draft": true,
-      "description": "The Lava-Guava Pink label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The Lava-Guava Pink label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/lava-guava-pink-blanket.webp"
@@ -1746,87 +2470,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
-      "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Volcanic label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/lava-guava-black-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGV-TEE-WHITE",
-          "title": "White",
+          "sku": "LGV-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGV-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "LGV-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGV-TEE-PLUM",
-          "title": "Plum",
+          "sku": "LGV-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGV-TEE-GREY",
-          "title": "Grey",
+          "sku": "LGV-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-LGV-TEE-BLACK",
-          "title": "Black",
+          "sku": "LGV-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "LGV-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "LGV-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "LGV-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5a4711d7c1bbb0a90ea",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5a4711d7c1bbb0a90ea"
     },
     {
       "id": "logo-lava-guava-black-long-sleeve",
@@ -1835,93 +2651,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
-      "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Volcanic label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/lava-guava-black-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGV-LS-WHITE",
-          "title": "White",
+          "sku": "LGV-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGV-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "LGV-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGV-LS-PLUM",
-          "title": "Plum",
+          "sku": "LGV-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGV-LS-GREY",
-          "title": "Grey",
+          "sku": "LGV-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-LGV-LS-BLACK",
-          "title": "Black",
+          "sku": "LGV-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "LGV-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "LGV-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "LGV-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5a7ad99e6137e0f6e50",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5a7ad99e6137e0f6e50"
     },
     {
       "id": "logo-lava-guava-black-beach-hoodie",
@@ -1931,7 +2833,7 @@
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
       "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Volcanic label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/lava-guava-black-beach-hoodie.webp"
@@ -2019,87 +2921,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
-      "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Volcanic label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/lava-guava-black-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGV-KIL-WHITE",
-          "title": "White",
+          "sku": "LGV-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGV-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "LGV-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGV-KIL-PLUM",
-          "title": "Plum",
+          "sku": "LGV-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGV-KIL-GREY",
-          "title": "Grey",
+          "sku": "LGV-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-LGV-KIL-BLACK",
-          "title": "Black",
+          "sku": "LGV-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "LGV-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "LGV-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "LGV-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5ab45d97dbbb9095afd",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5ab45d97dbbb9095afd"
     },
     {
       "id": "logo-lava-guava-black-mauna-kea-hoodie",
@@ -2108,87 +3102,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
-      "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Lava-Guava Volcanic label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/lava-guava-black-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-LGV-MK-WHITE",
-          "title": "White",
+          "sku": "LGV-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-LGV-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "LGV-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-LGV-MK-PLUM",
-          "title": "Plum",
+          "sku": "LGV-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-LGV-MK-GREY",
-          "title": "Grey",
+          "sku": "LGV-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-LGV-MK-BLACK",
-          "title": "Black",
+          "sku": "LGV-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "LGV-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGV-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGV-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGV-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "LGV-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "LGV-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGV-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGV-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "LGV-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "LGV-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5aeffdb88d5690cdac2",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5aeffdb88d5690cdac2"
     },
     {
       "id": "logo-lava-guava-black-blanket",
@@ -2198,7 +3284,7 @@
       "collection": "Logo",
       "logo": "Lava-Guava Volcanic",
       "draft": true,
-      "description": "The Lava-Guava Volcanic label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The Lava-Guava Volcanic label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/lava-guava-black-blanket.webp"
@@ -2266,87 +3352,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "FPX",
-      "draft": true,
-      "description": "The FPX label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The FPX label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/fpx-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPX-TEE-WHITE",
-          "title": "White",
+          "sku": "FPX-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPX-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "FPX-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPX-TEE-PLUM",
-          "title": "Plum",
+          "sku": "FPX-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPX-TEE-GREY",
-          "title": "Grey",
+          "sku": "FPX-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-FPX-TEE-BLACK",
-          "title": "Black",
+          "sku": "FPX-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "FPX-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "FPX-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "FPX-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5b040b32fadb80b4100",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5b040b32fadb80b4100"
     },
     {
       "id": "logo-fpx-long-sleeve",
@@ -2355,93 +3533,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "FPX",
-      "draft": true,
-      "description": "The FPX label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The FPX label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/fpx-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPX-LS-WHITE",
-          "title": "White",
+          "sku": "FPX-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPX-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "FPX-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPX-LS-PLUM",
-          "title": "Plum",
+          "sku": "FPX-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPX-LS-GREY",
-          "title": "Grey",
+          "sku": "FPX-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-FPX-LS-BLACK",
-          "title": "Black",
+          "sku": "FPX-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "FPX-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "FPX-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "FPX-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5b3ad99e6137e0f6e61",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5b3ad99e6137e0f6e61"
     },
     {
       "id": "logo-fpx-beach-hoodie",
@@ -2451,7 +3715,7 @@
       "collection": "Logo",
       "logo": "FPX",
       "draft": true,
-      "description": "The FPX label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The FPX label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/fpx-beach-hoodie.webp"
@@ -2539,87 +3803,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "FPX",
-      "draft": true,
-      "description": "The FPX label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The FPX label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/fpx-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPX-KIL-WHITE",
-          "title": "White",
+          "sku": "FPX-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPX-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "FPX-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPX-KIL-PLUM",
-          "title": "Plum",
+          "sku": "FPX-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPX-KIL-GREY",
-          "title": "Grey",
+          "sku": "FPX-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-FPX-KIL-BLACK",
-          "title": "Black",
+          "sku": "FPX-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "FPX-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "FPX-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "FPX-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5b735d2671b2405ca58",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5b735d2671b2405ca58"
     },
     {
       "id": "logo-fpx-mauna-kea-hoodie",
@@ -2628,87 +3984,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "FPX",
-      "draft": true,
-      "description": "The FPX label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The FPX label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/fpx-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-FPX-MK-WHITE",
-          "title": "White",
+          "sku": "FPX-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-FPX-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "FPX-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-FPX-MK-PLUM",
-          "title": "Plum",
+          "sku": "FPX-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-FPX-MK-GREY",
-          "title": "Grey",
+          "sku": "FPX-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-FPX-MK-BLACK",
-          "title": "Black",
+          "sku": "FPX-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "FPX-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPX-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPX-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPX-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "FPX-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "FPX-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPX-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPX-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "FPX-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "FPX-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5bab04fd1a7ef05b74c",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5bab04fd1a7ef05b74c"
     },
     {
       "id": "logo-fpx-blanket",
@@ -2718,7 +4166,7 @@
       "collection": "Logo",
       "logo": "FPX",
       "draft": true,
-      "description": "The FPX label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The FPX label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/fpx-blanket.webp"
@@ -2786,87 +4234,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Moon Tea",
-      "draft": true,
-      "description": "The Moon Tea label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Moon Tea label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/moon-tea-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-MTL-TEE-WHITE",
-          "title": "White",
+          "sku": "MTL-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-MTL-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "MTL-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-MTL-TEE-PLUM",
-          "title": "Plum",
+          "sku": "MTL-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-MTL-TEE-GREY",
-          "title": "Grey",
+          "sku": "MTL-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-MTL-TEE-BLACK",
-          "title": "Black",
+          "sku": "MTL-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "MTL-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "MTL-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "MTL-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5bc40b32fadb80b410e",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5bc40b32fadb80b410e"
     },
     {
       "id": "logo-moon-tea-long-sleeve",
@@ -2875,93 +4415,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Moon Tea",
-      "draft": true,
-      "description": "The Moon Tea label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Moon Tea label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/moon-tea-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-MTL-LS-WHITE",
-          "title": "White",
+          "sku": "MTL-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-MTL-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "MTL-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-MTL-LS-PLUM",
-          "title": "Plum",
+          "sku": "MTL-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-MTL-LS-GREY",
-          "title": "Grey",
+          "sku": "MTL-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-MTL-LS-BLACK",
-          "title": "Black",
+          "sku": "MTL-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "MTL-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "MTL-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "MTL-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5bfad99e6137e0f6e6a",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5bfad99e6137e0f6e6a"
     },
     {
       "id": "logo-moon-tea-beach-hoodie",
@@ -2971,7 +4597,7 @@
       "collection": "Logo",
       "logo": "Moon Tea",
       "draft": true,
-      "description": "The Moon Tea label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Moon Tea label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/moon-tea-beach-hoodie.webp"
@@ -3059,87 +4685,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Moon Tea",
-      "draft": true,
-      "description": "The Moon Tea label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Moon Tea label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/moon-tea-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-MTL-KIL-WHITE",
-          "title": "White",
+          "sku": "MTL-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-MTL-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "MTL-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-MTL-KIL-PLUM",
-          "title": "Plum",
+          "sku": "MTL-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-MTL-KIL-GREY",
-          "title": "Grey",
+          "sku": "MTL-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-MTL-KIL-BLACK",
-          "title": "Black",
+          "sku": "MTL-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "MTL-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "MTL-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "MTL-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5c4ad99e6137e0f6e70",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5c4ad99e6137e0f6e70"
     },
     {
       "id": "logo-moon-tea-mauna-kea-hoodie",
@@ -3148,87 +4866,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Moon Tea",
-      "draft": true,
-      "description": "The Moon Tea label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Moon Tea label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/moon-tea-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-MTL-MK-WHITE",
-          "title": "White",
+          "sku": "MTL-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-MTL-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "MTL-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-MTL-MK-PLUM",
-          "title": "Plum",
+          "sku": "MTL-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-MTL-MK-GREY",
-          "title": "Grey",
+          "sku": "MTL-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-MTL-MK-BLACK",
-          "title": "Black",
+          "sku": "MTL-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "MTL-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "MTL-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "MTL-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "MTL-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "MTL-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "MTL-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "MTL-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "MTL-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "MTL-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "MTL-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5c6ad99e6137e0f6e72",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5c6ad99e6137e0f6e72"
     },
     {
       "id": "logo-moon-tea-blanket",
@@ -3238,7 +5048,7 @@
       "collection": "Logo",
       "logo": "Moon Tea",
       "draft": true,
-      "description": "The Moon Tea label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The Moon Tea label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/moon-tea-blanket.webp"
@@ -3306,87 +5116,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Thorny Toad",
-      "draft": true,
-      "description": "The Thorny Toad label art on the tee. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Thorny Toad label art, printed on the chest of a Bella+Canvas 3001 unisex jersey tee. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/thorny-toad-tee.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Tee size chart",
-        "note": "Unisex. Chest and length in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-TTL-TEE-WHITE",
-          "title": "White",
+          "sku": "TTL-TEE-18100",
+          "title": "Black / S",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18100,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-TTL-TEE-CARNATION",
-          "title": "Carnation",
+          "sku": "TTL-TEE-18101",
+          "title": "Black / M",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18101,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-TTL-TEE-PLUM",
-          "title": "Plum",
+          "sku": "TTL-TEE-18102",
+          "title": "Black / L",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18102,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-TTL-TEE-GREY",
-          "title": "Grey",
+          "sku": "TTL-TEE-18103",
+          "title": "Black / XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18103,
+          "cost_cents": 1129
         },
         {
-          "sku": "DRAFT-TTL-TEE-BLACK",
-          "title": "Black",
+          "sku": "TTL-TEE-18104",
+          "title": "Black / 2XL",
           "price_cents": 2800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18104,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "TTL-TEE-103362",
+          "title": "Solid Athletic Grey / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 103362,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-103363",
+          "title": "Solid Athletic Grey / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 103363,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-103364",
+          "title": "Solid Athletic Grey / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 103364,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-103365",
+          "title": "Solid Athletic Grey / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 103365,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-103366",
+          "title": "Solid Athletic Grey / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 103366,
+          "cost_cents": 1385
+        },
+        {
+          "sku": "TTL-TEE-18540",
+          "title": "White / S",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18540,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-18541",
+          "title": "White / M",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18541,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-18542",
+          "title": "White / L",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18542,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-18543",
+          "title": "White / XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18543,
+          "cost_cents": 1129
+        },
+        {
+          "sku": "TTL-TEE-18544",
+          "title": "White / 2XL",
+          "price_cents": 2800,
+          "active": true,
+          "printify_product_id": "6aefc5c9ad99e6137e0f6e77",
+          "printify_variant_id": 18544,
+          "cost_cents": 1385
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5c9ad99e6137e0f6e77"
     },
     {
       "id": "logo-thorny-toad-long-sleeve",
@@ -3395,93 +5297,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Thorny Toad",
-      "draft": true,
-      "description": "The Thorny Toad label art on the long sleeve. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Thorny Toad label art, printed on the chest of a Bella+Canvas 3501 unisex jersey long sleeve. Made to order by Printify and shipped from the US.",
       "model": "Dinny",
       "images": [
         "img/logo/thorny-toad-long-sleeve.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Long sleeve size chart",
-        "note": "Unisex. Chest, length, and sleeve in inches.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length",
-          "Sleeve"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "18",
-            "28",
-            "33"
+            "S"
           ],
           [
-            "M",
-            "20",
-            "29",
-            "34"
+            "M"
           ],
           [
-            "L",
-            "22",
-            "30",
-            "35"
+            "L"
           ],
           [
-            "XL",
-            "24",
-            "31",
-            "36"
+            "XL"
           ],
           [
-            "2XL",
-            "26",
-            "32",
-            "37"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-TTL-LS-WHITE",
-          "title": "White",
+          "sku": "TTL-LS-24993",
+          "title": "Athletic Heather / S",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24993,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-TTL-LS-CARNATION",
-          "title": "Carnation",
+          "sku": "TTL-LS-24992",
+          "title": "Athletic Heather / M",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24992,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-TTL-LS-PLUM",
-          "title": "Plum",
+          "sku": "TTL-LS-24991",
+          "title": "Athletic Heather / L",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24991,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-TTL-LS-GREY",
-          "title": "Grey",
+          "sku": "TTL-LS-24994",
+          "title": "Athletic Heather / XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24994,
+          "cost_cents": 1843
         },
         {
-          "sku": "DRAFT-TTL-LS-BLACK",
-          "title": "Black",
+          "sku": "TTL-LS-24995",
+          "title": "Athletic Heather / 2XL",
           "price_cents": 3200,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24995,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "TTL-LS-24998",
+          "title": "Black / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24998,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-24997",
+          "title": "Black / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24997,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-24996",
+          "title": "Black / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24996,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-24999",
+          "title": "Black / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 24999,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-25000",
+          "title": "Black / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25000,
+          "cost_cents": 2125
+        },
+        {
+          "sku": "TTL-LS-25078",
+          "title": "White / S",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25078,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-25077",
+          "title": "White / M",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25077,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-25076",
+          "title": "White / L",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25076,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-25079",
+          "title": "White / XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25079,
+          "cost_cents": 1843
+        },
+        {
+          "sku": "TTL-LS-25080",
+          "title": "White / 2XL",
+          "price_cents": 3200,
+          "active": true,
+          "printify_product_id": "6aefc5ccffdb88d5690cdad4",
+          "printify_variant_id": 25080,
+          "cost_cents": 2125
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5ccffdb88d5690cdad4"
     },
     {
       "id": "logo-thorny-toad-beach-hoodie",
@@ -3491,7 +5479,7 @@
       "collection": "Logo",
       "logo": "Thorny Toad",
       "draft": true,
-      "description": "The Thorny Toad label art on the beach hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Thorny Toad label art on the beach hoodie. Coming soon. Not for sale until the price covers the printer cost.",
       "model": "Erv",
       "images": [
         "img/logo/thorny-toad-beach-hoodie.webp"
@@ -3579,87 +5567,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Thorny Toad",
-      "draft": true,
-      "description": "The Thorny Toad label art on the kīlauea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Thorny Toad label art, printed on the chest of a Gildan 18500 Heavy Blend hoodie, 8.0 oz. Made to order by Printify and shipped from the US.",
       "model": "Fonk",
       "images": [
         "img/logo/thorny-toad-kilauea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Kīlauea hoodie size chart",
-        "note": "Standard hooded sweatshirt. Unisex.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "20",
-            "27"
+            "S"
           ],
           [
-            "M",
-            "22",
-            "28"
+            "M"
           ],
           [
-            "L",
-            "24",
-            "29"
+            "L"
           ],
           [
-            "XL",
-            "26",
-            "30"
+            "XL"
           ],
           [
-            "2XL",
-            "28",
-            "31"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-TTL-KIL-WHITE",
-          "title": "White",
+          "sku": "TTL-KIL-32918",
+          "title": "Black / S",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32918,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-TTL-KIL-CARNATION",
-          "title": "Carnation",
+          "sku": "TTL-KIL-32919",
+          "title": "Black / M",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32919,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-TTL-KIL-PLUM",
-          "title": "Plum",
+          "sku": "TTL-KIL-32920",
+          "title": "Black / L",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32920,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-TTL-KIL-GREY",
-          "title": "Grey",
+          "sku": "TTL-KIL-32921",
+          "title": "Black / XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32921,
+          "cost_cents": 2158
         },
         {
-          "sku": "DRAFT-TTL-KIL-BLACK",
-          "title": "Black",
+          "sku": "TTL-KIL-32922",
+          "title": "Black / 2XL",
           "price_cents": 4800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32922,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "TTL-KIL-32902",
+          "title": "Sport Grey / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32902,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32903",
+          "title": "Sport Grey / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32903,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32904",
+          "title": "Sport Grey / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32904,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32905",
+          "title": "Sport Grey / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32905,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32906",
+          "title": "Sport Grey / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32906,
+          "cost_cents": 2389
+        },
+        {
+          "sku": "TTL-KIL-32910",
+          "title": "White / S",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32910,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32911",
+          "title": "White / M",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32911,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32912",
+          "title": "White / L",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32912,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32913",
+          "title": "White / XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32913,
+          "cost_cents": 2158
+        },
+        {
+          "sku": "TTL-KIL-32914",
+          "title": "White / 2XL",
+          "price_cents": 4800,
+          "active": true,
+          "printify_product_id": "6aefc5d1ffdb88d5690cdad7",
+          "printify_variant_id": 32914,
+          "cost_cents": 2389
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5d1ffdb88d5690cdad7"
     },
     {
       "id": "logo-thorny-toad-mauna-kea-hoodie",
@@ -3668,87 +5748,179 @@
       "type": "Apparel",
       "collection": "Logo",
       "logo": "Thorny Toad",
-      "draft": true,
-      "description": "The Thorny Toad label art on the mauna kea hoodie. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer.",
+      "description": "The Thorny Toad label art, printed on the chest of a Independent Trading Co. IND4000 heavyweight hoodie, 10 oz. Made to order by Printify and shipped from the US.",
       "model": "Ipo",
       "images": [
         "img/logo/thorny-toad-mauna-kea-hoodie.webp"
       ],
       "tags": [
         "merch",
-        "logo",
-        "draft"
+        "logo"
       ],
       "pairs": [],
       "fulfiller": "printify",
       "size_chart": {
-        "title": "Mauna Kea hoodie size chart",
-        "note": "Heavyweight. Unisex. Runs slightly roomy.",
+        "title": "Sizes",
+        "note": "Unisex sizing from the garment maker.",
         "headers": [
-          "Size",
-          "Chest",
-          "Length"
+          "Size"
         ],
         "rows": [
           [
-            "S",
-            "21",
-            "27.5"
+            "S"
           ],
           [
-            "M",
-            "23",
-            "28.5"
+            "M"
           ],
           [
-            "L",
-            "25",
-            "29.5"
+            "L"
           ],
           [
-            "XL",
-            "27",
-            "30.5"
+            "XL"
           ],
           [
-            "2XL",
-            "29",
-            "31.5"
+            "2XL"
           ]
         ]
       },
       "variants": [
         {
-          "sku": "DRAFT-TTL-MK-WHITE",
-          "title": "White",
+          "sku": "TTL-MK-123875",
+          "title": "Black / S",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123875,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-TTL-MK-CARNATION",
-          "title": "Carnation",
+          "sku": "TTL-MK-123859",
+          "title": "Black / M",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123859,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-TTL-MK-PLUM",
-          "title": "Plum",
+          "sku": "TTL-MK-123843",
+          "title": "Black / L",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123843,
+          "cost_cents": 3492
         },
         {
-          "sku": "DRAFT-TTL-MK-GREY",
-          "title": "Grey",
+          "sku": "TTL-MK-123891",
+          "title": "Black / XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123891,
+          "cost_cents": 3490
         },
         {
-          "sku": "DRAFT-TTL-MK-BLACK",
-          "title": "Black",
+          "sku": "TTL-MK-123811",
+          "title": "Black / 2XL",
           "price_cents": 6800,
-          "active": false
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123811,
+          "cost_cents": 3622
+        },
+        {
+          "sku": "TTL-MK-123880",
+          "title": "Grey Heather / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123880,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "TTL-MK-123864",
+          "title": "Grey Heather / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123864,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "TTL-MK-123848",
+          "title": "Grey Heather / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123848,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "TTL-MK-123896",
+          "title": "Grey Heather / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123896,
+          "cost_cents": 3768
+        },
+        {
+          "sku": "TTL-MK-123816",
+          "title": "Grey Heather / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123816,
+          "cost_cents": 4492
+        },
+        {
+          "sku": "TTL-MK-123996",
+          "title": "White / S",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123996,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "TTL-MK-123981",
+          "title": "White / M",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123981,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "TTL-MK-123966",
+          "title": "White / L",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123966,
+          "cost_cents": 3666
+        },
+        {
+          "sku": "TTL-MK-124011",
+          "title": "White / XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 124011,
+          "cost_cents": 3668
+        },
+        {
+          "sku": "TTL-MK-123936",
+          "title": "White / 2XL",
+          "price_cents": 6800,
+          "active": true,
+          "printify_product_id": "6aefc5d5ffdb88d5690cdad9",
+          "printify_variant_id": 123936,
+          "cost_cents": 3794
         }
-      ]
+      ],
+      "printify_product_id": "6aefc5d5ffdb88d5690cdad9"
     },
     {
       "id": "logo-thorny-toad-blanket",
@@ -3758,7 +5930,7 @@
       "collection": "Logo",
       "logo": "Thorny Toad",
       "draft": true,
-      "description": "The Thorny Toad label art on the blanket. Draft: coming soon, not for sale yet. Colors and sizes are planned, not yet confirmed with the printer. Blanket artwork needs a higher-resolution file before it can be made.",
+      "description": "The Thorny Toad label art on the blanket. Coming soon. This blanket needs higher-resolution artwork before it can be made.",
       "model": null,
       "images": [
         "img/logo/thorny-toad-blanket.webp"

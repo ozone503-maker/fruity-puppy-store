@@ -73,20 +73,22 @@ function jarCard(p) {
 }
 
 function logoCard(p) {
-  const colors = p.variants.map(v => v.title).join(', ');
+  const colors = [...new Set(p.variants.map(v => v.title.split(' / ')[0]))].join(', ');
   const sizes = p.size_chart ? p.size_chart.rows.map(r => r[0]).join(', ') : '';
   const who = p.model ? `${p.model} wearing the ${p.title}` : `The ${p.title}, laid flat`;
+  const live = !p.draft && p.variants.some(v => v.available);
   return `<li class="logo-item"><a href="${href(p)}"><img src="${esc(imgSrc(p.images[0]))}" alt="${esc(who)}" loading="lazy" width="360" height="${p.model ? 640 : 480}"></a>
-    <h4>${esc(p.title.replace(p.logo + ' ', ''))}</h4>
-    <p class="logo-price">${money(p.variants[0].price_cents)} <span class="soon">Coming soon</span></p>
-    <p class="logo-var">Planned colors: ${esc(colors)}${sizes ? `<br>Planned sizes: ${esc(sizes)}` : ''}</p></li>`;
+    <h4><a href="${href(p)}">${esc(p.title.replace(p.logo + ' ', ''))}</a></h4>
+    <p class="logo-price">${money(p.variants[0].price_cents)} ${live ? '' : '<span class="soon">Coming soon</span>'}</p>
+    <p class="logo-var">${esc(colors)}${sizes ? `<br>${esc(sizes)}` : ''}</p>
+    ${live ? `<a class="buy logo-buy" href="${href(p)}">Pick size and color</a>` : ''}</li>`;
 }
 
 function logoSection(items) {
   const groups = [...new Set(items.map(p => p.logo))];
   return `<section class="logos" aria-labelledby="logos-h">
     <h2 id="logos-h">The label collection</h2>
-    <p class="logos-sub">Our jar labels, made wearable. Coming soon, not for sale yet. Colors and sizes are planned and not confirmed with the printer.</p>
+    <p class="logos-sub">Our jar labels, made wearable. Printed to order and shipped from the US. Beach hoodies and blankets are coming soon.</p>
     ${groups.map(g => `<details class="logo-group"${g === groups[0] ? ' open' : ''}><summary>${esc(g)}</summary><ul class="logo-row">${items.filter(p => p.logo === g).map(logoCard).join('')}</ul></details>`).join('')}
   </section>`;
 }
