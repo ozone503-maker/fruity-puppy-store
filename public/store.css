@@ -171,7 +171,7 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
 .car-btn:hover{background:var(--ink);color:var(--blush);border-color:var(--ink)}
 .dark .car-btn:hover{background:var(--blush);color:var(--ink);border-color:var(--blush)}
 .car-btn:focus-visible,.car-track:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
-.car-track{list-style:none;margin:0;padding:0 0 12px;display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,300px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin}
+.car-track{position:relative;list-style:none;margin:0;padding:0 0 12px;display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,300px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin}
 .car-track>li{scroll-snap-align:start;min-width:0}
 .rack .car-track .rack-item{height:100%}
 .pcard{background:#fff7f0;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;height:100%}
@@ -194,3 +194,8 @@ a:focus-visible,button:focus-visible,input:focus-visible+span,select:focus-visib
   .small .car-track{grid-auto-columns:44%}
   .top-h{font-size:clamp(36px,11vw,56px)}
 }
+.pcard-photo{overflow:hidden}
+.pcard-photo:not(.flat) img{object-position:50% 40%;transform:scale(1.45);transform-origin:50% 46%}
+.rack h2,.labels h2,.fridge h2{line-height:1.02}
+.top-sample{display:none}
+@media (max-width:640px){.top-sample{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;margin:0 0 20px;border-radius:999px;background:var(--ink);color:var(--blush);font-weight:700;text-decoration:none}}

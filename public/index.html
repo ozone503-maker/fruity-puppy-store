@@ -106,6 +106,7 @@ function fruityPuppy(data, shop) {
   <section class="topbuy" aria-labelledby="top-h">
     <h1 id="top-h" class="top-h">Fruity Puppy cream<br>fresh from the fridge</h1>
     <p class="fridge-sub">Fresh fruit skin nutrition from Hawaiʻi.</p>
+    ${inStock.find(p => /sample/i.test(p.title)) ? `<a class="top-sample" href="${href(inStock.find(p => /sample/i.test(p.title)))}">Get a free sample</a>` : ''}
     <ul class="jars top">${inStock.map(jarCard).join('')}</ul>
   </section>
   <section class="rack" aria-labelledby="rack-h">
