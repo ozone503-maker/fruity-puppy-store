@@ -10,6 +10,7 @@ const BRAND = params.get('brand') || brandFromHost();
 const brandQ = BRAND ? '?brand=' + BRAND : '';
 const CART_KEY = 'store-cart-' + (BRAND || 'default');
 let catalog = null;
+if (!BRAND) document.body.classList.add('fp');
 
 // Shop and Back to shop links go to the store root (/store on fruitypuppy.com), not the site homepage.
 document.querySelectorAll('a[data-shop-home]').forEach(a => { a.href = (BASE || '/') + brandQ; });
@@ -44,13 +45,13 @@ function suggestions() {
     const p = catalog.products.find(x => x.id === id);
     if (!p) continue;
     const v = p.variants[0];
-    if (!v || inCart.has(v.sku)) continue;
+    if (!v || v.available === false || inCart.has(v.sku)) continue;
     out.push(p);
   }
   if (!out.length) {
     for (const p of catalog.products) {
       const v = p.variants[0];
-      if (v && !inCart.has(v.sku)) out.push(p);
+      if (v && v.available !== false && !inCart.has(v.sku)) out.push(p);
       if (out.length >= 3) break;
     }
   }
@@ -99,11 +100,12 @@ function render() {
   let sub = 0;
   const html = cart.map((item, i) => {
     const hit = findVariant(item.sku);
-    const title = hit ? `${hit.product.title} — ${hit.variant.title}` : item.sku;
+    const title = hit ? `${hit.product.title}, ${hit.variant.title}` : item.sku;
+    const gone = !hit || hit.variant.available === false;
     const price = hit ? hit.variant.price_cents : 0;
-    sub += price * (item.quantity || 1);
+    if (hit && hit.variant.available !== false) sub += price * (item.quantity || 1);
     return `<div class="cart-line">
-      <div><b>${title}</b><div>${money(price)}</div></div>
+      <div><b>${title}</b><div>${gone ? '<span class="stock-out">Out of stock, please remove</span>' : money(price)}</div></div>
       <div class="qty">
         <button type="button" data-qty="${i}" data-d="-1">−</button>
         <span>${item.quantity || 1}</span>
@@ -130,6 +132,8 @@ function render() {
 }
 
 function addToCart(sku, quantity = 1) {
+  const hit = findVariant(sku);
+  if (hit && hit.variant.available === false) return;
   const cart = getCart();
   const existing = cart.find(i => i.sku === sku);
   if (existing) existing.quantity += quantity;
