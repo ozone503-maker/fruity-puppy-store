@@ -3,7 +3,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 const root = new URL('../public/', import.meta.url).pathname;
-const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp' };
+const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
 createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost');
   let path = url.pathname.replace(/^\/store(?=\/|$)/, '') || '/';
@@ -23,6 +23,7 @@ createServer(async (req, res) => {
   let file = normalize(join(root, path));
   if (!file.startsWith(root)) { res.writeHead(403).end(); return; }
   if (path.endsWith('/')) file = join(file, 'index.html');
-  try { res.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream' }).end(await readFile(file)); }
-  catch { try { res.writeHead(200, { 'Content-Type': 'text/html' }).end(await readFile(join(file, 'index.html'))); } catch { res.writeHead(404).end('Not found'); } }
+  // Read before writing headers, so a missing file is a 404 instead of a crash.
+  try { const data = await readFile(file); res.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream' }).end(data); }
+  catch { try { const data = await readFile(join(file, 'index.html')); res.writeHead(200, { 'Content-Type': 'text/html' }).end(data); } catch { res.writeHead(404).end('Not found'); } }
 }).listen(process.env.PORT || 3000, () => console.log('http://localhost:' + (process.env.PORT || 3000) + '/store/'));

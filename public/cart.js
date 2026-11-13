@@ -1,3 +1,5 @@
+// Wrapped so its names (BASE, params...) cannot collide with a page's own inline script.
+(() => {
 const BASE = location.pathname.startsWith('/store') ? '/store' : '';
 const params = new URLSearchParams(location.search);
 function brandFromHost() {
@@ -25,7 +27,7 @@ function saveCart(cart) {
 function money(cents) { return '$' + (cents / 100).toFixed(2); }
 function findVariant(sku) {
   if (!catalog) return null;
-  for (const p of catalog.products) {
+  for (const p of [...catalog.products, ...(window.__pageProducts || [])]) {
     const v = p.variants.find(x => x.sku === sku);
     if (v) return { product: p, variant: v };
   }
@@ -131,7 +133,20 @@ function render() {
   if (pageSug) pageSug.innerHTML = block;
 }
 
-function addToCart(sku, quantity = 1) {
+// Big stores send one page at a time, so look up anything the cart needs by SKU.
+async function ensureSkus(skus) {
+  if (!catalog?.store?.paged) return;
+  const missing = skus.filter(s => s && !findVariant(s));
+  if (!missing.length) return;
+  try {
+    const more = await fetch(BASE + '/api/catalog' + brandQ + (brandQ ? '&' : '?') + 'skus=' + encodeURIComponent(missing.join(','))).then(r => r.json());
+    const have = new Set(catalog.products.map(p => p.id));
+    for (const p of more.products || []) if (!have.has(p.id)) catalog.products.push(p);
+  } catch {}
+}
+
+async function addToCart(sku, quantity = 1) {
+  await ensureSkus([sku]);
   const hit = findVariant(sku);
   if (hit && hit.variant.available === false) return;
   const cart = getCart();
@@ -176,5 +191,11 @@ document.addEventListener('click', e => {
   if (e.target.id === 'cart-page-checkout') checkout();
 });
 
-fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(data => { catalog = data; render(); }).catch(() => render());
+fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(async data => {
+  catalog = data;
+  if (data.store?.skin) document.body.classList.add(data.store.skin);
+  await ensureSkus(getCart().map(i => i.sku));
+  render();
+}).catch(() => render());
 render();
+})();

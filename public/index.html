@@ -28,7 +28,7 @@ function brandFromHost() {
 }
 const brand = params.get('brand') || brandFromHost();
 const brandQ = brand ? '?brand=' + brand : '';
-const homes = { brobots: 'https://brobots.space', kudoken: 'https://kudoken.space' };
+const homes = { brobots: 'https://brobots.space', 'brobots-tech': 'https://brobots.space', kudoken: 'https://kudoken.space' };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const money = c => '$' + (c / 100).toFixed(2).replace(/\.00$/, '');
 const imgSrc = u => /^https?:/.test(u) ? u : `${BASE}/${u}`;
@@ -46,6 +46,63 @@ function genericGrid(data, shop) {
     card.innerHTML = `<h3><a href="${href(p)}">${esc(p.title)}</a></h3><p>${esc(p.description)}</p><p class="price">${price}</p><button class="add" data-add-sku="${esc(v.sku)}">Add to cart</button>`;
     grid.appendChild(card);
   });
+}
+
+// Big department stores (config.catalog.page_size): departments, search, one page at a time.
+function deptStore(data, shop) {
+  const st = data.store;
+  if (st.skin) document.body.classList.add(st.skin);
+  const cur = { dept: params.get('dept') || '', q: params.get('q') || '' };
+  const link = o => {
+    const u = new URLSearchParams();
+    if (brand) u.set('brand', brand);
+    for (const k of ['dept', 'q', 'page']) if (o[k] && !(k === 'page' && o[k] === 1)) u.set(k, o[k]);
+    return `${BASE}/?${u}`;
+  };
+  const groups = [...new Set(st.departments.map(d => d.group))];
+  const active = st.departments.find(d => d.id === cur.dept);
+  // Phones get the groups folded shut (the active one open); wide screens show them all.
+  const wide = matchMedia('(min-width:761px)').matches;
+  const nav = groups.map(g => `<details class="dept-group"${wide || (active && active.group === g) ? ' open' : ''}><summary>${esc(g)}</summary><ul>${st.departments.filter(d => d.group === g).map(d =>
+    `<li><a href="${link({ dept: d.id })}"${d.id === cur.dept ? ' aria-current="page"' : ''}>${esc(d.name)} <span>${d.count}</span></a></li>`).join('')}</ul></details>`).join('');
+  const card = p => {
+    const vs = buyable(p);
+    const v = vs[0];
+    if (!v) return '';
+    const from = vs.some(x => x.price_cents !== v.price_cents) ? 'From ' : '';
+    const low = Math.min(...vs.map(x => x.price_cents));
+    const img = p.images[0] ? `<img src="${esc(imgSrc(p.images[0]))}" alt="${esc(p.title)}" loading="lazy" width="400" height="400">` : '';
+    return `<article class="dept-card"><a class="dept-photo" href="${href(p)}">${img}</a>
+      <h3><a href="${href(p)}">${esc(p.title)}</a></h3>
+      <p class="dept-price">${from}${money(low)}</p>
+      ${vs.length > 1 ? `<a class="add" href="${href(p)}">Choose options</a>` : `<button class="add" type="button" data-add-sku="${esc(v.sku)}">Add to cart</button>`}</article>`;
+  };
+  const heading = cur.q ? `Results for “${esc(cur.q)}”` : active ? esc(active.name) : 'Everything';
+  const pager = data.pages > 1 ? `<nav class="pager" aria-label="Pages">
+    ${data.page > 1 ? `<a href="${link({ ...cur, page: data.page - 1 })}">Back</a>` : '<span></span>'}
+    <span>Page ${data.page} of ${data.pages}</span>
+    ${data.page < data.pages ? `<a href="${link({ ...cur, page: data.page + 1 })}">Next</a>` : '<span></span>'}</nav>` : '';
+  shop.innerHTML = `
+  <section class="dept-top">
+    <h1>${esc(st.name)}</h1>
+    <p>${esc(st.tagline || '')}</p>
+    <form class="dept-search" role="search" action="${BASE}/">
+      ${brand ? `<input type="hidden" name="brand" value="${esc(brand)}">` : ''}
+      <label class="sr" for="q">Search the store</label>
+      <input id="q" name="q" type="search" value="${esc(cur.q)}" placeholder="Search ${st.total} products">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+  ${st.total ? `<div class="dept-layout">
+    <aside class="dept-nav" aria-label="Departments"><a class="dept-all" href="${link({})}"${!cur.dept && !cur.q ? ' aria-current="page"' : ''}>Everything <span>${st.total}</span></a>${nav}</aside>
+    <section class="dept-main" aria-labelledby="dept-h">
+      <h2 id="dept-h">${heading} <small>${data.matches} ${data.matches === 1 ? 'product' : 'products'}</small></h2>
+      ${data.products.length ? `<div class="dept-grid">${data.products.map(card).join('')}</div>` : '<p>Nothing matched. Try another word or pick a department.</p>'}
+      ${pager}
+      ${st.shipping_note ? `<p class="dept-ship">${esc(st.shipping_note)}</p>` : ''}
+    </section>
+  </div>` : '<p class="dept-empty">The shelves are being stocked. Check back soon.</p>'}`;
+  window.__pageProducts = data.products;
 }
 
 function merchCard(p) {
@@ -133,7 +190,14 @@ function fruityPuppy(data, shop) {
   });
 }
 
-fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(data => {
+const listQ = (() => {
+  const u = new URLSearchParams();
+  if (brand) u.set('brand', brand);
+  for (const k of ['dept', 'q', 'page']) if (params.get(k)) u.set(k, params.get(k));
+  const t = u.toString();
+  return t ? '?' + t : '';
+})();
+fetch(BASE + '/api/catalog' + listQ).then(r => r.json()).then(data => {
   if (data.store && data.store.name) document.title = data.store.name;
   const logo = document.querySelector('.fp-logo');
   if (logo && data.store) logo.textContent = data.store.name;
@@ -143,7 +207,7 @@ fetch(BASE + '/api/catalog' + brandQ).then(r => r.json()).then(data => {
   const foot = document.querySelector('.fp-foot');
   if (foot && brand) foot.innerHTML = `<p>${esc(data.store?.tagline)}</p><p><a href="${home}">${home.replace('https://', '')}</a></p>`;
   const shop = document.getElementById('shop');
-  if (brand) genericGrid(data, shop); else fruityPuppy(data, shop);
+  if (data.store && data.store.paged) deptStore(data, shop); else if (brand) genericGrid(data, shop); else fruityPuppy(data, shop);
 }).catch(() => { document.getElementById('shop').textContent = 'The shop did not load. Refresh the page to try again.'; });
 </script>
 <script src="cart.js" defer></script>

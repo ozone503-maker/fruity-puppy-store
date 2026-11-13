@@ -1,0 +1,66 @@
+name: CJ import
+
+# Fills a dropship brand's catalog from CJ Dropshipping and commits it to the branch it was run on.
+# Needs the repository secret CJ_API_KEY.
+on:
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: Brand folder under store/brands
+        default: brobots-tech
+        required: true
+      dept:
+        description: One department id (blank for all)
+        required: false
+      limit:
+        description: Products per department (blank uses departments.json)
+        required: false
+      fresh:
+        description: Rebuild the catalog from nothing
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cj-import-${{ inputs.brand }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Import from CJ
+        env:
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+          BRAND: ${{ inputs.brand }}
+          DEPT: ${{ inputs.dept }}
+          LIMIT: ${{ inputs.limit }}
+          FRESH: ${{ inputs.fresh }}
+        run: |
+          if [ -z "$CJ_API_KEY" ]; then echo "Add the CJ_API_KEY secret first (Settings > Secrets and variables > Actions)."; exit 1; fi
+          args=(--brand "$BRAND")
+          if [ -n "$DEPT" ]; then args+=(--dept "$DEPT"); fi
+          if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
+          if [ "$FRESH" = "true" ]; then args+=(--fresh); fi
+          node tools/cj-import.js "${args[@]}"
+      - name: Check the store still passes its tests
+        run: npm test
+      - name: Commit the catalog
+        if: always()
+        env:
+          BRAND: ${{ inputs.brand }}
+        run: |
+          git config user.name "cj-import"
+          git config user.email "cj-import@users.noreply.github.com"
+          git add "store/brands/$BRAND/catalog.json"
+          if git diff --cached --quiet; then echo "No catalog changes."; exit 0; fi
+          count=$(node -e "console.log(require('./store/brands/' + process.env.BRAND + '/catalog.json').products.length)")
+          git commit -m "CJ import: $BRAND catalog now $count products"
+          git push

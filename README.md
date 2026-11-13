@@ -5,6 +5,7 @@ One store program. Every brand gets the same shop.
 - Brobots: `brobots.space/store` → `store/brands/brobots/catalog.json`
 - Fruity Puppy: `fruitypuppy.com/store` → `store/catalog.json`
 - Kudoken: `kudoken.space/store` → `store/brands/kudoken/catalog.json`
+- Brobots Tech (CJ dropshipping, standalone): `/store/?brand=brobots-tech` → `store/brands/brobots-tech/catalog.json`
 - New brand: add `store/brands/<brand>/` and mount `/store`. Do not rebuild the shop.
 
 Bots: read `store/OPERATOR.md` before touching anything.
@@ -75,3 +76,9 @@ Machine-readable copy: `store/standard-catalog.json`.
 ## Merch menu
 
 `store/merch-menu.json` is a menu of 50 Printify clothing styles (jackets, hoodies, sweatsuits, jerseys, hats) for the merch factory to pick from. Each entry has the Printify `blueprint_id`, base price and 1.2x retail price. These are not listings. Resolve the print provider live when you create a product.
+
+## Big dropship stores (CJ Dropshipping)
+
+A brand with `"catalog": { "page_size": 24 }` in its config and a `departments.json` next to its catalog gets the department store layout: departments, search, and one page of products at a time. Small brands are untouched.
+
+`tools/cj-import.js` fills that catalog from CJ. See "CJ Dropshipping" in `store/OPERATOR.md`.
