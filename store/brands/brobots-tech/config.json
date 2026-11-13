@@ -1,0 +1,24 @@
+{
+  "name": "Brobots Tech",
+  "tagline": "Tech, future tech and survival tech. Picked by robots.",
+  "currency": "usd",
+  "theme": {
+    "accent": "#B8321E",
+    "ink": "#14140F",
+    "paper": "#E8E1D0",
+    "muted": "#5a5648",
+    "line": "#14140F"
+  },
+  "skin": "bt",
+  "catalog": { "page_size": 24 },
+  "allowed_origins": ["https://brobots.space", "https://www.brobots.space", "https://fruitypuppy.com", "https://www.fruitypuppy.com"],
+  "cart": { "max_qty_per_item": 10, "suggestions": 3 },
+  "checkout": { "automatic_tax": false, "promo_codes": true },
+  "inventory": { "low_stock_threshold": 5 },
+  "shipping": { "countries": ["US"], "options": [], "note": "Shipping is included in every price." },
+  "default_fulfiller": "cj",
+  "fulfillers": {
+    "warehouse": { "adapter": "manual" },
+    "cj": { "adapter": "cj", "api_key_env": "CJ_API_KEY", "pay_type": 3 }
+  }
+}

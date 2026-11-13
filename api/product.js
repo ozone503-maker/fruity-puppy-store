@@ -51,7 +51,7 @@ export function GET(request) {
 <meta name="description" content="${esc((product.description || '').slice(0, 160))}">
 <link id="css" rel="stylesheet" href="../store.css">
 </head>
-<body class="${brand || /brobots|kudoken/.test(url.hostname) ? '' : 'fp'}">
+<body class="${config.skin ? esc(config.skin) : brand || /brobots|kudoken/.test(url.hostname) ? '' : 'fp'}">
 <header class="fp-head">
   <a class="fp-logo" id="home" href="../">${esc(config.name || 'Shop')}</a>
   <nav><a id="shop" href="../">Shop</a> <a id="cart-link" href="../cart/">Cart</a></nav>
@@ -62,7 +62,8 @@ export function GET(request) {
     <h1>${esc(product.title)}</h1>
     <p class="desc">${esc(product.description || '')}</p>
     <p class="price">${price}</p>
-    ${options ? `<label>Color <select id="sku">${options}</select></label>` : ''}
+    ${product.shipping_note ? `<p class="muted ship-note">${esc(product.shipping_note)}</p>` : ''}
+    ${options ? `<label>${product.department ? 'Option' : 'Color'} <select id="sku">${options}</select></label>` : ''}
     ${product.draft ? '<p class="stock-out">Coming soon. Not for sale yet; colors and sizes are planned, not confirmed with the printer.</p><button class="add" type="button" disabled>Coming soon</button>' : soldOut ? '<p class="stock-out">Out of stock right now</p><button class="add" type="button" disabled>Out of stock</button>' : `<button class="add" data-add-sku="${esc(firstBuy.sku || '')}">Add to cart</button>`}
     ${chartHtml}
   </div>

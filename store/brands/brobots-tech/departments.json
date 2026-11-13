@@ -1,0 +1,40 @@
+{
+  "brand_label": "Brobots",
+  "ship_to": "US",
+  "ship_from": ["US", "CN"],
+  "per_department": 40,
+  "max_variants": 12,
+  "pricing": { "multiplier": 1.2, "max_retail_cents": 60000 },
+  "departments": [
+    { "id": "tech-power", "group": "Tech", "name": "Chargers and Power Banks", "keywords": ["power bank", "GaN charger", "wireless charger", "charging station", "magnetic charger"] },
+    { "id": "tech-audio", "group": "Tech", "name": "Audio", "keywords": ["wireless earbuds", "bluetooth speaker", "bone conduction headphones", "noise cancelling headphones"] },
+    { "id": "tech-phone", "group": "Tech", "name": "Phone Gear", "keywords": ["phone gimbal", "phone tripod", "magnetic phone holder", "phone camera lens", "phone cooler"] },
+    { "id": "tech-desk", "group": "Tech", "name": "Desk and Computer", "keywords": ["mechanical keyboard", "wireless mouse", "USB C hub", "monitor light bar", "laptop stand", "webcam"] },
+    { "id": "tech-smart-home", "group": "Tech", "name": "Smart Home", "keywords": ["smart plug", "smart bulb", "wifi camera", "smart sensor", "robot vacuum", "smart doorbell"] },
+    { "id": "tech-wearables", "group": "Tech", "name": "Wearables", "keywords": ["smart watch", "fitness tracker", "smart ring", "gps tracker tag"] },
+    { "id": "tech-cameras", "group": "Tech", "name": "Cameras and Drones", "keywords": ["mini drone", "action camera", "dash cam", "trail camera", "digital microscope"] },
+    { "id": "tech-gaming", "group": "Tech", "name": "Gaming", "keywords": ["game controller", "handheld game console", "gaming headset", "mobile game trigger"] },
+    { "id": "tech-lighting", "group": "Tech", "name": "LED and Lighting", "keywords": ["LED strip lights", "smart lamp", "galaxy projector", "neon light", "ring light"] },
+    { "id": "tech-car", "group": "Tech", "name": "Car Tech", "keywords": ["car jump starter", "tire inflator", "car phone mount", "OBD2 scanner", "car vacuum"] },
+
+    { "id": "future-robots", "group": "Future Tech", "name": "Robots", "keywords": ["robot toy", "programmable robot", "robot dog", "robot arm", "robot kit"] },
+    { "id": "future-maker", "group": "Future Tech", "name": "Maker and STEM Kits", "keywords": ["STEM kit", "electronics kit", "solar robot kit", "soldering kit", "development board"] },
+    { "id": "future-3d", "group": "Future Tech", "name": "3D Printing", "keywords": ["3D printer", "3D pen", "PLA filament", "3D printer nozzle"] },
+    { "id": "future-vr", "group": "Future Tech", "name": "VR and Smart Glasses", "keywords": ["VR headset", "smart glasses", "bluetooth glasses", "AR glasses"] },
+    { "id": "future-ai", "group": "Future Tech", "name": "AI Gadgets", "keywords": ["translator earbuds", "AI voice recorder", "smart translator", "smart pen", "AI camera"] },
+    { "id": "future-mobility", "group": "Future Tech", "name": "Electric Ride Gear", "keywords": ["electric scooter accessories", "ebike light", "bike computer", "smart helmet"] },
+    { "id": "future-energy", "group": "Future Tech", "name": "Solar and Energy", "keywords": ["solar panel", "portable solar charger", "solar light", "energy monitor", "solar fan"] },
+    { "id": "future-grow", "group": "Future Tech", "name": "Smart Garden", "keywords": ["hydroponic garden", "grow light", "soil sensor", "automatic watering", "smart planter"] },
+
+    { "id": "survival-power", "group": "Survival Tech", "name": "Off Grid Power", "keywords": ["portable power station", "hand crank charger", "solar power bank", "foldable solar panel"] },
+    { "id": "survival-radio", "group": "Survival Tech", "name": "Radios and Comms", "keywords": ["emergency radio", "hand crank radio", "walkie talkie", "weather radio"] },
+    { "id": "survival-water", "group": "Survival Tech", "name": "Water", "keywords": ["water filter straw", "portable water filter", "water purifier bottle", "collapsible water container"] },
+    { "id": "survival-light", "group": "Survival Tech", "name": "Light", "keywords": ["tactical flashlight", "headlamp rechargeable", "camping lantern", "solar lantern"] },
+    { "id": "survival-fire", "group": "Survival Tech", "name": "Fire and Cooking", "keywords": ["fire starter", "camping stove", "plasma lighter", "portable stove", "camping cookware"] },
+    { "id": "survival-shelter", "group": "Survival Tech", "name": "Shelter and Warmth", "keywords": ["emergency blanket", "bivy sack", "emergency tent", "hand warmer rechargeable", "tarp shelter"] },
+    { "id": "survival-tools", "group": "Survival Tech", "name": "Tools", "keywords": ["multitool", "survival shovel", "paracord bracelet", "folding saw", "survival kit"] },
+    { "id": "survival-nav", "group": "Survival Tech", "name": "Navigation and Optics", "keywords": ["compass", "handheld gps", "monocular telescope", "night vision", "rangefinder"] },
+    { "id": "survival-bags", "group": "Survival Tech", "name": "Packs and Storage", "keywords": ["tactical backpack", "dry bag", "waterproof case", "molle pouch"] },
+    { "id": "survival-home", "group": "Survival Tech", "name": "Storm and Home Prep", "keywords": ["emergency light", "weather station", "gas detector", "emergency whistle", "first aid bag empty"] }
+  ]
+}

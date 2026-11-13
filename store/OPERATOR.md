@@ -5,6 +5,7 @@
 - PRINTIFY_TOKEN (Personal Access Token from Printify dashboard > My Account > API)
 - PRINTIFY_SHOP_ID (from GET /shops.json or dashboard)
 - Optional: PRINTIFY_WEBHOOK_SECRET
+- CJ_API_KEY (only for CJ dropship brands; from cjdropshipping.com > My CJ > Authorization > API > API Key). Also saved as a GitHub Actions secret of the same name so the import can run.
 
 ## Duplicatable program
 
@@ -70,6 +71,22 @@ Example: "take this design, make me a trucker hat, a duffel bag and standard cat
 5. Commit the catalog change.
 
 Resolve blueprint and provider IDs live from the Printify catalog. Do not hardcode stale IDs.
+
+## CJ Dropshipping (Brobots Tech)
+
+`store/brands/brobots-tech/` is a dropship department store. Products come from CJ, CJ ships them, nothing is held in stock.
+
+- `departments.json` is the plan: the departments, the search words for each, how many products per department, where stock may ship from, and the price rule.
+- `catalog.json` is written by the importer. Do not hand-type CJ products into it.
+- Fill or top up the catalog: GitHub > Actions > "CJ import" > Run workflow. Or locally: `CJ_API_KEY=... node tools/cj-import.js --brand brobots-tech`. Add `--dept survival-water --limit 10` to try one small department first. Running it again only adds what is missing. `--fresh` rebuilds from nothing.
+- CJ allows one API call a second and each product takes about three calls, so 1,000 products is roughly an hour.
+- Everything on a listing is real CJ data: title, photos, variant ids, stock country, cost and the cheapest carrier quote to the US. A product with no stock, no price, no photo or no carrier is skipped, not guessed.
+- Price rule: (CJ cost + CJ freight to the US) x `pricing.multiplier`, rounded up to the next .99. Shipping is inside the price, so checkout adds none. Freight is quoted once per product on its first variant.
+- `ship_from` is in order of preference. `["US", "CN"]` takes US warehouse stock when it exists and China stock otherwise. Each listing says where it ships from and CJ's own delivery estimate.
+- Titles and descriptions start as CJ's text with the HTML stripped. Rewrite the ones that sell using the review-to-page method below.
+- Listing photos are CJ's product photos. The "characters wear the gear" rule is for printed merch.
+- Orders: a paid order with CJ items lands in the admin queue as `handoff_pending`, same as Printify. `fulfillOrder` with the `cj` adapter creates the order inside CJ unpaid (`pay_type: 3`), one CJ order per origin country, and you pay it in the CJ dashboard. Setting `pay_type` to 2 makes CJ charge your CJ balance on its own; that spends money, so it needs Jessie's yes.
+- Stripe rules still apply to what is listed. Keep weapons, knives sold as weapons, and anything medical out of `departments.json`.
 
 ## Order flow
 On paid Stripe session, call fulfillOrder with the order object that includes items with printify_* ids and shipping address.
